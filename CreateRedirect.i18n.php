@@ -26,17 +26,19 @@
 if (!defined('MEDIAWIKI')) {
         echo <<<EOT
 To install the CreateRedirect extension, put the following line in LocalSettings.php:
-require_once( "$IP/extensions/CreateRedirect/CreateRedirect.setup.php" );
+require_once( "$IP/extensions/CreateRedirect/CreateRedirect.php" );
 EOT;
         exit( 1 );
 }
 
-$allMessages = array(
-        'en' => array( 
-                "createredirect" => "Create redirect",
-				"crmsgform" => "Using the form below, you can create a redirect page or replace an existing page with a redirect.",
-				"crorigtitle" => "Page title:",
-				"crredirecttitle" => "Redirect to:",
-				"crerror" => "ERROR: Authentication failed." // TODO: Figure out error cases. One message just is not going to do. --Digi 11/5/07
-        )
+$messages = array();
+
+$messages['en'] = array( 
+	"createredirect" => "Create Redirect",
+	"crmsgform" => "Using the form below, you can create a redirect page or replace an existing page with a redirect.",
+	"crorigtitle" => "Page title:",
+	"crredirecttitle" => "Redirect to:",
+	"crredirectdone" => "Redirect created from $1 to $2",
+	"crerror" => "ERROR: Authentication failed." // TODO: Figure out error cases. One message just is not going to do. --Digi 11/5/07
 );
+

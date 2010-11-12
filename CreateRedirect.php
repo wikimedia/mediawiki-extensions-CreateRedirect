@@ -48,25 +48,14 @@ $wgExtensionCredits['specialpage'][] = array(
 );
 
 # Set up the actual extension functionality.
-$wgAutoloadClasses['CreateRedirect'] = dirname(__FILE__) . '/CreateRedirect.body.php'; # Tell MediaWiki to load the extension body.
-$wgSpecialPages['Createredirect'] = 'CreateRedirect'; # Let MediaWiki know about your new special page.
-$wgHooks['LoadAllMessages'][] = 'CreateRedirect::loadMessages'; # Load the internationalization messages for your special page.
-$wgHooks['LanguageGetSpecialPageAliases'][] = 'createRedirect_LanguageGetSpecialPageAliases'; # Add any aliases for the special page.
-
-function createRedirect_LanguageGetSpecialPageAliases(&$specialPageArray, $code) {
-  # The localized title of the special page is among the messages of the extension:
-  CreateRedirect::loadMessages();
-  $text = wfMsg('createredirect');
- 
-  # Convert from title in text form to DBKey and put it into the alias array:
-  $title = Title::newFromText($text);
-  $specialPageArray['CreateRedirect'][] = $title->getDBKey();
- 
-  return true;
-}
+$wgAutoloadClasses['SpecialCreateRedirect'] = dirname(__FILE__) . '/CreateRedirect.body.php'; # Tell MediaWiki to load the extension body.
+$wgSpecialPages['CreateRedirect'] = 'SpecialCreateRedirect'; # Let MediaWiki know about your new special page.
+$wgSpecialPageGroups['CreateRedirect'] = 'pagetools';
+$wgExtensionMessagesFiles['CreateRedirect'] = dirname(__FILE__) . '/CreateRedirect.i18n.php';
+$wgExtensionAliasesFiles['CreateRedirect'] = dirname(__FILE__) . '/CreateRedirect.alias.php';
 
 # Other hooks.
-$wgHooks['MonoBookTemplateToolboxEnd'][] = 'createRedirect_addToolboxLink'; # Add a shortcut link to the sidebar menu in Monobook; specifically the toolbox.
+$wgHooks['SkinTemplateToolboxEnd'][] = 'createRedirect_addToolboxLink'; # Add a shortcut link to the sidebar menu in Monobook; specifically the toolbox.
 
 /*
  * createRedirect_AddToolboxLink(): Adds to the "toolbox" menu in the Monobook skin a shortcut link pointing to Special:Createredirect. If applicable, also adds a reference to the current title as a GET param.
@@ -74,28 +63,17 @@ $wgHooks['MonoBookTemplateToolboxEnd'][] = 'createRedirect_addToolboxLink'; # Ad
  * Returns: true
  */
 function createRedirect_AddToolboxLink() {
-	global $wgRequest, $wgOut, $wgScript;
+	global $wgRequest, $wgOut, $wgScript, $wgTitle;
 	
 	// 1. Determine whether to actually add the link at all. There are certain cases, e.g. in the edit dialog, in a special page, where it's inappropriate for the link to appear.
-	// First, see if "action" exists. If there's an "action" parameter in the URL, we assume that to mean "action=edit" or any other thing. In which case, we don't display the link.
-	if($wgRequest->getText("action")) { return true; }
-	
 	// 2. Check the title. Is it a "Special:" page? Don't display the link.
-	$title = $wgRequest->getText("title"); // We use this for more than one thing.
-	if(strpos($title, "Special:") === 0) { return true; }
-	
-	// TODO: Determine better ways to detect cases to not display the link. --Digi 11/4/07
-	
-	// 3. Are we still here? Good; we can display the link! If $title exists, we pass that as a GET var; the special page can automatically fill in a field using that var.
-	if($title) { 
-		$crTitle = "&crTitle=$title"; 
-	} else { 
-		$crTitle = "";
-	}
+	$action = $wgRequest->getText("action", "view");
+	if( $action != "view" && $action != "purge" && !$wgTitle->isSpecialPage() )
+		return true;
 	
 	// 4. Add the link!
-	$finalItem = "<li><a href=\"" . $wgScript . "?title=Special:Createredirect$crTitle\">Create redirect</a></li>";
-	echo $finalItem;
+	$href = SpecialPage::getTitleFor('CreateRedirect', $wgTitle->getPrefixedText())->getLocalURL();
+	echo Html::rawElement( 'li', null, Html::element( 'a', array( 'href' => $href ), wfMsg('createredirect') ) );
 	
 	return true;
 }

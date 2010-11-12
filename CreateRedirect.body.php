@@ -26,74 +26,28 @@
 if (!defined('MEDIAWIKI')) {
         echo <<<EOT
 To install the CreateRedirect extension, put the following line in LocalSettings.php:
-require_once( "$IP/extensions/CreateRedirect/CreateRedirect.setup.php" );
+require_once( "$IP/extensions/CreateRedirect/CreateRedirect.php" );
 EOT;
         exit( 1 );
 }
 
-class CreateRedirect extends SpecialPage
-{
-	function CreateRedirect() {
-		SpecialPage::SpecialPage("Createredirect", "", true);
-		self::loadMessages();
-		
-		$title_text = wfMsg('cr_title');
-	}
+class SpecialCreateRedirect extends SpecialPage {
 	
-	function loadMessages() {
-		static $messagesLoaded = false;
-		global $wgMessageCache;
-		if ( $messagesLoaded ) return;
-		$messagesLoaded = true;
-		
-		require_once( dirname( __FILE__ ) . '/CreateRedirect.i18n.php' );
-		foreach ( $allMessages as $lang => $langMessages ) {
-			$wgMessageCache->addMessages( $langMessages, $lang );
-		}
-		return true;
+	function __construct() {
+		parent::__construct("CreateRedirect");
 	}
 	
 	function execute( $par ) {
-		global $wgRequest, $wgOut, $wgTitle, $wgUser;
+		global $wgRequest, $wgOut, $wgUser;
 		
-		// 1. Do some prep stuff. We call $this->setHeaders() (a method of SpecialPage) for the page, and we also initialize $output, which will hold the text output to serve with the page.
+		if( wfReadOnly() ) {
+			$wgOut->readOnlyPage();
+			return;
+		}
+		
 		$this->setHeaders();
-		$output = "";
 		
-		// 2. Break from here: "crWrite" determines whether we're serving the form or we're performing the write routine. We send it along with the form on submission, so if we see a POST var "crWrite", then we've got form data to process; if it's not there, then we don't have form data to process, and we have to serve the form.
-		if(!$wgRequest->getVal('crWrite')) { // Serve the form!
-			// 1. Get the local URL for the "action" param, used by <form>. This points the form back to this page (again), where if crWrite exists (which it does,) we process the submitted form.
-			$action = $wgTitle->escapeLocalURL();
-			$crTitle = $wgRequest->getText("crTitle"); // Also retrieve "crTitle". If this GET var is found, we autofill the "Redirect to:" field with that text.
-			
-			// 2. Start rendering the output! The output is entirely the form. It's all HTML, and may be self-explanatory.
-			$output .= "<p>Using the form below, you can create a redirect page or replace an existing page with a redirect.</p>";
-			$output .= <<<END
-<form id="redirectform" name="redirectform" method="post" action="$action" enctype="multipart/form-data">
-<table>
-<tr>
-<td><label for="crOrigTitle">Page title:</label></td>
-<td><input type="text" name="crOrigTitle" id="crOrigTitle" size="60" tabindex="1" /></td>
-</tr>
-<tr>
-<td><label for="crRedirectTitle">Redirect to:</label></td>
-<td><input type="text" name="crRedirectTitle" id="crRedirectTitle" value="{$crTitle}" size="60" tabindex="2" /></td>
-</tr>
-<tr>
-<td />
-<td><input type="submit" name="crWrite" id="crWrite" value="Save page" tabindex="4" /></td>
-</tr>
-</table>
-</form>
-END;
-			$output .= <<<END
-<script language="javascript">
-//<![CDATA[
-document.redirectform.crOrigTitle.focus();
-//]]>
-</script>
-END;
-		} else { // Process submitted form data!
+		if ( $wgRequest->wasPosted() ) {
 			// 1. Retrieve POST vars. First, we want "crOrigTitle", holding the title of the page we're writing to, and "crRedirectTitle", holding the title of the page we're redirecting to.
 			$crOrigTitle = $wgRequest->getText("crOrigTitle");
 			$crRedirectTitle = $wgRequest->getText("crRedirectTitle");
@@ -105,7 +59,7 @@ END;
 			$crEditArticle = new Article($crEditTitle, 0); // Then, construct "Article". This is where most of the article's information is.
 			$wpStarttime = wfTimestampNow(); // POST var "wpStarttime" stores when the edit was started.
 			$wpEdittime = $crEditArticle->getTimestamp(); // POST var "wpEdittime" stores when the article was ''last edited''. This is used to check against edit conflicts, and also why we needed to construct "Article" so early. "Article" contains the article's last edittime.
-			$wpTextbox1 = "#REDIRECT[[$crRedirectTitle]]"."\r\n"; // POST var "wpTextbox1" stores the content that's actually going to be written. This is where we write the #REDIRECT[[Article]] stuff. We plug in $crRedirectTitle here.
+			$wpTextbox1 = "#REDIRECT [[$crRedirectTitle]]"."\r\n"; // POST var "wpTextbox1" stores the content that's actually going to be written. This is where we write the #REDIRECT[[Article]] stuff. We plug in $crRedirectTitle here.
 			$wpSave = 1;
 			$wpMinoredit = 1; // TODO: Decide on this; should this really be marked and hardcoded as a minor edit, or not? Or should we provide an option? --Digi 11/4/07
 			$wpEditToken = htmlspecialchars($wgUser->editToken());
@@ -132,58 +86,85 @@ END;
 			// b. Then import the "form data" (or the FauxRequest object that we just constructed). EditPage now has all the information we generated.
 			$crEdit->importFormData($crRequest);
 			
-			// 6. Write the data!
-
-			if($this->checkUserPermissions($crEdit)) { // WORKAROUND: Since EditPage::attemptSave() doesn't actually check user permissions, and EditPage::edit() imports its own form data (hence we can't use it,) we have to reimplement user permission checking. See CreateRedirect::checkUserPermissions(). --Digi 11/5/07
-				$crEdit->attemptSave();
+			$permErrors = $crEditTitle->getUserPermissionsErrors( 'edit', $wgUser );
+			# Can this title be created?
+			if ( !$crEditTitle->exists() ) {
+				$permErrors = array_merge( $permErrors,
+					wfArrayDiff2( $crEditTitle->getUserPermissionsErrors( 'create', $wgUser ), $permErrors ) );
+			}
+			if ( $permErrors ) {
+				wfDebug( __METHOD__ . ": User can't edit\n" );
+				$wgOut->addWikiText( $crEdit->formatPermissionsErrorMessage( $permErrors, 'edit' ) );
+				wfProfileOut( __METHOD__ );
+				return;
 			}
 			
-			$output .= "ERROR: Authentication failed.";
+			$resultDetails = false;
+			$value = $crEdit->internalAttemptSave( $resultDetails, $wgUser->isAllowed( 'bot' ) && $wgRequest->getBool('bot', true) );
+			
+			if ( $value == EditPage::AS_SUCCESS_UPDATE || $value == EditPage::AS_SUCCESS_NEW_ARTICLE ) {
+				$wgOut->wrapWikiMsg( "<div class=\"mw-createredirect-done\">\n$1</div>", array( 'crredirectdone', $crOrigTitle, $crRedirectTitle ) );
+			}
+			
+			switch ( $value ) {
+				case EditPage::AS_SPAM_ERROR:
+					$crEdit->spamPage( $resultDetails['spam'] );
+					return;
+
+				case EditPage::AS_BLOCKED_PAGE_FOR_USER:
+					$crEdit->blockedPage();
+					return;
+
+				case EditPage::AS_READ_ONLY_PAGE_ANON:
+					$crEdit->userNotLoggedInPage();
+					return;
+
+			 	case EditPage::AS_READ_ONLY_PAGE_LOGGED:
+			 	case EditPage::AS_READ_ONLY_PAGE:
+			 		$wgOut->readOnlyPage();
+					return;
+
+			 	case EditPage::AS_RATE_LIMITED:
+			 		$wgOut->rateLimited();
+					break;
+
+			 	case EditPage::AS_NO_CREATE_PERMISSION:
+			 		$crEdit->noCreatePermission();
+					return;
+			}
+			
+			$wgOut->mRedirect = '';
+			$wgOut->mRedirectCode = '';
 			
 			// TODO: Implement error handling (i.e. "Edit conflict!" or "You don't have permissions to edit this page!") --Digi 11/4/07
 		}
-
-		// Return $output so as to serve the page. Note that we only reach this if we haven't processed form data; if we processed form data, then we don't reach this.
-		$wgOut->addHTML( $output );
+		
+		$action = htmlspecialchars($this->getTitle()->getLocalURL());
+		$crTitle = $wgRequest->getText("crRedirectTitle", $wgRequest->getText("crTitle", $par)); // Also retrieve "crTitle". If this GET var is found, we autofill the "Redirect to:" field with that text.
+		$crTitle = Title::newFromText($crTitle);
+		$crTitle = htmlspecialchars(isset($crTitle) ? $crTitle->getPrefixedText() : "");
+		
+		// 2. Start rendering the output! The output is entirely the form. It's all HTML, and may be self-explanatory.
+		$wgOut->addHTML( "<p>Using the form below, you can create a redirect page or replace an existing page with a redirect.</p>" );
+		$wgOut->addHTML( <<<END
+<form id="redirectform" name="redirectform" method="post" action="$action">
+<table>
+<tr>
+<td><label for="crOrigTitle">Page title:</label></td>
+<td><input type="text" name="crOrigTitle" id="crOrigTitle" size="60" tabindex="1" /></td>
+</tr>
+<tr>
+<td><label for="crRedirectTitle">Redirect to:</label></td>
+<td><input type="text" name="crRedirectTitle" id="crRedirectTitle" value="{$crTitle}" size="60" tabindex="2" /></td>
+</tr>
+<tr>
+<td></td>
+<td><input type="submit" name="crWrite" id="crWrite" value="Save page" tabindex="4" /></td>
+</tr>
+</table>
+</form>
+END
+		);
 	}
 	
-	function checkUserPermissions(&$crEdit) {
-		// I can't believe I have to do this, but I have to reimplement user permission checking from EditPage::edit();. What prevents me from using the method is one line: it performs importFormData($wgRequest), even though we have to use a different request object. --Digi 11/5/07
-		// The below is (almost) verbatim copying from MediaWiki 1.11.0, "/includes/EditPage.php", save minor changes to get everything working.
-		global $wgUser, $wgOut;
-		
-		$permErrors = $crEdit->mTitle->getUserPermissionsErrors( 'edit', $wgUser);
-		if( !$crEdit->mTitle->exists() )
-			$permErrors += $crEdit->mTitle->getUserPermissionsErrors( 'create', $wgUser);
-
-		# Ignore some permissions errors.
-		$remove = array();
-		foreach( $permErrors as $error ) {
-			if ($crEdit->preview || $crEdit->diff &&
-				($error[0] == 'blockedtext' || $error[0] == 'autoblockedtext'))
-			{
-				// Don't worry about blocks when previewing/diffing
-				$remove[] = $error;
-			}
-
-			if ($error[0] == 'readonlytext')
-			{
-				if ($crEdit->edit) {
-					$crEdit->formtype = 'preview';
-				} elseif ($crEdit->save || $crEdit->preview || $crEdit->diff) {
-					$remove[] = $error;
-				}
-			}
-		}
-		# array_diff returns elements in $permErrors that are not in $remove.
-		$permErrors = array_diff( $permErrors, $remove );
-
-		if ( !empty($permErrors) )
-		{
-			return false;
-		} else {
-			return true;
-		}
-	}
-
 }
