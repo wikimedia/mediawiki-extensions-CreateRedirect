@@ -6,12 +6,16 @@
  * @ingroup Extensions
  */
 
-$aliases = array();
+$specialPageAliases = array();
 
 /** English
  * @author Marco Zafra
  */
-$aliases['en'] = array(
+$specialPageAliases['en'] = array(
 	'CreateRedirect' => array( 'CreateRedirect' ),
 );
 
+/**
+ * For backwards compatibility with MediaWiki 1.15 and earlier.
+ */
+$aliases =& $specialPageAliases;
