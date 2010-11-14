@@ -41,11 +41,12 @@ EOT;
 
 // Add this extension to Special:Credits.
 $wgExtensionCredits['specialpage'][] = array(
+	'path'  => __FILE__,
 	'name' => 'CreateRedirect',
 	'author' => 'Marco Zafra',
-	'version' => 1.0,
-	'description' => 'Adds [[Special:CreateRedirect]] to easily create redirects.',
+	'version' => 1.0.1,
 	'url' => 'http://www.mediawiki.org/wiki/Extension:CreateRedirect',
+	'descriptionmsg' => 'createredirect-desc',
 );
 
 // Set up the actual extension functionality.
