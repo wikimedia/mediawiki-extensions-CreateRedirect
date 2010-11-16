@@ -30,13 +30,14 @@ $messages['qqq'] = array(
 );
 
 /** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
+ * @author EugeneZelenko
  * @author Wizardist
  */
 $messages['be-tarask'] = array(
-	'createredirect' => 'Create Redirect',
-	'createredirect-desc' => 'Дадае спэцыяльную старонку [[Special:CreateRedirect|CreateRedirect]] для лёгкага стварэньня перанакіраваньняў',
-	'createredirect-error' => 'Памылка: беспасьпяховая аўтэнтыфікацыя.',
-	'createredirect-instructions' => 'Скарыстаўшыся пададзенай формай, вы можаце ствараць старонкі-перанакіраваньні ці замяняць існыя старонкі перанакіраваньнямі.',
+	'createredirect' => 'Стварыць перанакіраваньне',
+	'createredirect-desc' => 'Дадае [[Special:CreateRedirect|спэцыяльную старонку]] для лёгкага стварэньня перанакіраваньняў',
+	'createredirect-error' => 'Памылка: немагчыма аўтэнтыфікаць.',
+	'createredirect-instructions' => 'З дапамогай формы ніжэй Вы можаце ствараць старонкі-перанакіраваньні ці замяняць існуючыя старонкі перанакіраваньнямі.',
 	'createredirect-page-title' => 'Назва старонкі:',
 	'createredirect-redirect-done' => 'Створанае перанакіраваньне з «$1» на «$2».',
 	'createredirect-redirect-to' => 'Перанакіраваньне на:',
@@ -95,6 +96,20 @@ $messages['gl'] = array(
 	'createredirect-redirect-done' => 'Redirección creada de "$1" cara a "$2"',
 	'createredirect-redirect-to' => 'Redirixir cara a:',
 	'createredirect-save' => 'Gardar a páxina',
+);
+
+/** Swiss German (Alemannisch)
+ * @author Als-Holder
+ */
+$messages['gsw'] = array(
+	'createredirect' => 'Wyterleitig aalege',
+	'createredirect-desc' => '[[Special:CreateRedirect|Spezialsyte]] zum eifachen Aalege vu Wyterleitige',
+	'createredirect-error' => 'Fähler: Authentifizieriig fählgschlaa.',
+	'createredirect-instructions' => 'Mit däm Formular chasch e Wyterleitig aalege oder e Syte, wu s git, dur e Wyterleitig ersetze.',
+	'createredirect-page-title' => 'Sytetitel:',
+	'createredirect-redirect-done' => 'Wyterleitig vu „$1“ uf „$2“ aagleit',
+	'createredirect-redirect-to' => 'Wyterleite uf:',
+	'createredirect-save' => 'Syte spychere',
 );
 
 /** Upper Sorbian (Hornjoserbsce)
@@ -169,6 +184,20 @@ $messages['mk'] = array(
 	'createredirect-save' => 'Зачувај',
 );
 
+/** Dutch (Nederlands)
+ * @author Siebrand
+ */
+$messages['nl'] = array(
+	'createredirect' => 'Doorverwijzing aanmaken',
+	'createredirect-desc' => 'Voegt een [[Special:CreateRedirect|speciale pagina]] toe om eenvoudig doorverwijzingen aan te maken',
+	'createredirect-error' => 'Fout: authenticatie mislukt.',
+	'createredirect-instructions' => 'Via het onderstaande formulier kunt u een doorverwijzingspagina aanmaken of een bestaande pagina vervangen door een doorverwijzing.',
+	'createredirect-page-title' => 'Paginanaam:',
+	'createredirect-redirect-done' => 'Doorverwijzing aangemaakt van "$1" naar "$2"',
+	'createredirect-redirect-to' => 'Doorverwijzen naar:',
+	'createredirect-save' => 'Pagina opslaan',
+);
+
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Nghtwlkr
  */
@@ -181,6 +210,20 @@ $messages['no'] = array(
 	'createredirect-redirect-done' => 'Omdirigering opprettet fra «$1» til «$2»',
 	'createredirect-redirect-to' => 'Omdiriger til:',
 	'createredirect-save' => 'Lagre siden',
+);
+
+/** Polish (Polski)
+ * @author Sp5uhe
+ */
+$messages['pl'] = array(
+	'createredirect' => 'Tworzenie przekierowania',
+	'createredirect-desc' => 'Dodaje stronę specjalną [[Special:CreateRedirect|tworzenia przekierowania]] ułatwiającą tę czynność',
+	'createredirect-error' => 'Błąd – nie powiodło się uwierzytelnienie.',
+	'createredirect-instructions' => 'Korzystając z poniższego formularza, można utworzyć stronę przekierowującą lub zastąpić istniejącą stronę przekierowaniem.',
+	'createredirect-page-title' => 'Tytuł strony',
+	'createredirect-redirect-done' => 'Utworzono przekierowanie ze strony „$1” do „$2”',
+	'createredirect-redirect-to' => 'Przekierowanie do',
+	'createredirect-save' => 'Zapisz stronę',
 );
 
 /** Piedmontese (Piemontèis)
@@ -209,6 +252,20 @@ $messages['pt'] = array(
 	'createredirect-redirect-done' => 'Redireccionamento criado de "$1" para "$2"',
 	'createredirect-redirect-to' => 'Redireccionar para:',
 	'createredirect-save' => 'Gravar página',
+);
+
+/** Brazilian Portuguese (Português do Brasil)
+ * @author Giro720
+ */
+$messages['pt-br'] = array(
+	'createredirect' => 'Criar Redirecionamento',
+	'createredirect-desc' => 'Adiciona a página especial [[Special:CreateRedirect|Criar redirecionamento]] para criar redirecionamentos de forma simples',
+	'createredirect-error' => 'Erro: Falha na autenticação.',
+	'createredirect-instructions' => 'Usando o formulário abaixo pode criar uma página de redirecionamento, ou substituir uma página existente por um redirecionamento.',
+	'createredirect-page-title' => 'Título da página:',
+	'createredirect-redirect-done' => 'Redirecionamento criado de "$1" para "$2"',
+	'createredirect-redirect-to' => 'Redirecionar para:',
+	'createredirect-save' => 'Salvar página',
 );
 
 /** Telugu (తెలుగు)
