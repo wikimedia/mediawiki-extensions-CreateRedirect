@@ -31,11 +31,12 @@ $messages['qqq'] = array(
 
 /** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
  * @author EugeneZelenko
+ * @author Jim-by
  * @author Wizardist
  */
 $messages['be-tarask'] = array(
 	'createredirect' => 'Стварыць перанакіраваньне',
-	'createredirect-desc' => 'Дадае [[Special:CreateRedirect|спэцыяльную старонку]] для лёгкага стварэньня перанакіраваньняў',
+	'createredirect-desc' => 'Дадае спэцыяльную старонку для лёгкага [[Special:CreateRedirect|стварэньня перанакіраваньняў]]',
 	'createredirect-error' => 'Памылка: немагчыма аўтэнтыфікаць.',
 	'createredirect-instructions' => 'З дапамогай формы ніжэй Вы можаце ствараць старонкі-перанакіраваньні ці замяняць існуючыя старонкі перанакіраваньнямі.',
 	'createredirect-page-title' => 'Назва старонкі:',
