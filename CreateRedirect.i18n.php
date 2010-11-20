@@ -46,10 +46,14 @@ $messages['be-tarask'] = array(
 );
 
 /** Breton (Brezhoneg)
+ * @author Fulup
  * @author Y-M D
  */
 $messages['br'] = array(
 	'createredirect' => 'Krouiñ un adkas',
+	'createredirect-desc' => 'Ouzhpennañ a ra ur bajenn dibar [[Special:CreateRedirect|Krouiñ un adkas]] evit krouiñ adkasoù en un doare aes',
+	'createredirect-error' => "Fazi : Gwiriekadur c'hwitet.",
+	'createredirect-instructions' => "En ur ober gant ar furmskrid a-is e c'hallit krouiñ ur bajenn adkas pe lakaat un adkas e-lec'h ur bajenn zo anezhi dija.",
 	'createredirect-page-title' => 'Titl ar bajenn :',
 	'createredirect-redirect-done' => 'Adkas krouet eus "$1" davet "$2"',
 	'createredirect-redirect-to' => 'Adkas davet :',
@@ -68,6 +72,20 @@ $messages['de'] = array(
 	'createredirect-redirect-done' => 'Weiterleitung von „$1“ auf „$2“ erstellt',
 	'createredirect-redirect-to' => 'Weiterleiten nach:',
 	'createredirect-save' => 'Seite speichern',
+);
+
+/** Greek (Ελληνικά)
+ * @author Glavkos
+ */
+$messages['el'] = array(
+	'createredirect' => 'Δημιουργία Ανακατεύθυνσης',
+	'createredirect-desc' => 'Προσθέτει μια ειδική σελίδα [[Special:CreateRedirect|CreateRedirect]] για εύκολη δημιουργία ανακατευθύνσεων',
+	'createredirect-error' => 'Σφάλμα: Ο έλεγχος ταυτοποίησης απέτυχε',
+	'createredirect-instructions' => 'Χρησιμοποιώντας την παρακάτω φόρμα, μπορείτε να δημιουργήσετε μια σελίδα ανακατεύθυνσης ή να αντικαταστήσετε μια υπάρχουσα σελίδα με μια ανακατεύθυνση.',
+	'createredirect-page-title' => 'Τίτλος σελίδας:',
+	'createredirect-redirect-done' => 'Redirect δημιουργήθηκε από το "$1" σε "$2"',
+	'createredirect-redirect-to' => 'Ανακατεύθυνση στο:',
+	'createredirect-save' => 'Αποθήκευση σελίδας',
 );
 
 /** French (Français)
@@ -139,6 +157,20 @@ $messages['ia'] = array(
 	'createredirect-redirect-done' => 'Redirection create ab "$1" verso "$2"',
 	'createredirect-redirect-to' => 'Rediriger verso:',
 	'createredirect-save' => 'Publicar pagina',
+);
+
+/** Indonesian (Bahasa Indonesia)
+ * @author IvanLanin
+ */
+$messages['id'] = array(
+	'createredirect' => 'Pembuatan Pengalihan',
+	'createredirect-desc' => 'Menambahkan halaman istimewa [[Special:CreateRedirect|Pembuat Pengalihan]] untuk dengan mudah membuat pengalihan',
+	'createredirect-error' => 'Kesalahan: Autentikasi gagal.',
+	'createredirect-instructions' => 'Dengan menggunakan formulir di bawah ini, Anda dapat membuat halaman pengalihan atau mengganti halaman yang sudah ada dengan suatu pengalihan.',
+	'createredirect-page-title' => 'Judul halaman:',
+	'createredirect-redirect-done' => 'Pengalihan dibuat dari "$1" ke "$2"',
+	'createredirect-redirect-to' => 'Pengalihan ke:',
+	'createredirect-save' => 'Simpan halaman',
 );
 
 /** Japanese (日本語)
