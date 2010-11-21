@@ -44,7 +44,7 @@ $wgExtensionCredits['specialpage'][] = array(
 	'path'  => __FILE__,
 	'name' => 'CreateRedirect',
 	'author' => 'Marco Zafra',
-	'version' => 1.0.1,
+	'version' => '1.0.1',
 	'url' => 'http://www.mediawiki.org/wiki/Extension:CreateRedirect',
 	'descriptionmsg' => 'createredirect-desc',
 );
