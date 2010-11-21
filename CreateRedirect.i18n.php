@@ -60,6 +60,34 @@ $messages['br'] = array(
 	'createredirect-save' => 'Enrollañ ar bajenn',
 );
 
+/** Bosnian (Bosanski)
+ * @author CERminator
+ */
+$messages['bs'] = array(
+	'createredirect' => 'Pravljenje preusmjerenja',
+	'createredirect-desc' => 'Dodaje posebnu stranicu [[Special:CreateRedirect|Napravi Preusmjerenje]] za lahko pravljenje preusmjerenja',
+	'createredirect-error' => 'Greška: Autentifikacija nije uspjela.',
+	'createredirect-instructions' => 'Koristeći obrazac ispod, možete napraviti stranicu za preusmjeravanje ili zamijeniti postojeću stranicu sa preusmjeravanjem.',
+	'createredirect-page-title' => 'Naslov stranice:',
+	'createredirect-redirect-done' => 'Napravljeno preusmjerenje sa "$1" na "$2"',
+	'createredirect-redirect-to' => 'Preusmjerenje na:',
+	'createredirect-save' => 'Spremi stranicu',
+);
+
+/** Welsh (Cymraeg)
+ * @author Lloffiwr
+ */
+$messages['cy'] = array(
+	'createredirect' => 'Gosod Ailgyfeiriad',
+	'createredirect-desc' => "Yn ychwanegu tudalen arbennig [[Special:CreateRedirect|CreateRedirect]] sy'n gosod ailgyfeiriadau'n ddi-drafferth",
+	'createredirect-error' => 'Gwall: Methwyd â dilysu.',
+	'createredirect-instructions' => "Gan ddefnyddio'r ffurflen isod, gallwch osod tudalen ailgyfeirio neu ddisodli tudalen gydag ailgyfeiriad.",
+	'createredirect-page-title' => 'Teitl y dudalen:',
+	'createredirect-redirect-done' => 'Gosodwyd ailgyfeiriad o "$1" i "$2"',
+	'createredirect-redirect-to' => 'Ailgyfeirio i:',
+	'createredirect-save' => 'Cadwer y dudalen',
+);
+
 /** German (Deutsch)
  * @author The Evil IP address
  */
