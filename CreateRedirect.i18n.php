@@ -329,6 +329,21 @@ $messages['pt-br'] = array(
 	'createredirect-save' => 'Salvar página',
 );
 
+/** Russian (Русский)
+ * @author MaxSem
+ * @author Александр Сигачёв
+ */
+$messages['ru'] = array(
+	'createredirect' => 'Создать перенаправление',
+	'createredirect-desc' => 'Добавляет служебную страницу [[Special:CreateRedirect|CreateRedirect]] для легко создания перенаправлений',
+	'createredirect-error' => 'Ошибка. Аутентификация не удалась.',
+	'createredirect-instructions' => 'Используя приведённую ниже форму, вы можете создать страницу-перенаправление или заменить существующую страницу перенаправления.',
+	'createredirect-page-title' => 'Название страницы:',
+	'createredirect-redirect-done' => 'Создано перенаправление с «$1» на «$2»',
+	'createredirect-redirect-to' => 'Перенаправить на:',
+	'createredirect-save' => 'Сохранить страницу',
+);
+
 /** Telugu (తెలుగు)
  * @author Veeven
  */
