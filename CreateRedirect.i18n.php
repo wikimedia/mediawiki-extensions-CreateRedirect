@@ -159,6 +159,20 @@ $messages['gsw'] = array(
 	'createredirect-save' => 'Syte spychere',
 );
 
+/** Hebrew (עברית)
+ * @author YaronSh
+ */
+$messages['he'] = array(
+	'createredirect' => 'יצירת הפנייה',
+	'createredirect-desc' => 'הוספת דף מיוחד [[Special:CreateRedirect|CreateRedirect]] ליצירת הפניות בפשטות',
+	'createredirect-error' => 'שגיאה: האימות נכשל.',
+	'createredirect-instructions' => 'באמצעות הטופס שלהלן, באפשרות ליצור דף הפניה או להחליף דף קיים בהפניה.',
+	'createredirect-page-title' => 'שם הדף:',
+	'createredirect-redirect-done' => 'נוצרה הפנייה מהדף "$1" אל "$2"',
+	'createredirect-redirect-to' => 'הפנייה אל:',
+	'createredirect-save' => 'שמירת הדף',
+);
+
 /** Upper Sorbian (Hornjoserbsce)
  * @author Michawiki
  */
