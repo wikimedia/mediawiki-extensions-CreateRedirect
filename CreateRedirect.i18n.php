@@ -116,6 +116,13 @@ $messages['el'] = array(
 	'createredirect-save' => 'Αποθήκευση σελίδας',
 );
 
+/** Persian (فارسی)
+ * @author Mjbmr
+ */
+$messages['fa'] = array(
+	'createredirect-save' => 'ذخیره صفحه',
+);
+
 /** French (Français)
  * @author McDutchie
  * @author Peter17
