@@ -102,6 +102,20 @@ $messages['de'] = array(
 	'createredirect-save' => 'Seite speichern',
 );
 
+/** Lower Sorbian (Dolnoserbski)
+ * @author Michawiki
+ */
+$messages['dsb'] = array(
+	'createredirect' => 'Dalejpósrědnjenje napóraś',
+	'createredirect-desc' => 'Pśidawa specialny bok [[Special:CreateRedirect|CreateRedirect]] za lažke napóranje dalejpósrědnjenjow',
+	'createredirect-error' => 'Zmólka: Awtenfikacija jo se njeraźiła.',
+	'createredirect-instructions' => 'Z pomocu toś togo formulara móžoš dalejpósrědnjenje napóraś abo eksistěrowacy bok pśez dalejpósrědnjenje wuměniś.',
+	'createredirect-page-title' => 'Titel boka:',
+	'createredirect-redirect-done' => 'Dalejpósrědnjenje wót "$1" do "$2" napórane',
+	'createredirect-redirect-to' => 'Dalej pósrědniś do:',
+	'createredirect-save' => 'Bok składowaś',
+);
+
 /** Greek (Ελληνικά)
  * @author Glavkos
  */
