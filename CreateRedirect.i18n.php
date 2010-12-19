@@ -130,11 +130,32 @@ $messages['el'] = array(
 	'createredirect-save' => 'Αποθήκευση σελίδας',
 );
 
+/** Spanish (Español)
+ * @author Sanbec
+ */
+$messages['es'] = array(
+	'createredirect' => 'Crear una redirección',
+	'createredirect-desc' => 'Añade una [[Special:CreateRedirect|página especial]] para crear redirecciones de una manera sencilla',
+	'createredirect-error' => 'Error : Fallo de la identificación.',
+	'createredirect-instructions' => 'Empleando el formulario de abajo, puede crear una página de redirección o sustituir una página existente por una redirección.',
+	'createredirect-page-title' => 'Título de la página:',
+	'createredirect-redirect-done' => 'Redirección creada de «$1» hacia «$2»',
+	'createredirect-redirect-to' => 'Redirigir a:',
+	'createredirect-save' => 'Guardar la página',
+);
+
 /** Persian (فارسی)
  * @author Mjbmr
  */
 $messages['fa'] = array(
 	'createredirect-save' => 'ذخیره صفحه',
+);
+
+/** Finnish (Suomi)
+ * @author Crt
+ */
+$messages['fi'] = array(
+	'createredirect-save' => 'Tallenna sivu',
 );
 
 /** French (Français)
