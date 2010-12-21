@@ -155,6 +155,8 @@ $messages['fa'] = array(
  * @author Crt
  */
 $messages['fi'] = array(
+	'createredirect' => 'Luo ohjaus',
+	'createredirect-desc' => 'Lisää [[Special:CreateRedirect|toimintosivun]], jolla voi helposti luoda ohjauksia.',
 	'createredirect-save' => 'Tallenna sivu',
 );
 
