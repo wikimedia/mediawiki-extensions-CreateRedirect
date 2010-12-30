@@ -259,6 +259,18 @@ $messages['id'] = array(
 	'createredirect-save' => 'Simpan halaman',
 );
 
+/** Italian (Italiano)
+ * @author Beta16
+ */
+$messages['it'] = array(
+	'createredirect-error' => 'Errore: autenticazione fallita.',
+	'createredirect-instructions' => 'Utilizzando questo modulo, puoi creare una pagina di reindirizzamento o sostituire una pagina esistente con un rimando.',
+	'createredirect-page-title' => 'Titolo della pagina:',
+	'createredirect-redirect-done' => 'Rimando creato da "$1" a "$2"',
+	'createredirect-redirect-to' => 'Reindirizza a:',
+	'createredirect-save' => 'Salva la pagina',
+);
+
 /** Japanese (日本語)
  * @author 青子守歌
  */
