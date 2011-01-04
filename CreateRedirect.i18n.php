@@ -29,6 +29,17 @@ $messages['qqq'] = array(
 	'createredirect-desc' => '{{desc}}',
 );
 
+/** Afrikaans (Afrikaans)
+ * @author Naudefj
+ */
+$messages['af'] = array(
+	'createredirect' => 'Skep Aanstuur',
+	'createredirect-page-title' => 'Bladsynaam:',
+	'createredirect-redirect-done' => 'Aanstuur vanaf "$1" na "$2" geskep',
+	'createredirect-redirect-to' => 'Stuur aan na:',
+	'createredirect-save' => 'Stoor bladsy',
+);
+
 /** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
  * @author EugeneZelenko
  * @author Jim-by
