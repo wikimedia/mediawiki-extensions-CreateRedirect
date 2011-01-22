@@ -40,7 +40,7 @@ $messages['af'] = array(
 	'createredirect-save' => 'Stoor bladsy',
 );
 
-/** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
+/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
  * @author Wizardist
@@ -111,6 +111,13 @@ $messages['de'] = array(
 	'createredirect-redirect-done' => 'Weiterleitung von „$1“ auf „$2“ erstellt',
 	'createredirect-redirect-to' => 'Weiterleiten nach:',
 	'createredirect-save' => 'Seite speichern',
+);
+
+/** German (formal address) (‪Deutsch (Sie-Form)‬)
+ * @author The Evil IP address
+ */
+$messages['de-formal'] = array(
+	'createredirect-instructions' => 'Mit diesem Formular können Sie eine Weiterleitung erstellen oder eine existierende Seite durch eine Weiterleitung ersetzen.',
 );
 
 /** Lower Sorbian (Dolnoserbski)
