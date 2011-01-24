@@ -23,14 +23,9 @@
  * The bulk of the routines are stored here. This is where all the internal processing actually occurs.
  */
 
-// Alert the user that this is not a valid entry point to MediaWiki if they try
-// to access the file directly.
-if ( !defined( 'MEDIAWIKI' ) ) {
-	echo <<<EOT
-To install the CreateRedirect extension, put the following line in LocalSettings.php:
-require_once( "$IP/extensions/CreateRedirect/CreateRedirect.php" );
-EOT;
-	exit( 1 );
+if( !defined( 'MEDIAWIKI' ) ) {
+	echo( "This file is an extension to the MediaWiki software and cannot be used standalone.\n" );
+	die( 1 );
 }
 
 class SpecialCreateRedirect extends SpecialPage {
