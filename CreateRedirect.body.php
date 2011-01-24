@@ -136,7 +136,7 @@ class SpecialCreateRedirect extends SpecialPage {
 
 			switch ( $value ) {
 				case EditPage::AS_SPAM_ERROR:
-					$crEdit->spamPage( $resultDetails['spam'] );
+					$crEdit->spamPageWithContent( $resultDetails['spam'] );
 					return;
 
 				case EditPage::AS_BLOCKED_PAGE_FOR_USER:

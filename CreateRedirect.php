@@ -61,7 +61,7 @@ $wgHooks['SkinTemplateToolboxEnd'][] = 'createRedirect_addToolboxLink';
  *
  * @return Boolean: true
  */
-function createRedirect_AddToolboxLink() {
+function createRedirect_AddToolboxLink( &$skin ) {
 	global $wgRequest, $wgTitle;
 
 	// 1. Determine whether to actually add the link at all.
@@ -73,7 +73,7 @@ function createRedirect_AddToolboxLink() {
 		return true;
 	}
 
-	// 4. Add the link!
+	// 3. Add the link!
 	$href = SpecialPage::getTitleFor( 'CreateRedirect', $wgTitle->getPrefixedText() )->getLocalURL();
 	echo Html::rawElement( 'li', null, Html::element( 'a', array( 'href' => $href ), wfMsg( 'createredirect' ) ) );
 
