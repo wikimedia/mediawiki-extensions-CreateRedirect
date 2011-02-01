@@ -376,17 +376,18 @@ $messages['pl'] = array(
 );
 
 /** Piedmontese (Piemontèis)
+ * @author Borichèt
  * @author Dragonòt
  */
 $messages['pms'] = array(
-	'createredirect' => 'Creé rediression',
-	'createredirect-desc' => 'A gionta na pàgina special [[Special:CreateRedirect|CreateRedirect]] për creé rediression facilment',
+	'createredirect' => 'Creé na ridiression',
+	'createredirect-desc' => 'A gionta na pàgina special [[Special:CreateRedirect|CreateRedirect]] për creé facilment dle ridiression',
 	'createredirect-error' => 'Eror: Autenticassion falìa.',
-	'createredirect-instructions' => 'An dovrand ël formolari sota, it peule creé na pàgina ëd rediression e rimpiassé na pàgina esistenta con na rediression.',
-	'createredirect-page-title' => 'Tìtol ëd pàgina:',
-	'createredirect-redirect-done' => 'Rediression creà da "$1" a "$2"',
-	'createredirect-redirect-to' => 'Rediression a:',
-	'createredirect-save' => 'Salva pàgina',
+	'createredirect-instructions' => 'An dovrand ël formolari sì-sota, a peul creé na pàgina ëd ridiression e rimpiassé na pàgina esistenta con na ridiression.',
+	'createredirect-page-title' => 'Tìtol ëd la pàgina:',
+	'createredirect-redirect-done' => 'Ridiression creà da "$1" a "$2"',
+	'createredirect-redirect-to' => 'Ridiression a:',
+	'createredirect-save' => 'Salvé la pàgina',
 );
 
 /** Portuguese (Português)
