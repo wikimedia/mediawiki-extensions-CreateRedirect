@@ -303,6 +303,13 @@ $messages['ja'] = array(
 	'createredirect-save' => 'ページを保存',
 );
 
+/** Kurdish (Latin) (Kurdî (Latin))
+ * @author George Animal
+ */
+$messages['ku-latn'] = array(
+	'createredirect-save' => 'Rûpelê tomar bike',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author McDutchie
  * @author Robby
