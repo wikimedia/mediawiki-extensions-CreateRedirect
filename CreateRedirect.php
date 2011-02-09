@@ -61,20 +61,27 @@ $wgHooks['SkinTemplateToolboxEnd'][] = 'createRedirect_addToolboxLink';
  *
  * @return Boolean: true
  */
-function createRedirect_AddToolboxLink( &$skin ) {
-	global $wgRequest, $wgTitle;
+function createRedirect_AddToolboxLink( &$tpl ) {
+	global $wgRequest;
 
 	// 1. Determine whether to actually add the link at all.
 	// There are certain cases, e.g. in the edit dialog, in a special page,
 	// where it's inappropriate for the link to appear.
 	// 2. Check the title. Is it a "Special:" page? Don't display the link.
 	$action = $wgRequest->getText( 'action', 'view' );
-	if( $action != 'view' && $action != 'purge' && !$wgTitle->isSpecialPage() ) {
+	if ( method_exists( $tpl, 'getSkin' ) ) {
+		$title = $tpl->getSkin()->getTitle();
+	} else {
+		global $wgTitle;
+		$title = $wgTitle;
+	}
+
+	if( $action != 'view' && $action != 'purge' && !$title->isSpecialPage() ) {
 		return true;
 	}
 
 	// 3. Add the link!
-	$href = SpecialPage::getTitleFor( 'CreateRedirect', $wgTitle->getPrefixedText() )->getLocalURL();
+	$href = SpecialPage::getTitleFor( 'CreateRedirect', $title->getPrefixedText() )->getLocalURL();
 	echo Html::rawElement( 'li', null, Html::element( 'a', array( 'href' => $href ), wfMsg( 'createredirect' ) ) );
 
 	return true;
