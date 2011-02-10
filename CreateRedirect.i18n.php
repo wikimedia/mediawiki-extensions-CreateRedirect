@@ -303,6 +303,19 @@ $messages['ja'] = array(
 	'createredirect-save' => 'ページを保存',
 );
 
+/** Khmer (ភាសាខ្មែរ)
+ * @author គីមស៊្រុន
+ */
+$messages['km'] = array(
+	'createredirect' => 'បង្កើតការបញ្ជូនបន្ត',
+	'createredirect-desc' => 'បន្ថែមទំព័រពិសេស[[Special:CreateRedirect|បង្កើតការបញ្ជូនបន្ត]] ដើម្បីបង្កើតការបញ្ជូនបន្តយ៉ាងងាយស្រួល',
+	'createredirect-instructions' => 'ដោយប្រើប្រាស់សំនុំបែបបទខាងក្រោម អ្នកអាចបង្កើតទំព័របញ្ជួនបន្តមួយ ឬជំនួសទំព័រដែលមានហើយជាមួយតំណភ្ជាប់បញ្ជួនបន្តមួយ។',
+	'createredirect-page-title' => 'ចំណងជើង​ទំព័រ៖',
+	'createredirect-redirect-done' => 'បានបញ្ជូនបន្តពី "$1" ទៅ "$2"',
+	'createredirect-redirect-to' => 'ការបញ្ជូនបន្តទៅ៖',
+	'createredirect-save' => 'រក្សាទុកទំព័រ',
+);
+
 /** Kurdish (Latin) (Kurdî (Latin))
  * @author George Animal
  */
