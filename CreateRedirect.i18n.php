@@ -316,10 +316,21 @@ $messages['km'] = array(
 	'createredirect-save' => 'រក្សាទុកទំព័រ',
 );
 
+/** Colognian (Ripoarisch)
+ * @author Purodha
+ */
+$messages['ksh'] = array(
+	'createredirect' => 'Ömleidungssigg aanlääje',
+	'createredirect-page-title' => 'Siggetittel:',
+	'createredirect-redirect-done' => 'Ömleidung vun "$1" op "$2" aanjelaat',
+	'createredirect-redirect-to' => 'Ömleide op:',
+);
+
 /** Kurdish (Latin) (Kurdî (Latin))
  * @author George Animal
  */
 $messages['ku-latn'] = array(
+	'createredirect-page-title' => 'Sernavê rûpelê:',
 	'createredirect-save' => 'Rûpelê tomar bike',
 );
 
@@ -461,5 +472,12 @@ $messages['te'] = array(
 	'createredirect-desc' => 'సులభంగా దారిమార్పులను సృష్టించడానికి వీలుగా [[Special:CreateRedirect|దారిమార్పులను సృష్టించండి]] అనే ప్రత్యేక పుటని చేరుస్తుంది',
 	'createredirect-page-title' => 'పుట శీర్షిక:',
 	'createredirect-redirect-done' => '"$1" నుండి "$2"కి దారిమార్పుని సృష్టించాం',
+);
+
+/** Yiddish (ייִדיש)
+ * @author פוילישער
+ */
+$messages['yi'] = array(
+	'createredirect-save' => 'אױפֿהיטן בלאַט',
 );
 
