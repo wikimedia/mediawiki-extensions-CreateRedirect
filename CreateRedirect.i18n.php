@@ -321,9 +321,13 @@ $messages['km'] = array(
  */
 $messages['ksh'] = array(
 	'createredirect' => 'Ömleidungssigg aanlääje',
+	'createredirect-desc' => 'Deiht en [[Special:CreateRedirect|Extrasigg]] en et Wiki, öm eifach Ömeidungssige aanlääje ze künne.',
+	'createredirect-error' => 'Fähler: De Beräschtejungspröövung es donevve jejange.',
+	'createredirect-instructions' => 'Met dämm Fommulaa kam_mer en Ömleidungssigg aanlääje udder en Sigg en en Ömleidongssigg verwandele.',
 	'createredirect-page-title' => 'Siggetittel:',
 	'createredirect-redirect-done' => 'Ömleidung vun "$1" op "$2" aanjelaat',
 	'createredirect-redirect-to' => 'Ömleide op:',
+	'createredirect-save' => 'De Sigg Avspeichere',
 );
 
 /** Kurdish (Latin) (Kurdî (Latin))
