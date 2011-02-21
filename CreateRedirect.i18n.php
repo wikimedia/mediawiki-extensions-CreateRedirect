@@ -281,6 +281,8 @@ $messages['id'] = array(
  * @author Beta16
  */
 $messages['it'] = array(
+	'createredirect' => 'Crea redirect',
+	'createredirect-desc' => 'Aggiunge la pagina speciale [[Special:CreateRedirect|CreateRedirect]] per creare facilmente redirect',
 	'createredirect-error' => 'Errore: autenticazione fallita.',
 	'createredirect-instructions' => 'Utilizzando questo modulo, puoi creare una pagina di reindirizzamento o sostituire una pagina esistente con un rimando.',
 	'createredirect-page-title' => 'Titolo della pagina:',
@@ -483,5 +485,19 @@ $messages['te'] = array(
  */
 $messages['yi'] = array(
 	'createredirect-save' => 'אױפֿהיטן בלאַט',
+);
+
+/** Simplified Chinese (‪中文(简体)‬)
+ * @author Hydra
+ */
+$messages['zh-hans'] = array(
+	'createredirect' => '创建重定向',
+	'createredirect-desc' => '添加特殊页 [[Special:CreateRedirect|CreateRedirect]] 可以轻松地创建重定向',
+	'createredirect-error' => '错误：身份验证失败。',
+	'createredirect-instructions' => '使用下面的表格，可以创建重定向页面或替换现有页面重定向。',
+	'createredirect-page-title' => '页标题:',
+	'createredirect-redirect-done' => '创建重定向从 "$1" 到 "$2"',
+	'createredirect-redirect-to' => '重定向至：',
+	'createredirect-save' => '保存网页',
 );
 
