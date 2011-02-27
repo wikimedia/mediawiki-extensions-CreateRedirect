@@ -370,6 +370,14 @@ $messages['mk'] = array(
 	'createredirect-save' => 'Зачувај',
 );
 
+/** Malayalam (മലയാളം)
+ * @author Junaidpv
+ */
+$messages['ml'] = array(
+	'createredirect' => 'തിരിച്ചുവിടൽ സൃഷ്ടിക്കുക',
+	'createredirect-page-title' => 'താളിന്റെ തലക്കെട്ട്:',
+);
+
 /** Dutch (Nederlands)
  * @author Siebrand
  */
