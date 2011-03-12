@@ -488,6 +488,18 @@ $messages['te'] = array(
 	'createredirect-redirect-done' => '"$1" నుండి "$2"కి దారిమార్పుని సృష్టించాం',
 );
 
+/** Tagalog (Tagalog)
+ * @author AnakngAraw
+ */
+$messages['tl'] = array(
+	'createredirect' => 'Lumikha ng Pagpapalit ng Pupuntahan',
+	'createredirect-error' => 'Kamalian: Nabigo ang pagpapatotoo.',
+	'createredirect-page-title' => 'Pamagat ng pahina:',
+	'createredirect-redirect-done' => 'Ang nilipat na pagpapunta ay nilikha mula sa "$1" hanggang sa "$2"',
+	'createredirect-redirect-to' => 'Papuntahin sa:',
+	'createredirect-save' => 'Sagipin ang pahina',
+);
+
 /** Yiddish (ייִדיש)
  * @author פוילישער
  */
