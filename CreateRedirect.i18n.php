@@ -494,6 +494,7 @@ $messages['te'] = array(
 $messages['tl'] = array(
 	'createredirect' => 'Lumikha ng Pagpapalit ng Pupuntahan',
 	'createredirect-error' => 'Kamalian: Nabigo ang pagpapatotoo.',
+	'createredirect-instructions' => 'Sa pamamagitan ng paggamit ng pormularyong nasa ibaba, makalilikha ka ng isang pahinang nagpapapunta sa iba o palitan ang pahinang umiiral ng isang pinapupunta sa iba.',
 	'createredirect-page-title' => 'Pamagat ng pahina:',
 	'createredirect-redirect-done' => 'Ang nilipat na pagpapunta ay nilikha mula sa "$1" hanggang sa "$2"',
 	'createredirect-redirect-to' => 'Papuntahin sa:',
