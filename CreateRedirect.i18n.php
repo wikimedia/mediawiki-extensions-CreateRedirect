@@ -392,6 +392,13 @@ $messages['nl'] = array(
 	'createredirect-save' => 'Pagina opslaan',
 );
 
+/** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
+ * @author Ranveig
+ */
+$messages['nn'] = array(
+	'createredirect-instructions' => 'Ved å bruke skjemaet under kan du opprette ei omdirigeringsside eller erstatte ei side som finst me ei omdirigering.',
+);
+
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Nghtwlkr
  */
