@@ -171,10 +171,12 @@ $messages['fa'] = array(
 
 /** Finnish (Suomi)
  * @author Crt
+ * @author Nike
  */
 $messages['fi'] = array(
 	'createredirect' => 'Luo ohjaus',
 	'createredirect-desc' => 'Lisää [[Special:CreateRedirect|toimintosivun]], jolla voi helposti luoda ohjauksia.',
+	'createredirect-redirect-done' => 'Ohjaus luotu sivulta ”$1” sivulle ”$2”.',
 	'createredirect-save' => 'Tallenna sivu',
 );
 
