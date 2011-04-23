@@ -444,6 +444,14 @@ $messages['pms'] = array(
 	'createredirect-save' => 'Salvé la pàgina',
 );
 
+/** Pashto (پښتو)
+ * @author Ahmed-Najib-Biabani-Ibrahimkhel
+ */
+$messages['ps'] = array(
+	'createredirect-page-title' => 'د مخ سرليک:',
+	'createredirect-save' => 'مخ خوندي کول',
+);
+
 /** Portuguese (Português)
  * @author Hamilton Abreu
  */
