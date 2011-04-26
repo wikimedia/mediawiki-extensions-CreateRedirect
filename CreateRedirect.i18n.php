@@ -85,6 +85,14 @@ $messages['bs'] = array(
 	'createredirect-save' => 'Spremi stranicu',
 );
 
+/** Czech (Česky)
+ * @author Jkjk
+ */
+$messages['cs'] = array(
+	'createredirect' => 'Vytvořit přesměrování',
+	'createredirect-error' => 'Chyba: Ověření se nezdařilo.',
+);
+
 /** Welsh (Cymraeg)
  * @author Lloffiwr
  */
