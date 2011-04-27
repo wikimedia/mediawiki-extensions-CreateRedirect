@@ -388,6 +388,19 @@ $messages['ml'] = array(
 	'createredirect-page-title' => 'താളിന്റെ തലക്കെട്ട്:',
 );
 
+/** Nepali (नेपाली)
+ * @author Bhawani Gautam Rhk
+ */
+$messages['ne'] = array(
+	'createredirect' => 'अनुप्रेषण सृजना गर्ने',
+	'createredirect-error' => 'त्रुटि:सत्यापन असफल',
+	'createredirect-instructions' => 'तलको फारम प्रयोग गरेर तपाईंले अनुप्रेषण पृष्ठ तयार गर्न सक्नुहुन्छ अथवा वर्तमान पृष्ठको स्थान राख्न सक्नुहुन्छ।',
+	'createredirect-page-title' => 'पृष्ठ शीर्षक:',
+	'createredirect-redirect-done' => ' "$1" बाट  "$2" तर्फ अनुप्रेषित गरियो',
+	'createredirect-redirect-to' => 'अनुप्रेषण गर्ने नाम:',
+	'createredirect-save' => 'पृष्ठ संग्रह गर्ने',
+);
+
 /** Dutch (Nederlands)
  * @author Siebrand
  */
