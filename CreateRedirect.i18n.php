@@ -388,6 +388,14 @@ $messages['ml'] = array(
 	'createredirect-page-title' => 'താളിന്റെ തലക്കെട്ട്:',
 );
 
+/** Erzya (Эрзянь)
+ * @author Botuzhaleny-sodamo
+ */
+$messages['myv'] = array(
+	'createredirect-page-title' => 'Лопанть коняксозо:',
+	'createredirect-save' => 'Ванстомс лопанть',
+);
+
 /** Nepali (नेपाली)
  * @author Bhawani Gautam Rhk
  */
