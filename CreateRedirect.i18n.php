@@ -56,6 +56,20 @@ $messages['be-tarask'] = array(
 	'createredirect-save' => 'Захаваць старонку',
 );
 
+/** Bengali (বাংলা)
+ * @author Wikitanvir
+ */
+$messages['bn'] = array(
+	'createredirect' => 'পুনর্নির্দেশনা তৈরি',
+	'createredirect-desc' => 'সহজে পুনর্নির্দেশনা তৈরি করতে বিশে পাতা [[Special:CreateRedirect|ক্রিয়েটরিডাইরেক্ট]] যোগ করো',
+	'createredirect-error' => 'ত্রুটি: নিশ্চিতকরণ ব্যর্থ।',
+	'createredirect-instructions' => 'নিচের ফর্মটি পূরণের মাধ্যমে আপনি একটি পুনর্নির্দেশিত পাতা তৈরি করতে পারবেন, বা ইতিমধ্যেই আছে এমন পাতাকে একটি পুনর্নির্দেশিত পাতা দিয়ে প্রতিস্থাপিত করতে পারবেন।',
+	'createredirect-page-title' => 'পাতার শিরোনাম:',
+	'createredirect-redirect-done' => '"$1" থেকে "$2"-এ পুনর্নির্দেশনা তৈরি হয়েছে',
+	'createredirect-redirect-to' => 'যে পাতায় পুননির্দেশিত হয়েছে:',
+	'createredirect-save' => 'সংরক্ষণ',
+);
+
 /** Breton (Brezhoneg)
  * @author Fulup
  * @author Y-M D
@@ -201,6 +215,17 @@ $messages['fr'] = array(
 	'createredirect-redirect-done' => 'Redirection créée de « $1 » vers « $2 »',
 	'createredirect-redirect-to' => 'Rediriger vers :',
 	'createredirect-save' => 'Enregistrer la page',
+);
+
+/** Franco-Provençal (Arpetan)
+ * @author ChrisPtDe
+ */
+$messages['frp'] = array(
+	'createredirect' => 'Fâre una redirèccion',
+	'createredirect-page-title' => 'Titro de la pâge :',
+	'createredirect-redirect-done' => 'Redirèccion fêta de « $1 » vers « $2 »',
+	'createredirect-redirect-to' => 'Redirigiér vers :',
+	'createredirect-save' => 'Sôvar la pâge',
 );
 
 /** Galician (Galego)
@@ -525,13 +550,18 @@ $messages['ru'] = array(
 );
 
 /** Telugu (తెలుగు)
+ * @author Chaduvari
  * @author Veeven
  */
 $messages['te'] = array(
 	'createredirect' => 'దారిమార్పుని సృష్టించండి',
 	'createredirect-desc' => 'సులభంగా దారిమార్పులను సృష్టించడానికి వీలుగా [[Special:CreateRedirect|దారిమార్పులను సృష్టించండి]] అనే ప్రత్యేక పుటని చేరుస్తుంది',
+	'createredirect-error' => 'లోపం: ఆథెంటికేషను విఫలమైంది.',
+	'createredirect-instructions' => 'కింది ఫారమును వాడి, ఓ దారిమార్పు పేజీని సృష్టించవచ్చు లేదా ప్రస్తుతం ఉనికిలో ఉన్న పేజీ స్థానంలో దారిమార్పు పేజీని పెట్టవచ్చు.',
 	'createredirect-page-title' => 'పుట శీర్షిక:',
 	'createredirect-redirect-done' => '"$1" నుండి "$2"కి దారిమార్పుని సృష్టించాం',
+	'createredirect-redirect-to' => 'ఇక్కడికి దారిమార్పు:',
+	'createredirect-save' => 'పేజీని భద్రపరచు',
 );
 
 /** Tagalog (Tagalog)
