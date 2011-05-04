@@ -549,6 +549,16 @@ $messages['ru'] = array(
 	'createredirect-save' => 'Сохранить страницу',
 );
 
+/** Swedish (Svenska)
+ * @author WikiPhoenix
+ */
+$messages['sv'] = array(
+	'createredirect' => 'Skapa omdirigering',
+	'createredirect-page-title' => 'Sidtitel:',
+	'createredirect-redirect-to' => 'Omdirigera till:',
+	'createredirect-save' => 'Spara sida',
+);
+
 /** Telugu (తెలుగు)
  * @author Chaduvari
  * @author Veeven
