@@ -551,11 +551,16 @@ $messages['ru'] = array(
 );
 
 /** Swedish (Svenska)
+ * @author Lokal Profil
  * @author WikiPhoenix
  */
 $messages['sv'] = array(
 	'createredirect' => 'Skapa omdirigering',
+	'createredirect-desc' => 'Lägger till specialsidan [[Special:CreateRedirect|CreateRedirect]] för att enkelt skapa omdirigeringar.',
+	'createredirect-error' => 'Fel: Autentisering misslyckades.',
+	'createredirect-instructions' => 'Med hjälp av formuläret nedan kan du skapa en omdirigeringssida eller ersätta en befintlig sida med en omdirigering.',
 	'createredirect-page-title' => 'Sidtitel:',
+	'createredirect-redirect-done' => 'Omdirigering skapad från "$1" till "$2"',
 	'createredirect-redirect-to' => 'Omdirigera till:',
 	'createredirect-save' => 'Spara sida',
 );
