@@ -125,7 +125,8 @@ class SpecialCreateRedirect extends SpecialPage {
 			}
 
 			$resultDetails = false;
-			$value = $crEdit->internalAttemptSave( $resultDetails, $wgUser->isAllowed( 'bot' ) && $wgRequest->getBool( 'bot', true ) );
+			$status = $crEdit->internalAttemptSave( $resultDetails, $wgUser->isAllowed( 'bot' ) && $wgRequest->getBool( 'bot', true ) );
+			$value = $status->value;
 
 			if ( $value == EditPage::AS_SUCCESS_UPDATE || $value == EditPage::AS_SUCCESS_NEW_ARTICLE ) {
 				$wgOut->wrapWikiMsg(
