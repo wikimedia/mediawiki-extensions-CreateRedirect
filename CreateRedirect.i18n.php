@@ -40,6 +40,13 @@ $messages['af'] = array(
 	'createredirect-save' => 'Stoor bladsy',
 );
 
+/** Azerbaijani (Azərbaycanca)
+ * @author Cekli829
+ */
+$messages['az'] = array(
+	'createredirect-save' => 'Səhifəni qeyd et',
+);
+
 /** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
