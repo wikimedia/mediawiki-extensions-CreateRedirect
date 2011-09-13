@@ -35,12 +35,17 @@ $specialPageAliases['eo'] = array(
 
 /** Persian (فارسی) */
 $specialPageAliases['fa'] = array(
-	'CreateRedirect' => array( 'ایجاد_تغییر_مسیر' ),
+	'CreateRedirect' => array( 'ایجاد_تغییرمسیر' ),
 );
 
 /** French (Français) */
 $specialPageAliases['fr'] = array(
 	'CreateRedirect' => array( 'CréerRedirection', 'Créer_redirection' ),
+);
+
+/** Franco-Provençal (Arpetan) */
+$specialPageAliases['frp'] = array(
+	'CreateRedirect' => array( 'Fâre_una_redirèccion', 'FâreUnaRedirèccion' ),
 );
 
 /** Haitian (Kreyòl ayisyen) */
@@ -73,6 +78,11 @@ $specialPageAliases['ml'] = array(
 	'CreateRedirect' => array( 'തിരിച്ചുവിടൽസൃഷ്ടിക്കുക' ),
 );
 
+/** Nedersaksisch (Nedersaksisch) */
+$specialPageAliases['nds-nl'] = array(
+	'CreateRedirect' => array( 'Deurverwiezing_anmaken' ),
+);
+
 /** Dutch (Nederlands) */
 $specialPageAliases['nl'] = array(
 	'CreateRedirect' => array( 'DoorverwijzingAanmaken' ),
@@ -85,7 +95,12 @@ $specialPageAliases['tr'] = array(
 
 /** Simplified Chinese (‪中文(简体)‬) */
 $specialPageAliases['zh-hans'] = array(
-	'CreateRedirect' => array( '创建重定向' ),
+	'CreateRedirect' => array( '创建重定向页' ),
+);
+
+/** Traditional Chinese (‪中文(繁體)‬) */
+$specialPageAliases['zh-hant'] = array(
+	'CreateRedirect' => array( '創建重定向' ),
 );
 
 /**
