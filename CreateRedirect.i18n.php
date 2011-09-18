@@ -129,6 +129,7 @@ $messages['cy'] = array(
 );
 
 /** German (Deutsch)
+ * @author Kghbln
  * @author The Evil IP address
  */
 $messages['de'] = array(
@@ -136,7 +137,7 @@ $messages['de'] = array(
 	'createredirect-desc' => '[[Special:CreateRedirect|Spezialseite]] zum einfachen Erstellen von Weiterleitungen',
 	'createredirect-error' => 'Fehler: Authentifizierung fehlgeschlagen.',
 	'createredirect-instructions' => 'Mit diesem Formular kannst du eine Weiterleitung erstellen oder eine existierende Seite durch eine Weiterleitung ersetzen.',
-	'createredirect-page-title' => 'Seitentitel:',
+	'createredirect-page-title' => 'Seitenname:',
 	'createredirect-redirect-done' => 'Weiterleitung von „$1“ auf „$2“ erstellt',
 	'createredirect-redirect-to' => 'Weiterleiten nach:',
 	'createredirect-save' => 'Seite speichern',
