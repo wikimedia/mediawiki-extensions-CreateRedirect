@@ -230,6 +230,7 @@ $messages['fr'] = array(
  */
 $messages['frp'] = array(
 	'createredirect' => 'Fâre una redirèccion',
+	'createredirect-error' => 'Èrror : falyita de l’ôtenticacion.',
 	'createredirect-page-title' => 'Titro de la pâge :',
 	'createredirect-redirect-done' => 'Redirèccion fêta de « $1 » vers « $2 »',
 	'createredirect-redirect-to' => 'Redirigiér vers :',
