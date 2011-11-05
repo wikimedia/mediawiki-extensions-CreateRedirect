@@ -40,6 +40,14 @@ $messages['af'] = array(
 	'createredirect-save' => 'Stoor bladsy',
 );
 
+/** Arabic (العربية)
+ * @author روخو
+ */
+$messages['ar'] = array(
+	'createredirect-redirect-to' => 'إعادة توجيه إلى:',
+	'createredirect-save' => 'احفظ الصفحة',
+);
+
 /** Azerbaijani (Azərbaycanca)
  * @author Cekli829
  */
