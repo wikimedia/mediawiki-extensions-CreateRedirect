@@ -384,7 +384,7 @@ $messages['ksh'] = array(
 	'createredirect-save' => 'De Sigg Avspeichere',
 );
 
-/** Kurdish (Latin) (Kurdî (Latin))
+/** Kurdish (Latin script) (‪Kurdî (latînî)‬)
  * @author George Animal
  */
 $messages['ku-latn'] = array(
