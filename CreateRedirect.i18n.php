@@ -202,8 +202,13 @@ $messages['es'] = array(
 
 /** Persian (فارسی)
  * @author Mjbmr
+ * @author ZxxZxxZ
  */
 $messages['fa'] = array(
+	'createredirect' => 'ایجاد تغییرمسیر',
+	'createredirect-page-title' => 'عنوان صفحه:',
+	'createredirect-redirect-done' => 'تغییرمسیر از «$1» به «$2» ایجاد شد.',
+	'createredirect-redirect-to' => 'تغییرمسیر به:',
 	'createredirect-save' => 'ذخیره صفحه',
 );
 
