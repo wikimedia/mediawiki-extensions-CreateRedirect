@@ -206,6 +206,8 @@ $messages['es'] = array(
  */
 $messages['fa'] = array(
 	'createredirect' => 'ایجاد تغییرمسیر',
+	'createredirect-error' => 'خطا: تأیید اعتبار انجام نشد.',
+	'createredirect-instructions' => 'با استفاده از فرم زیر می‌توانید صفحه‌ای تغییرمسیر ایجاد کنید یا صفحه‌ای موجود را تبدیل به تغییرمسیر کنید.',
 	'createredirect-page-title' => 'عنوان صفحه:',
 	'createredirect-redirect-done' => 'تغییرمسیر از «$1» به «$2» ایجاد شد.',
 	'createredirect-redirect-to' => 'تغییرمسیر به:',
