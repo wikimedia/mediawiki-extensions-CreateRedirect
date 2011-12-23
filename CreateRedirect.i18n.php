@@ -653,3 +653,15 @@ $messages['zh-hans'] = array(
 	'createredirect-save' => '保存网页',
 );
 
+/** Traditional Chinese (‪中文(繁體)‬) */
+$messages['zh-hant'] = array(
+	'createredirect' => '創建重定向',
+	'createredirect-desc' => '添加特殊頁 [[Special:CreateRedirect|CreateRedirect]] 可以輕鬆地創建重定向',
+	'createredirect-error' => '錯誤：身份驗證失敗。',
+	'createredirect-instructions' => '使用下面的表格，可以創建重定向頁面或替換現有頁面重定向。',
+	'createredirect-page-title' => '頁標題:',
+	'createredirect-redirect-done' => '創建重定向從 "$1" 到 "$2"',
+	'createredirect-redirect-to' => '重定向至：',
+	'createredirect-save' => '保存網頁',
+);
+
