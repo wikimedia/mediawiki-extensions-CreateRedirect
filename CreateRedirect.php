@@ -50,7 +50,7 @@ $wgAutoloadClasses['SpecialCreateRedirect'] = $dir . 'CreateRedirect.body.php';
 $wgSpecialPages['CreateRedirect'] = 'SpecialCreateRedirect';
 $wgSpecialPageGroups['CreateRedirect'] = 'pagetools';
 $wgExtensionMessagesFiles['CreateRedirect'] = $dir . 'CreateRedirect.i18n.php';
-$wgExtensionAliasesFiles['CreateRedirect'] = $dir . 'CreateRedirect.alias.php';
+$wgExtensionMessagesFiles['CreateRedirectAlias'] = $dir . 'CreateRedirect.alias.php';
 
 // Add a shortcut link to the toolbox.
 $wgHooks['SkinTemplateToolboxEnd'][] = 'createRedirect_addToolboxLink';
