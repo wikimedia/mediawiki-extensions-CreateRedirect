@@ -483,7 +483,7 @@ $messages['nn'] = array(
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Nghtwlkr
  */
-$messages['no'] = array(
+$messages['nb'] = array(
 	'createredirect' => 'Opprett omdirigering',
 	'createredirect-desc' => 'Legger til spesialsiden [[Special:CreateRedirect|CreateRedirect]] for å enkelt opprette omdirigeringer',
 	'createredirect-error' => 'Feil: Autentisering mislyktes.',
