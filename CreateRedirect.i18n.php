@@ -445,6 +445,20 @@ $messages['myv'] = array(
 	'createredirect-save' => 'Ванстомс лопанть',
 );
 
+/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+ * @author Nghtwlkr
+ */
+$messages['nb'] = array(
+	'createredirect' => 'Opprett omdirigering',
+	'createredirect-desc' => 'Legger til spesialsiden [[Special:CreateRedirect|CreateRedirect]] for å enkelt opprette omdirigeringer',
+	'createredirect-error' => 'Feil: Autentisering mislyktes.',
+	'createredirect-instructions' => 'Ved å brukes skjemaet nedenfor kan du opprette en omdirigeringsside eller erstatte en eksisterende side med en omdirigering.',
+	'createredirect-page-title' => 'Sidetittel:',
+	'createredirect-redirect-done' => 'Omdirigering opprettet fra «$1» til «$2»',
+	'createredirect-redirect-to' => 'Omdiriger til:',
+	'createredirect-save' => 'Lagre siden',
+);
+
 /** Nepali (नेपाली)
  * @author Bhawani Gautam
  * @author Bhawani Gautam Rhk
@@ -478,20 +492,6 @@ $messages['nl'] = array(
  */
 $messages['nn'] = array(
 	'createredirect-instructions' => 'Ved å bruke skjemaet under kan du opprette ei omdirigeringsside eller erstatte ei side som finst me ei omdirigering.',
-);
-
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
- * @author Nghtwlkr
- */
-$messages['nb'] = array(
-	'createredirect' => 'Opprett omdirigering',
-	'createredirect-desc' => 'Legger til spesialsiden [[Special:CreateRedirect|CreateRedirect]] for å enkelt opprette omdirigeringer',
-	'createredirect-error' => 'Feil: Autentisering mislyktes.',
-	'createredirect-instructions' => 'Ved å brukes skjemaet nedenfor kan du opprette en omdirigeringsside eller erstatte en eksisterende side med en omdirigering.',
-	'createredirect-page-title' => 'Sidetittel:',
-	'createredirect-redirect-done' => 'Omdirigering opprettet fra «$1» til «$2»',
-	'createredirect-redirect-to' => 'Omdiriger til:',
-	'createredirect-save' => 'Lagre siden',
 );
 
 /** Oriya (ଓଡ଼ିଆ)
