@@ -48,9 +48,19 @@ $specialPageAliases['frp'] = array(
 	'CreateRedirect' => array( 'Fâre_una_redirèccion', 'FâreUnaRedirèccion' ),
 );
 
+/** Galician (Galego) */
+$specialPageAliases['gl'] = array(
+	'CreateRedirect' => array( 'Crear_unha_redirección' ),
+);
+
 /** Haitian (Kreyòl ayisyen) */
 $specialPageAliases['ht'] = array(
 	'CreateRedirect' => array( 'FèRedireksyon' ),
+);
+
+/** Interlingua (Interlingua) */
+$specialPageAliases['ia'] = array(
+	'CreateRedirect' => array( 'Crear_redirection' ),
 );
 
 /** Japanese (日本語) */
@@ -102,8 +112,3 @@ $specialPageAliases['zh-hans'] = array(
 $specialPageAliases['zh-hant'] = array(
 	'CreateRedirect' => array( '創建重定向' ),
 );
-
-/**
- * For backwards compatibility with MediaWiki 1.15 and earlier.
- */
-$aliases =& $specialPageAliases;
