@@ -217,11 +217,16 @@ $messages['fa'] = array(
 /** Finnish (Suomi)
  * @author Crt
  * @author Nike
+ * @author Veikk0.ma
  */
 $messages['fi'] = array(
 	'createredirect' => 'Luo ohjaus',
 	'createredirect-desc' => 'Lisää [[Special:CreateRedirect|toimintosivun]], jolla voi helposti luoda ohjauksia.',
+	'createredirect-error' => 'Virhe: Varmennus epäonnistui.',
+	'createredirect-instructions' => 'Alla olevan lomakkeen avulla voit luoda ohjaussivun tai korvata olemassa olevan sivun ohjaussivulla.',
+	'createredirect-page-title' => 'Sivun nimi',
 	'createredirect-redirect-done' => 'Ohjaus luotu sivulta ”$1” sivulle ”$2”.',
+	'createredirect-redirect-to' => 'Ohjaa sivulle',
 	'createredirect-save' => 'Tallenna sivu',
 );
 
