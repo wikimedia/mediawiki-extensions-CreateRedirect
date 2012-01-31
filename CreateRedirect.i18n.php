@@ -419,6 +419,20 @@ $messages['lb'] = array(
 	'createredirect-save' => 'Säit späicheren',
 );
 
+/** Basa Banyumasan (Basa Banyumasan)
+ * @author StefanusRA
+ */
+$messages['map-bms'] = array(
+	'createredirect' => 'Gawe pengalihan',
+	'createredirect-desc' => 'Tambahna kaca astamiwa [[Special:CreateRedirect|Gawe Pengalihan]] ben nggampangna nék arep gawe kaca pengalihan',
+	'createredirect-error' => 'Luput: Autentikasi gagal.',
+	'createredirect-instructions' => 'Ngunakna formulir nang ngisor kiye, Rika teyeng gawe kaca pengalihan utawa nindih kaca sing wis ana karo sawijining pengalihan.',
+	'createredirect-page-title' => 'Judul kaca:',
+	'createredirect-redirect-done' => 'Pengalihan wis digawe sekang "$1" meng "$2"',
+	'createredirect-redirect-to' => 'Pengalihan meng:',
+	'createredirect-save' => 'Simpen kaca',
+);
+
 /** Macedonian (Македонски)
  * @author Bjankuloski06
  * @author McDutchie
