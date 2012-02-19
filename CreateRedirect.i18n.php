@@ -48,6 +48,20 @@ $messages['ar'] = array(
 	'createredirect-save' => 'احفظ الصفحة',
 );
 
+/** Asturian (Asturianu)
+ * @author Xuacu
+ */
+$messages['ast'] = array(
+	'createredirect' => 'Crear una redireición',
+	'createredirect-desc' => 'Amiesta la páxina especial [[Special:CreateRedirect|CreateRedirect]] pa crear redireiciones de manera fácil',
+	'createredirect-error' => 'Error : Falló la identificación.',
+	'createredirect-instructions' => "Emplegando'l formulariu d'abaxo, pues crear una páxina de redireición o trocar una páxina esistente por una redireición.",
+	'createredirect-page-title' => 'Títulu de la páxina:',
+	'createredirect-redirect-done' => 'Redireición creada de «$1» a «$2»',
+	'createredirect-redirect-to' => 'Redirixir a:',
+	'createredirect-save' => 'Grabar páxina',
+);
+
 /** Azerbaijani (Azərbaycanca)
  * @author Cekli829
  */
