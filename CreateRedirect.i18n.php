@@ -666,6 +666,14 @@ $messages['tl'] = array(
 	'createredirect-save' => 'Sagipin ang pahina',
 );
 
+/** Turkish (Türkçe)
+ * @author Suelnur
+ */
+$messages['tr'] = array(
+	'createredirect' => 'Yönlendirme oluştur',
+	'createredirect-save' => 'Sayfayı kaydet',
+);
+
 /** Yiddish (ייִדיש)
  * @author פוילישער
  */
