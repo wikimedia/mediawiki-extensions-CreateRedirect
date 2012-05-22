@@ -479,6 +479,13 @@ $messages['myv'] = array(
 	'createredirect-save' => 'Ванстомс лопанть',
 );
 
+/** Mazanderani (مازِرونی)
+ * @author Mehdi
+ */
+$messages['mzn'] = array(
+	'createredirect-redirect-done' => 'از «$1» به «$2» مسیرتغییر ایجاد بیه.',
+);
+
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Nghtwlkr
  */
