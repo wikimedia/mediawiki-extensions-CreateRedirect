@@ -434,6 +434,19 @@ $messages['lb'] = array(
 	'createredirect-save' => 'Säit späicheren',
 );
 
+/** Lushai (Mizo ţawng)
+ * @author RMizo
+ */
+$messages['lus'] = array(
+	'createredirect' => 'Hruailuhna siamna',
+	'createredirect-desc' => 'Hruailuhna awlsam taka siamna phêk vohbîk [[Special:CreateRedirect|hruailuhna siamna]] belhna a ni.',
+	'createredirect-error' => 'Dikhlel: Insawiluhna tlawlh',
+	'createredirect-page-title' => 'Phêk hming:',
+	'createredirect-redirect-done' => '"$1" aṭanga "$2"-a hruailuhna siam a ni.',
+	'createredirect-redirect-to' => 'Hruailuhna tùr phêk:',
+	'createredirect-save' => 'Phêk dahṭhatna',
+);
+
 /** Basa Banyumasan (Basa Banyumasan)
  * @author StefanusRA
  */
