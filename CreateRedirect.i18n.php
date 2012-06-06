@@ -371,11 +371,12 @@ $messages['it'] = array(
 );
 
 /** Japanese (日本語)
+ * @author Shirayuki
  * @author 青子守歌
  */
 $messages['ja'] = array(
 	'createredirect' => '転送を作成',
-	'createredirect-desc' => '転送を簡単に作成する[[Special:CreateRedirect|転送作成]]特別ページを追加します',
+	'createredirect-desc' => '転送を簡単に作成する[[Special:CreateRedirect|転送作成]]特別ページを追加する',
 	'createredirect-error' => 'エラー：認証に失敗しました。',
 	'createredirect-instructions' => '下記のフォームを使用して、新しく転送ページを作成したり、既存のページを転送に置き換えることができます。',
 	'createredirect-page-title' => 'ページ名：',
