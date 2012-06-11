@@ -18,7 +18,7 @@ $specialPageAliases['ar'] = array(
 	'CreateRedirect' => array( 'تحويل_تصنيف' ),
 );
 
-/** Breton (Brezhoneg) */
+/** Breton (brezhoneg) */
 $specialPageAliases['br'] = array(
 	'CreateRedirect' => array( 'KrouiñAdkas' ),
 );
@@ -26,6 +26,11 @@ $specialPageAliases['br'] = array(
 /** German (Deutsch) */
 $specialPageAliases['de'] = array(
 	'CreateRedirect' => array( 'Weiterleitung_erstellen' ),
+);
+
+/** Zazaki (Zazaki) */
+$specialPageAliases['diq'] = array(
+	'CreateRedirect' => array( 'HetenayışVıraştış' ),
 );
 
 /** Esperanto (Esperanto) */
@@ -38,12 +43,12 @@ $specialPageAliases['fa'] = array(
 	'CreateRedirect' => array( 'ایجاد_تغییرمسیر' ),
 );
 
-/** French (Français) */
+/** French (français) */
 $specialPageAliases['fr'] = array(
 	'CreateRedirect' => array( 'CréerRedirection', 'Créer_redirection' ),
 );
 
-/** Franco-Provençal (Arpetan) */
+/** Franco-Provençal (arpetan) */
 $specialPageAliases['frp'] = array(
 	'CreateRedirect' => array( 'Fâre_una_redirèccion', 'FâreUnaRedirèccion' ),
 );
@@ -58,12 +63,12 @@ $specialPageAliases['ht'] = array(
 	'CreateRedirect' => array( 'FèRedireksyon' ),
 );
 
-/** Interlingua (Interlingua) */
+/** Interlingua (interlingua) */
 $specialPageAliases['ia'] = array(
 	'CreateRedirect' => array( 'Crear_redirection' ),
 );
 
-/** Italian (Italiano) */
+/** Italian (italiano) */
 $specialPageAliases['it'] = array(
 	'CreateRedirect' => array( 'CreaRedirect' ),
 );
@@ -78,12 +83,17 @@ $specialPageAliases['km'] = array(
 	'CreateRedirect' => array( 'បង្កើតការបញ្ចូនបន្ត' ),
 );
 
+/** Korean (한국어) */
+$specialPageAliases['ko'] = array(
+	'CreateRedirect' => array( '넘겨주기만들기' ),
+);
+
 /** Luxembourgish (Lëtzebuergesch) */
 $specialPageAliases['lb'] = array(
 	'CreateRedirect' => array( 'Viruleedung_uleeën' ),
 );
 
-/** Macedonian (Македонски) */
+/** Macedonian (македонски) */
 $specialPageAliases['mk'] = array(
 	'CreateRedirect' => array( 'СоздајПренасочување' ),
 );
@@ -93,7 +103,7 @@ $specialPageAliases['ml'] = array(
 	'CreateRedirect' => array( 'തിരിച്ചുവിടൽസൃഷ്ടിക്കുക' ),
 );
 
-/** Norwegian Bokmål (‪Norsk (bokmål)‬) */
+/** Norwegian Bokmål (‪norsk (bokmål)‬) */
 $specialPageAliases['nb'] = array(
 	'CreateRedirect' => array( 'Opprett_omdirigering' ),
 );
@@ -113,12 +123,12 @@ $specialPageAliases['tr'] = array(
 	'CreateRedirect' => array( 'YönlendirmeOluştur' ),
 );
 
-/** Simplified Chinese (‪中文(简体)‬) */
+/** Simplified Chinese (‪中文（简体）‬) */
 $specialPageAliases['zh-hans'] = array(
 	'CreateRedirect' => array( '创建重定向页' ),
 );
 
-/** Traditional Chinese (‪中文(繁體)‬) */
+/** Traditional Chinese (‪中文（繁體）‬) */
 $specialPageAliases['zh-hant'] = array(
 	'CreateRedirect' => array( '創建重定向' ),
 );
