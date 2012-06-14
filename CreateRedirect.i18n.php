@@ -48,7 +48,7 @@ $messages['ar'] = array(
 	'createredirect-save' => 'احفظ الصفحة',
 );
 
-/** Asturian (Asturianu)
+/** Asturian (asturianu)
  * @author Xuacu
  */
 $messages['ast'] = array(
@@ -62,7 +62,7 @@ $messages['ast'] = array(
 	'createredirect-save' => 'Grabar páxina',
 );
 
-/** Azerbaijani (Azərbaycanca)
+/** Azerbaijani (azərbaycanca)
  * @author Cekli829
  */
 $messages['az'] = array(
@@ -99,7 +99,7 @@ $messages['bn'] = array(
 	'createredirect-save' => 'সংরক্ষণ',
 );
 
-/** Breton (Brezhoneg)
+/** Breton (brezhoneg)
  * @author Fulup
  * @author Y-M D
  */
@@ -114,7 +114,7 @@ $messages['br'] = array(
 	'createredirect-save' => 'Enrollañ ar bajenn',
 );
 
-/** Bosnian (Bosanski)
+/** Bosnian (bosanski)
  * @author CERminator
  */
 $messages['bs'] = array(
@@ -128,7 +128,7 @@ $messages['bs'] = array(
 	'createredirect-save' => 'Spremi stranicu',
 );
 
-/** Czech (Česky)
+/** Czech (česky)
  * @author Jkjk
  */
 $messages['cs'] = array(
@@ -200,7 +200,7 @@ $messages['el'] = array(
 	'createredirect-save' => 'Αποθήκευση σελίδας',
 );
 
-/** Spanish (Español)
+/** Spanish (español)
  * @author Sanbec
  */
 $messages['es'] = array(
@@ -229,7 +229,7 @@ $messages['fa'] = array(
 	'createredirect-save' => 'صفحه ذخیره شود',
 );
 
-/** Finnish (Suomi)
+/** Finnish (suomi)
  * @author Crt
  * @author Nike
  * @author Veikk0.ma
@@ -245,7 +245,7 @@ $messages['fi'] = array(
 	'createredirect-save' => 'Tallenna sivu',
 );
 
-/** French (Français)
+/** French (français)
  * @author McDutchie
  * @author Peter17
  */
@@ -260,7 +260,7 @@ $messages['fr'] = array(
 	'createredirect-save' => 'Enregistrer la page',
 );
 
-/** Franco-Provençal (Arpetan)
+/** Franco-Provençal (arpetan)
  * @author ChrisPtDe
  */
 $messages['frp'] = array(
@@ -328,7 +328,7 @@ $messages['hsb'] = array(
 	'createredirect-save' => 'Stronu składować',
 );
 
-/** Interlingua (Interlingua)
+/** Interlingua (interlingua)
  * @author McDutchie
  */
 $messages['ia'] = array(
@@ -356,7 +356,7 @@ $messages['id'] = array(
 	'createredirect-save' => 'Simpan halaman',
 );
 
-/** Italian (Italiano)
+/** Italian (italiano)
  * @author Beta16
  */
 $messages['it'] = array(
@@ -462,7 +462,7 @@ $messages['map-bms'] = array(
 	'createredirect-save' => 'Simpen kaca',
 );
 
-/** Macedonian (Македонски)
+/** Macedonian (македонски)
  * @author Bjankuloski06
  * @author McDutchie
  */
@@ -542,7 +542,7 @@ $messages['nl'] = array(
 	'createredirect-save' => 'Pagina opslaan',
 );
 
-/** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
+/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
  * @author Ranveig
  */
 $messages['nn'] = array(
@@ -563,7 +563,7 @@ $messages['or'] = array(
 	'createredirect-save' => 'ପୃଷ୍ଠାଟି ସାଇତିବେ',
 );
 
-/** Polish (Polski)
+/** Polish (polski)
  * @author Sp5uhe
  */
 $messages['pl'] = array(
@@ -600,7 +600,7 @@ $messages['ps'] = array(
 	'createredirect-save' => 'مخ خوندي کول',
 );
 
-/** Portuguese (Português)
+/** Portuguese (português)
  * @author Hamilton Abreu
  */
 $messages['pt'] = array(
@@ -614,7 +614,7 @@ $messages['pt'] = array(
 	'createredirect-save' => 'Gravar página',
 );
 
-/** Brazilian Portuguese (Português do Brasil)
+/** Brazilian Portuguese (português do Brasil)
  * @author Giro720
  */
 $messages['pt-br'] = array(
@@ -628,7 +628,7 @@ $messages['pt-br'] = array(
 	'createredirect-save' => 'Salvar página',
 );
 
-/** Russian (Русский)
+/** Russian (русский)
  * @author MaxSem
  * @author Александр Сигачёв
  */
@@ -643,7 +643,7 @@ $messages['ru'] = array(
 	'createredirect-save' => 'Сохранить страницу',
 );
 
-/** Swedish (Svenska)
+/** Swedish (svenska)
  * @author Lokal Profil
  * @author WikiPhoenix
  */
@@ -702,7 +702,7 @@ $messages['yi'] = array(
 	'createredirect-save' => 'אױפֿהיטן בלאַט',
 );
 
-/** Simplified Chinese (‪中文(简体)‬)
+/** Simplified Chinese (‪中文（简体）‬)
  * @author Hydra
  */
 $messages['zh-hans'] = array(
@@ -716,7 +716,7 @@ $messages['zh-hans'] = array(
 	'createredirect-save' => '保存网页',
 );
 
-/** Traditional Chinese (‪中文(繁體)‬) */
+/** Traditional Chinese (‪中文（繁體）‬) */
 $messages['zh-hant'] = array(
 	'createredirect' => '創建重定向',
 	'createredirect-desc' => '添加特殊頁 [[Special:CreateRedirect|CreateRedirect]] 可以輕鬆地創建重定向',
