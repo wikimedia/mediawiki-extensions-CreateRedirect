@@ -18,6 +18,11 @@ $specialPageAliases['ar'] = array(
 	'CreateRedirect' => array( 'تحويل_تصنيف' ),
 );
 
+/** Assamese (অসমীয়া) */
+$specialPageAliases['as'] = array(
+	'CreateRedirect' => array( 'পুণঃনিৰ্দেশনা_সৃষ্টি' ),
+);
+
 /** Breton (brezhoneg) */
 $specialPageAliases['br'] = array(
 	'CreateRedirect' => array( 'KrouiñAdkas' ),
@@ -53,7 +58,7 @@ $specialPageAliases['frp'] = array(
 	'CreateRedirect' => array( 'Fâre_una_redirèccion', 'FâreUnaRedirèccion' ),
 );
 
-/** Galician (Galego) */
+/** Galician (galego) */
 $specialPageAliases['gl'] = array(
 	'CreateRedirect' => array( 'Crear_unha_redirección' ),
 );
