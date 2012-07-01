@@ -69,7 +69,7 @@ $messages['az'] = array(
 	'createredirect-save' => 'Səhifəni qeyd et',
 );
 
-/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
  * @author Wizardist
@@ -172,7 +172,7 @@ $messages['de-formal'] = array(
 	'createredirect-instructions' => 'Mit diesem Formular können Sie eine Weiterleitung erstellen oder eine existierende Seite durch eine Weiterleitung ersetzen.',
 );
 
-/** Lower Sorbian (Dolnoserbski)
+/** Lower Sorbian (dolnoserbski)
  * @author Michawiki
  */
 $messages['dsb'] = array(
@@ -272,7 +272,7 @@ $messages['frp'] = array(
 	'createredirect-save' => 'Sôvar la pâge',
 );
 
-/** Galician (Galego)
+/** Galician (galego)
  * @author Toliño
  */
 $messages['gl'] = array(
@@ -314,7 +314,7 @@ $messages['he'] = array(
 	'createredirect-save' => 'שמירת הדף',
 );
 
-/** Upper Sorbian (Hornjoserbsce)
+/** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
 $messages['hsb'] = array(
