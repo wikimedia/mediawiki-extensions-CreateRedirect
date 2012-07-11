@@ -485,7 +485,7 @@ $messages['ml'] = array(
 	'createredirect-page-title' => 'താളിന്റെ തലക്കെട്ട്:',
 );
 
-/** Erzya (Эрзянь)
+/** Erzya (эрзянь)
  * @author Botuzhaleny-sodamo
  */
 $messages['myv'] = array(
@@ -500,7 +500,7 @@ $messages['mzn'] = array(
 	'createredirect-redirect-done' => 'از «$1» به «$2» مسیرتغییر ایجاد بیه.',
 );
 
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+/** Norwegian Bokmål (‪norsk (bokmål)‬)
  * @author Nghtwlkr
  */
 $messages['nb'] = array(
