@@ -172,6 +172,13 @@ $messages['de-formal'] = array(
 	'createredirect-instructions' => 'Mit diesem Formular können Sie eine Weiterleitung erstellen oder eine existierende Seite durch eine Weiterleitung ersetzen.',
 );
 
+/** Zazaki (Zazaki)
+ * @author Erdemaslancan
+ */
+$messages['diq'] = array(
+	'createredirect-page-title' => 'Sernamey pela:',
+);
+
 /** Lower Sorbian (dolnoserbski)
  * @author Michawiki
  */
