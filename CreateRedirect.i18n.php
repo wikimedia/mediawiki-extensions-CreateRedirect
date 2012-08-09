@@ -650,6 +650,14 @@ $messages['ru'] = array(
 	'createredirect-save' => 'Сохранить страницу',
 );
 
+/** Sinhala (සිංහල)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['si'] = array(
+	'createredirect-page-title' => 'පිටුවේ මාතෘකාව:',
+	'createredirect-save' => 'පිටුව සුරකින්න',
+);
+
 /** Swedish (svenska)
  * @author Lokal Profil
  * @author WikiPhoenix
