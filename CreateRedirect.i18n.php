@@ -392,6 +392,16 @@ $messages['ja'] = array(
 	'createredirect-save' => 'ページを保存',
 );
 
+/** Georgian (ქართული)
+ * @author David1010
+ */
+$messages['ka'] = array(
+	'createredirect' => 'გადამისამართების შექმნა',
+	'createredirect-page-title' => 'გვერდის სათაური:',
+	'createredirect-redirect-to' => 'გადამისამართება:',
+	'createredirect-save' => 'გვერდის შენახვა',
+);
+
 /** Khmer (ភាសាខ្មែរ)
  * @author គីមស៊្រុន
  */
