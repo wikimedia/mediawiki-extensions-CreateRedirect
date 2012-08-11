@@ -502,6 +502,20 @@ $messages['ml'] = array(
 	'createredirect-page-title' => 'താളിന്റെ തലക്കെട്ട്:',
 );
 
+/** Maltese (Malti)
+ * @author Chrisportelli
+ */
+$messages['mt'] = array(
+	'createredirect' => 'Oħloq ir-rindirizz',
+	'createredirect-desc' => 'Iżżid paġna speċjali [[Special:CreateRedirect|CreateRedirect]] sabiex faċilment toħloq rindirizz',
+	'createredirect-error' => 'Żball: L-awtentikazzjoni falliet.',
+	'createredirect-instructions' => "Billi tuża l-formola t'hawn taħt, inti tista' toħloq paġna ta' rindirizz jew tissostitwixxi paġna eżistenti b'rindirizz.",
+	'createredirect-page-title' => 'Titlu tal-paġna:',
+	'createredirect-redirect-done' => 'Rindirizz maħluq minn "$1" għal "$2"',
+	'createredirect-redirect-to' => 'Rindirizz lejn:',
+	'createredirect-save' => 'Salva l-paġna',
+);
+
 /** Erzya (эрзянь)
  * @author Botuzhaleny-sodamo
  */
@@ -681,6 +695,20 @@ $messages['sv'] = array(
 	'createredirect-redirect-done' => 'Omdirigering skapad från "$1" till "$2"',
 	'createredirect-redirect-to' => 'Omdirigera till:',
 	'createredirect-save' => 'Spara sida',
+);
+
+/** Tamil (தமிழ்)
+ * @author Shanmugamp7
+ */
+$messages['ta'] = array(
+	'createredirect' => 'வழிமாற்றை உருவாக்கவும்',
+	'createredirect-desc' => 'எளிதாக வழிமாற்றை உருவாக்க சிறப்புப் பக்கம் [[Special:CreateRedirect|வழிமாற்றுஉருவாக்கு]] சேர்க்கிறது',
+	'createredirect-error' => 'பிழை: அங்கீகரித்தல் தோல்வியடைந்தது.',
+	'createredirect-instructions' => 'கீழேயுள்ள படிவத்தை பயன்படுத்தி, நீங்கள் ஒரு வழிமாற்று பக்கத்தை உருவாக்கலாம் அல்லது ஏற்கனவே உள்ள பக்கத்ததை வழிமாற்று கொண்டு பிரதியிடலாம்.',
+	'createredirect-page-title' => 'பக்கத்தின் தலைப்பு:',
+	'createredirect-redirect-done' => '"$1" லிருந்து "$2" க்கு வழிமாற்று உருவாக்கப்பட்டது',
+	'createredirect-redirect-to' => 'வழிமாற்றவும்:',
+	'createredirect-save' => 'பக்கத்தைச் சேமி',
 );
 
 /** Telugu (తెలుగు)
