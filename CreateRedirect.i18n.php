@@ -221,6 +221,15 @@ $messages['es'] = array(
 	'createredirect-save' => 'Guardar la página',
 );
 
+/** Estonian (eesti)
+ * @author Avjoska
+ */
+$messages['et'] = array(
+	'createredirect' => 'Loo ümbersuunamine',
+	'createredirect-page-title' => 'Lehekülje pealkiri:',
+	'createredirect-save' => 'Salvesta lehekülg',
+);
+
 /** Persian (فارسی)
  * @author Mjbmr
  * @author ZxxZxxZ
