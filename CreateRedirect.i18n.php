@@ -757,6 +757,14 @@ $messages['tr'] = array(
 	'createredirect-save' => 'Sayfayı kaydet',
 );
 
+/** Urdu (اردو)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['ur'] = array(
+	'createredirect-page-title' => 'صفحہ کا عنوان:',
+	'createredirect-save' => 'صفحہ کو محفوظ کریں',
+);
+
 /** Yiddish (ייִדיש)
  * @author פוילישער
  */
