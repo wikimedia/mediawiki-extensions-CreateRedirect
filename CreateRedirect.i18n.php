@@ -176,7 +176,11 @@ $messages['de-formal'] = array(
  * @author Erdemaslancan
  */
 $messages['diq'] = array(
+	'createredirect' => 'Hetenayış vırazê',
 	'createredirect-page-title' => 'Sernamey pela:',
+	'createredirect-redirect-done' => '"$1" ra "$2" hetanayış vıraziya',
+	'createredirect-redirect-to' => 'Hetanayışê cı:',
+	'createredirect-save' => 'Perer qeyd ke',
 );
 
 /** Lower Sorbian (dolnoserbski)
