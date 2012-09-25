@@ -108,7 +108,7 @@ $specialPageAliases['ml'] = array(
 	'CreateRedirect' => array( 'തിരിച്ചുവിടൽസൃഷ്ടിക്കുക' ),
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬) */
+/** Norwegian Bokmål (norsk (bokmål)‎) */
 $specialPageAliases['nb'] = array(
 	'CreateRedirect' => array( 'Opprett_omdirigering' ),
 );
@@ -128,12 +128,12 @@ $specialPageAliases['tr'] = array(
 	'CreateRedirect' => array( 'YönlendirmeOluştur' ),
 );
 
-/** Simplified Chinese (‪中文（简体）‬) */
+/** Simplified Chinese (中文（简体）‎) */
 $specialPageAliases['zh-hans'] = array(
 	'CreateRedirect' => array( '创建重定向页' ),
 );
 
-/** Traditional Chinese (‪中文（繁體）‬) */
+/** Traditional Chinese (中文（繁體）‎) */
 $specialPageAliases['zh-hant'] = array(
 	'CreateRedirect' => array( '創建重定向' ),
 );
