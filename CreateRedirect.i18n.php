@@ -640,7 +640,7 @@ $messages['pms'] = array(
  * @author Ahmed-Najib-Biabani-Ibrahimkhel
  */
 $messages['ps'] = array(
-	'createredirect-page-title' => 'د مخ سرليک:',
+	'createredirect-page-title' => 'مخ سرليک:',
 	'createredirect-save' => 'مخ خوندي کول',
 );
 
