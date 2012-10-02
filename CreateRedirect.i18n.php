@@ -69,7 +69,7 @@ $messages['az'] = array(
 	'createredirect-save' => 'Səhifəni qeyd et',
 );
 
-/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author EugeneZelenko
  * @author Jim-by
  * @author Wizardist
@@ -165,7 +165,7 @@ $messages['de'] = array(
 	'createredirect-save' => 'Seite speichern',
 );
 
-/** German (formal address) (‪Deutsch (Sie-Form)‬)
+/** German (formal address) (Deutsch (Sie-Form)‎)
  * @author The Evil IP address
  */
 $messages['de-formal'] = array(
@@ -442,7 +442,7 @@ $messages['ksh'] = array(
 	'createredirect-save' => 'De Sigg Avspeichere',
 );
 
-/** Kurdish (Latin script) (‪Kurdî (latînî)‬)
+/** Kurdish (Latin script) (Kurdî (latînî)‎)
  * @author George Animal
  */
 $messages['ku-latn'] = array(
@@ -544,7 +544,7 @@ $messages['mzn'] = array(
 	'createredirect-redirect-done' => 'از «$1» به «$2» مسیرتغییر ایجاد بیه.',
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬)
+/** Norwegian Bokmål (norsk (bokmål)‎)
  * @author Nghtwlkr
  */
 $messages['nb'] = array(
@@ -586,7 +586,7 @@ $messages['nl'] = array(
 	'createredirect-save' => 'Pagina opslaan',
 );
 
-/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
+/** Norwegian Nynorsk (norsk (nynorsk)‎)
  * @author Ranveig
  */
 $messages['nn'] = array(
@@ -776,7 +776,7 @@ $messages['yi'] = array(
 	'createredirect-save' => 'אױפֿהיטן בלאַט',
 );
 
-/** Simplified Chinese (‪中文（简体）‬)
+/** Simplified Chinese (中文（简体）‎)
  * @author Hydra
  */
 $messages['zh-hans'] = array(
@@ -790,7 +790,7 @@ $messages['zh-hans'] = array(
 	'createredirect-save' => '保存网页',
 );
 
-/** Traditional Chinese (‪中文（繁體）‬) */
+/** Traditional Chinese (中文（繁體）‎) */
 $messages['zh-hant'] = array(
 	'createredirect' => '創建重定向',
 	'createredirect-desc' => '添加特殊頁 [[Special:CreateRedirect|CreateRedirect]] 可以輕鬆地創建重定向',
