@@ -465,7 +465,7 @@ $messages['lb'] = array(
 	'createredirect-save' => 'Säit späicheren',
 );
 
-/** Lushai (Mizo ţawng)
+/** Mizo (Mizo ţawng)
  * @author RMizo
  */
 $messages['lus'] = array(
@@ -790,7 +790,8 @@ $messages['zh-hans'] = array(
 	'createredirect-save' => '保存网页',
 );
 
-/** Traditional Chinese (中文（繁體）‎) */
+/** Traditional Chinese (中文（繁體）‎)
+ */
 $messages['zh-hant'] = array(
 	'createredirect' => '創建重定向',
 	'createredirect-desc' => '添加特殊頁 [[Special:CreateRedirect|CreateRedirect]] 可以輕鬆地創建重定向',
@@ -801,4 +802,3 @@ $messages['zh-hant'] = array(
 	'createredirect-redirect-to' => '重定向至：',
 	'createredirect-save' => '保存網頁',
 );
-
