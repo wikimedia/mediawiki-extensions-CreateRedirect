@@ -177,6 +177,7 @@ $messages['de-formal'] = array(
  */
 $messages['diq'] = array(
 	'createredirect' => 'Hetenayış vırazê',
+	'createredirect-error' => 'Xırab:Araşt kerdış nêbı',
 	'createredirect-page-title' => 'Sernamey pela:',
 	'createredirect-redirect-done' => '"$1" ra "$2" hetanayış vıraziya',
 	'createredirect-redirect-to' => 'Hetanayışê cı:',
