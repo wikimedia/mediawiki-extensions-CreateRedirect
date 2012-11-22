@@ -123,6 +123,11 @@ $specialPageAliases['nl'] = array(
 	'CreateRedirect' => array( 'DoorverwijzingAanmaken' ),
 );
 
+/** Sicilian (sicilianu) */
+$specialPageAliases['scn'] = array(
+	'CreateRedirect' => array( 'CreaRedirect' ),
+);
+
 /** Turkish (Türkçe) */
 $specialPageAliases['tr'] = array(
 	'CreateRedirect' => array( 'YönlendirmeOluştur' ),
