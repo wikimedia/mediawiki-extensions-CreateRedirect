@@ -123,6 +123,11 @@ $specialPageAliases['nl'] = array(
 	'CreateRedirect' => array( 'DoorverwijzingAanmaken' ),
 );
 
+/** Punjabi (ਪੰਜਾਬੀ) */
+$specialPageAliases['pa'] = array(
+	'CreateRedirect' => array( 'ਰੀਡਿਰੈਕਟ_ਬਣਾਓ' ),
+);
+
 /** Sicilian (sicilianu) */
 $specialPageAliases['scn'] = array(
 	'CreateRedirect' => array( 'CreaRedirect' ),

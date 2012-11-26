@@ -762,6 +762,20 @@ $messages['tr'] = array(
 	'createredirect-save' => 'Sayfayı kaydet',
 );
 
+/** Ukrainian (українська)
+ * @author Base
+ */
+$messages['uk'] = array(
+	'createredirect' => 'Створити перенаправлення',
+	'createredirect-desc' => 'Додає спеціальну сторінк [[Special:CreateRedirect|CreateRedirect]] для легкого створення перенаправлень',
+	'createredirect-error' => 'Помилка: Аутентифікація не вдалась.',
+	'createredirect-instructions' => 'Використовуючи форму нижче, Ви можете створити сторіку-перенаправлення або замінити існуючу сторіку перенаправленням.',
+	'createredirect-page-title' => 'Назва сторінки:',
+	'createredirect-redirect-done' => 'Створено пененаправлення із «$1» на «$2»',
+	'createredirect-redirect-to' => 'Перенаправити на:',
+	'createredirect-save' => 'Зберегти сторінку',
+);
+
 /** Urdu (اردو)
  * @author පසිඳු කාවින්ද
  */
