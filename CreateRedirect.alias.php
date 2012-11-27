@@ -113,7 +113,7 @@ $specialPageAliases['nb'] = array(
 	'CreateRedirect' => array( 'Opprett_omdirigering' ),
 );
 
-/** Nedersaksisch (Nedersaksisch) */
+/** Nedersaksies (Nedersaksies) */
 $specialPageAliases['nds-nl'] = array(
 	'CreateRedirect' => array( 'Deurverwiezing_anmaken' ),
 );
