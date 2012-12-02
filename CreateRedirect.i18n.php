@@ -150,6 +150,17 @@ $messages['cy'] = array(
 	'createredirect-save' => 'Cadwer y dudalen',
 );
 
+/** Danish (dansk)
+ * @author Sarrus
+ */
+$messages['da'] = array(
+	'createredirect' => 'Opret omdirigering',
+	'createredirect-page-title' => 'Sidetitel:',
+	'createredirect-redirect-done' => 'En omdirigering fra "$1" til "$2" er oprettet',
+	'createredirect-redirect-to' => 'Omdiriger til:',
+	'createredirect-save' => 'Gem side',
+);
+
 /** German (Deutsch)
  * @author Kghbln
  * @author The Evil IP address

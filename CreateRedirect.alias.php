@@ -93,6 +93,11 @@ $specialPageAliases['ko'] = array(
 	'CreateRedirect' => array( '넘겨주기만들기' ),
 );
 
+/** Cornish (kernowek) */
+$specialPageAliases['kw'] = array(
+	'CreateRedirect' => array( 'FormyaDaswedyans' ),
+);
+
 /** Luxembourgish (Lëtzebuergesch) */
 $specialPageAliases['lb'] = array(
 	'CreateRedirect' => array( 'Viruleedung_uleeën' ),
