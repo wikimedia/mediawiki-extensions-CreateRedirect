@@ -440,6 +440,20 @@ $messages['km'] = array(
 	'createredirect-save' => 'រក្សាទុកទំព័រ',
 );
 
+/** Korean (한국어)
+ * @author 아라
+ */
+$messages['ko'] = array(
+	'createredirect' => '넘겨주기 만들기',
+	'createredirect-desc' => '넘겨주기를 쉽게 만드는 [[Special:CreateRedirect|넘겨주기만들기]] 특수 문서 추가',
+	'createredirect-error' => '오류: 인증을 실패했습니다.',
+	'createredirect-instructions' => '아래의 양식을 사용하여 넘겨주기 문서를 만들거나 넘겨주기로 된 기존 문서를 바꿀 수 있습니다.',
+	'createredirect-page-title' => '문서 제목:',
+	'createredirect-redirect-done' => '넘겨주기를 "$1"에서 "$2"로 만듦',
+	'createredirect-redirect-to' => '넘겨주기 대상:',
+	'createredirect-save' => '문서 저장하기',
+);
+
 /** Colognian (Ripoarisch)
  * @author Purodha
  */
