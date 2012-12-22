@@ -698,6 +698,19 @@ $messages['pt-br'] = array(
 	'createredirect-save' => 'Salvar página',
 );
 
+/** Romanian (română)
+ * @author Firilacroco
+ * @author Minisarm
+ */
+$messages['ro'] = array(
+	'createredirect' => 'Creează o redirecționare',
+	'createredirect-error' => 'Eroare: Autentificarea a eșuat.',
+	'createredirect-page-title' => 'Titul paginii:',
+	'createredirect-redirect-done' => 'Redirecționare creată de la „$1” înspre „$2”',
+	'createredirect-redirect-to' => 'Redirecționare către:',
+	'createredirect-save' => 'Salvează pagina',
+);
+
 /** Russian (русский)
  * @author MaxSem
  * @author Александр Сигачёв
