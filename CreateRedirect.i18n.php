@@ -23,10 +23,11 @@ $messages['en'] = array(
 );
 
 /** Message documentation (Message documentation)
+ * @author Shirayuki
  * @author The Evil IP address
  */
 $messages['qqq'] = array(
-	'createredirect-desc' => '{{desc}}',
+	'createredirect-desc' => '{{desc|name=Create Redirect|url=http://www.mediawiki.org/wiki/Extension:CreateRedirect}}',
 );
 
 /** Afrikaans (Afrikaans)
@@ -221,6 +222,13 @@ $messages['el'] = array(
 	'createredirect-redirect-done' => 'Redirect δημιουργήθηκε από το "$1" σε "$2"',
 	'createredirect-redirect-to' => 'Ανακατεύθυνση στο:',
 	'createredirect-save' => 'Αποθήκευση σελίδας',
+);
+
+/** Esperanto (Esperanto)
+ * @author Yekrats
+ */
+$messages['eo'] = array(
+	'createredirect-save' => 'Konservi paĝon',
 );
 
 /** Spanish (español)
@@ -489,6 +497,15 @@ $messages['lb'] = array(
 	'createredirect-redirect-done' => 'Viruleedung vun "$1" op "$2" ugeluecht',
 	'createredirect-redirect-to' => 'Viruleeden op:',
 	'createredirect-save' => 'Säit späicheren',
+);
+
+/** Lithuanian (lietuvių)
+ * @author Eitvys200
+ */
+$messages['lt'] = array(
+	'createredirect-page-title' => 'Puslapio antraštė:',
+	'createredirect-redirect-to' => 'Nukreipti į:',
+	'createredirect-save' => 'Išsaugoti puslapį',
 );
 
 /** Mizo (Mizo ţawng)
