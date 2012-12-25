@@ -558,6 +558,16 @@ $messages['ml'] = array(
 	'createredirect-page-title' => 'താളിന്റെ തലക്കെട്ട്:',
 );
 
+/** Malay (Bahasa Melayu)
+ * @author Pizza1016
+ */
+$messages['ms'] = array(
+	'createredirect' => 'Cipta lencongan',
+	'createredirect-page-title' => 'Tajuk laman:',
+	'createredirect-redirect-to' => 'Lencongkan ke:',
+	'createredirect-save' => 'Simpan laman',
+);
+
 /** Maltese (Malti)
  * @author Chrisportelli
  */
@@ -747,7 +757,9 @@ $messages['ru'] = array(
  * @author පසිඳු කාවින්ද
  */
 $messages['si'] = array(
+	'createredirect' => 'යළියොමුවක් තනන්න',
 	'createredirect-page-title' => 'පිටුවේ මාතෘකාව:',
+	'createredirect-redirect-to' => 'වෙත යළියොමු කරන්න:',
 	'createredirect-save' => 'පිටුව සුරකින්න',
 );
 
