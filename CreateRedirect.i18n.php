@@ -758,6 +758,7 @@ $messages['ru'] = array(
  */
 $messages['si'] = array(
 	'createredirect' => 'යළියොමුවක් තනන්න',
+	'createredirect-error' => 'දෝෂය: සත්‍යාපනය අසාර්ථකයි.',
 	'createredirect-page-title' => 'පිටුවේ මාතෘකාව:',
 	'createredirect-redirect-to' => 'වෙත යළියොමු කරන්න:',
 	'createredirect-save' => 'පිටුව සුරකින්න',
