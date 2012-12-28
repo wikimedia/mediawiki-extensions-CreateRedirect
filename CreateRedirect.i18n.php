@@ -368,6 +368,20 @@ $messages['hsb'] = array(
 	'createredirect-save' => 'Stronu składować',
 );
 
+/** Hungarian (magyar)
+ * @author Dj
+ */
+$messages['hu'] = array(
+	'createredirect' => 'Átirányítás létrehozásra',
+	'createredirect-desc' => 'Hozzáadja a [[Special:CreateRedirect|CreateRedirect]] speciális lapot, mellyel könnyen lehet átirányítást létrehozni.',
+	'createredirect-error' => 'Hiba: hitelesítés sikertelen',
+	'createredirect-instructions' => 'Az alábbi űrlapot használva létrehozhatsz átirányítást vagy lecserélhetsz egy lapot átirányításra.',
+	'createredirect-page-title' => 'Lap címe:',
+	'createredirect-redirect-done' => 'Átirányítás létrehozva erről: "$1" erre: "$2"',
+	'createredirect-redirect-to' => 'Átirányítás ide:',
+	'createredirect-save' => 'Lap mentése',
+);
+
 /** Interlingua (interlingua)
  * @author McDutchie
  */
