@@ -70,6 +70,14 @@ $messages['az'] = array(
 	'createredirect-save' => 'Səhifəni qeyd et',
 );
 
+/** Bashkir (башҡортса)
+ * @author Ләйсән
+ */
+$messages['ba'] = array(
+	'createredirect-page-title' => 'Биттең исеме:',
+	'createredirect-redirect-to' => 'Йүнәлтергә:',
+);
+
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author EugeneZelenko
  * @author Jim-by
@@ -127,6 +135,17 @@ $messages['bs'] = array(
 	'createredirect-redirect-done' => 'Napravljeno preusmjerenje sa "$1" na "$2"',
 	'createredirect-redirect-to' => 'Preusmjerenje na:',
 	'createredirect-save' => 'Spremi stranicu',
+);
+
+/** Catalan (català)
+ * @author Arnaugir
+ */
+$messages['ca'] = array(
+	'createredirect' => 'Crea una redirecció',
+	'createredirect-page-title' => 'Títol de la pàgina:',
+	'createredirect-redirect-done' => 'Redirigir creada de "$1" a "$2"',
+	'createredirect-redirect-to' => 'Redirigeix a:',
+	'createredirect-save' => 'Desa la pàgina',
 );
 
 /** Czech (česky)
@@ -573,11 +592,16 @@ $messages['ml'] = array(
 );
 
 /** Malay (Bahasa Melayu)
+ * @author Anakmalaysia
  * @author Pizza1016
  */
 $messages['ms'] = array(
 	'createredirect' => 'Cipta lencongan',
+	'createredirect-desc' => 'Menambahkan halaman khas [[Special:CreateRedirect|CreateRedirect]] untuk membuat lencongan dengan mudah',
+	'createredirect-error' => 'Ralat: Penentusahan gagal.',
+	'createredirect-instructions' => 'Dengan borang di bawah, anda boleh membuat halaman lencongan atau mengganti halaman yang sedia ada dengan lencongan.',
 	'createredirect-page-title' => 'Tajuk laman:',
+	'createredirect-redirect-done' => 'Lencongan dibuat dari "$1" ke "$2"',
 	'createredirect-redirect-to' => 'Lencongkan ke:',
 	'createredirect-save' => 'Simpan laman',
 );
@@ -651,6 +675,13 @@ $messages['nl'] = array(
 	'createredirect-redirect-done' => 'Doorverwijzing aangemaakt van "$1" naar "$2"',
 	'createredirect-redirect-to' => 'Doorverwijzen naar:',
 	'createredirect-save' => 'Pagina opslaan',
+);
+
+/** Nederlands (informeel)‎ (Nederlands (informeel)‎)
+ * @author Siebrand
+ */
+$messages['nl-informal'] = array(
+	'createredirect-instructions' => 'Via het onderstaande formulier kan je een doorverwijzingspagina aanmaken of een bestaande pagina vervangen door een doorverwijzing.',
 );
 
 /** Norwegian Nynorsk (norsk (nynorsk)‎)
