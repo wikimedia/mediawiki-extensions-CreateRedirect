@@ -150,10 +150,12 @@ $messages['ca'] = array(
 
 /** Czech (česky)
  * @author Jkjk
+ * @author Vks
  */
 $messages['cs'] = array(
 	'createredirect' => 'Vytvořit přesměrování',
 	'createredirect-error' => 'Chyba: Ověření se nezdařilo.',
+	'createredirect-page-title' => 'Název stránky:',
 );
 
 /** Welsh (Cymraeg)
@@ -371,6 +373,15 @@ $messages['he'] = array(
 	'createredirect-redirect-done' => 'נוצרה הפנייה מהדף "$1" אל "$2"',
 	'createredirect-redirect-to' => 'הפנייה אל:',
 	'createredirect-save' => 'שמירת הדף',
+);
+
+/** Hindi (हिन्दी)
+ * @author Ansumang
+ */
+$messages['hi'] = array(
+	'createredirect' => 'पुनर्निर्देशन बनाएँ',
+	'createredirect-page-title' => 'पृष्ठ शीर्षक:',
+	'createredirect-save' => 'पृष्ठ सहेजें',
 );
 
 /** Upper Sorbian (hornjoserbsce)
@@ -805,8 +816,21 @@ $messages['si'] = array(
 	'createredirect' => 'යළියොමුවක් තනන්න',
 	'createredirect-error' => 'දෝෂය: සත්‍යාපනය අසාර්ථකයි.',
 	'createredirect-page-title' => 'පිටුවේ මාතෘකාව:',
+	'createredirect-redirect-done' => 'යළියොමුව "$1" වෙතින් "$2" වෙත තනන ලදී',
 	'createredirect-redirect-to' => 'වෙත යළියොමු කරන්න:',
 	'createredirect-save' => 'පිටුව සුරකින්න',
+);
+
+/** Serbian (Cyrillic script) (српски (ћирилица)‎)
+ * @author Rancher
+ */
+$messages['sr-ec'] = array(
+	'createredirect' => 'Направи преусмерење',
+	'createredirect-error' => 'Грешка: аутентификација није успела.',
+	'createredirect-page-title' => 'Наслов странице:',
+	'createredirect-redirect-done' => 'Преусмерење са „$1“ на „$2“',
+	'createredirect-redirect-to' => 'Преусмери на:',
+	'createredirect-save' => 'Сачувај',
 );
 
 /** Swedish (svenska)
