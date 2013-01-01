@@ -330,7 +330,7 @@ $messages['frp'] = array(
 	'createredirect-page-title' => 'Titro de la pâge :',
 	'createredirect-redirect-done' => 'Redirèccion fêta de « $1 » vers « $2 »',
 	'createredirect-redirect-to' => 'Redirigiér vers :',
-	'createredirect-save' => 'Sôvar la pâge',
+	'createredirect-save' => 'Encartar la pâge',
 );
 
 /** Galician (galego)
