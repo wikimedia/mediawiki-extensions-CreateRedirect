@@ -953,5 +953,5 @@ $messages['zh-hant'] = array(
 	'createredirect-page-title' => '頁面標題:',
 	'createredirect-redirect-done' => '創建重定向從 "$1" 到 "$2"',
 	'createredirect-redirect-to' => '重定向至：',
-	'createredirect-save' => '保存網頁',
+	'createredirect-save' => '儲存本頁',
 );
