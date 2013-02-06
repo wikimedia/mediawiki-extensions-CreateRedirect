@@ -794,6 +794,20 @@ $messages['ro'] = array(
 	'createredirect-save' => 'Salvează pagina',
 );
 
+/** tarandíne (tarandíne)
+ * @author Joetaras
+ */
+$messages['roa-tara'] = array(
+	'createredirect' => "ccreje 'nu redirezionamende",
+	'createredirect-desc' => "Aggiunge 'na pàgena speciale [[Special:CreateRedirect|Ccreje redirezionamende]] pe ccrejà facile facile le redirezionaminde",
+	'createredirect-error' => 'Errore: Autendicazione fallite.',
+	'createredirect-instructions' => "Ausanne 'u module aqquà sotte, tu puè ccrejà 'na pàggene de redirezionamende o sostituì 'na pàgene esistende cu 'nu redirezionamende.",
+	'createredirect-page-title' => "Titole d'a pàgene:",
+	'createredirect-redirect-done' => 'Redirezionamende ccrejate da "$1" a "$2"',
+	'createredirect-redirect-to' => 'Redirezione sus a:',
+	'createredirect-save' => "Reggistre 'a vôsce",
+);
+
 /** Russian (русский)
  * @author MaxSem
  * @author Александр Сигачёв
