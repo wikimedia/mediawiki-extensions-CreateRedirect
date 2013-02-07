@@ -73,6 +73,11 @@ $specialPageAliases['ia'] = array(
 	'CreateRedirect' => array( 'Crear_redirection' ),
 );
 
+/** Indonesian (Bahasa Indonesia) */
+$specialPageAliases['id'] = array(
+	'CreateRedirect' => array( 'Buat_pengalihan', 'BuatPengalihan' ),
+);
+
 /** Italian (italiano) */
 $specialPageAliases['it'] = array(
 	'CreateRedirect' => array( 'CreaRedirect' ),
@@ -113,7 +118,7 @@ $specialPageAliases['ml'] = array(
 	'CreateRedirect' => array( 'തിരിച്ചുവിടൽസൃഷ്ടിക്കുക' ),
 );
 
-/** Norwegian Bokmål (norsk (bokmål)‎) */
+/** Norwegian Bokmål (norsk bokmål) */
 $specialPageAliases['nb'] = array(
 	'CreateRedirect' => array( 'Opprett_omdirigering' ),
 );
