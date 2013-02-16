@@ -148,6 +148,11 @@ $specialPageAliases['tr'] = array(
 	'CreateRedirect' => array( 'YönlendirmeOluştur' ),
 );
 
+/** Urdu (اردو) */
+$specialPageAliases['ur'] = array(
+	'CreateRedirect' => array( 'تخلیق_رجوع_مکرر' ),
+);
+
 /** Simplified Chinese (中文（简体）‎) */
 $specialPageAliases['zh-hans'] = array(
 	'CreateRedirect' => array( '创建重定向页' ),
