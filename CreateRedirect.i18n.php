@@ -78,6 +78,15 @@ $messages['ba'] = array(
 	'createredirect-redirect-to' => 'Йүнәлтергә:',
 );
 
+/** Belarusian (беларуская)
+ * @author Хомелка
+ */
+$messages['be'] = array(
+	'createredirect' => 'Стварыць перанакіраванне',
+	'createredirect-page-title' => 'Назва старонкі',
+	'createredirect-save' => 'Захаваць старонку',
+);
+
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author EugeneZelenko
  * @author Jim-by
