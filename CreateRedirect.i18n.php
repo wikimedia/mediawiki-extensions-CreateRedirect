@@ -28,6 +28,11 @@ $messages['en'] = array(
  */
 $messages['qqq'] = array(
 	'createredirect-desc' => '{{desc|name=Create Redirect|url=http://www.mediawiki.org/wiki/Extension:CreateRedirect}}',
+	'createredirect-redirect-done' => 'This message indicates the redirect $2 (from the page $1) has been created successfully.
+
+Parameters:
+* $1 - original title
+* $2 - redirect title',
 );
 
 /** Afrikaans (Afrikaans)
