@@ -40,7 +40,7 @@ $specialPageAliases['diq'] = array(
 
 /** Esperanto (Esperanto) */
 $specialPageAliases['eo'] = array(
-	'CreateRedirect' => array( 'Kreu_alidirekton' ),
+	'CreateRedirect' => array( 'Krei_alidirektilon', 'Krei_alidirekton', 'Kreu_alidirekton' ),
 );
 
 /** Persian (فارسی) */
