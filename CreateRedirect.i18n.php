@@ -27,12 +27,24 @@ $messages['en'] = array(
  * @author The Evil IP address
  */
 $messages['qqq'] = array(
+	'createredirect' => '{{doc-special|CreateRedirect}}',
 	'createredirect-desc' => '{{desc|name=Create Redirect|url=http://www.mediawiki.org/wiki/Extension:CreateRedirect}}',
+	'createredirect-error' => 'Unused at this time.
+
+Used as error message.',
+	'createredirect-instructions' => 'Used as instructions message.
+
+This message is followed by the Redirect form.',
+	'createredirect-page-title' => 'Used as label for Original Title input box.
+{{Identical|Page title}}',
 	'createredirect-redirect-done' => 'This message indicates the redirect $2 (from the page $1) has been created successfully.
 
 Parameters:
 * $1 - original title
 * $2 - redirect title',
+	'createredirect-redirect-to' => 'Used as label for Redirect Title input box.',
+	'createredirect-save' => 'Used as Submit button text.
+{{Identical|Save page}}',
 );
 
 /** Afrikaans (Afrikaans)
