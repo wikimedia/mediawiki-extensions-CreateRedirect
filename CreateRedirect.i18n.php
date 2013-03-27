@@ -693,6 +693,13 @@ $messages['nb'] = array(
 	'createredirect-save' => 'Lagre siden',
 );
 
+/** Low German (Plattdüütsch)
+ * @author Joachim Mos
+ */
+$messages['nds'] = array(
+	'createredirect-save' => 'Siet spiekern',
+);
+
 /** Nepali (नेपाली)
  * @author Bhawani Gautam
  * @author Bhawani Gautam Rhk
