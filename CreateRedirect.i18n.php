@@ -15,11 +15,17 @@ $messages['en'] = array(
 	'createredirect' => 'Create Redirect',
 	'createredirect-desc' => 'Adds special page [[Special:CreateRedirect|CreateRedirect]] to easily create redirects',
 	'createredirect-error' => 'Error: Authentication failed.', // TODO: Figure out error cases. One message just is not going to do. --Digi 11/5/07
-	'createredirect-instructions' => 'Using the form below, you can create a redirect page or replace an existing page with a redirect.',
+	'createredirect-instructions' => 'Using the form below, you can create a redirect page.',
 	'createredirect-page-title' => 'Page title:',
-	'createredirect-redirect-done' => 'Redirect created from "$1" to "$2"',
+	'createredirect-redirect-done' => 'Redirect created from [[$1]] to [[$2]]',
 	'createredirect-redirect-to' => 'Redirect to:',
 	'createredirect-save' => 'Save page',
+	'createredirect-overwritelabel' => 'Overwrite existing pages?',
+	'createredirect-overwrite' => 'There is already an existing page. Not overwriting.',
+	'createredirect-overwritenot' => 'You are not allowed to overwrite an existing page: [[$1]]',
+	'createredirect-alreadytarget' => 'The page is actually a redirect to [[$1]]',
+	'createredirect-back' => 'Back to the redirect form',
+	'createredirect-namespaces' => 'Sorry, redirections between different namespaces are not allowed.'
 );
 
 /** Message documentation (Message documentation)
@@ -45,6 +51,12 @@ Parameters:
 	'createredirect-redirect-to' => 'Used as label for Redirect Title input box.',
 	'createredirect-save' => 'Used as Submit button text.
 {{Identical|Save page}}',
+	'createredirect-overwritelabel' => 'Whether existing pages will be overwritten.',
+	'createredirect-overwritenot' => 'Warning message when non-allowed user tries to overwrite a page.',
+	'createredirect-overwrite' => 'Warns about existing page.',
+	'createredirect-alreadytarget' => 'Points which page it redirects to.',
+	'createredirect-back' => 'Text link of back to redirect form.',
+	'createredirect-namespaces' => 'Warning message about namespace restriction of redirections.'
 );
 
 /** Afrikaans (Afrikaans)
@@ -290,13 +302,19 @@ $messages['eo'] = array(
  */
 $messages['es'] = array(
 	'createredirect' => 'Crear una redirección',
-	'createredirect-desc' => 'Añade una [[Special:CreateRedirect|página especial]] para crear redirecciones de una manera sencilla',
-	'createredirect-error' => 'Error : Fallo de la identificación.',
-	'createredirect-instructions' => 'Empleando el formulario de abajo, puede crear una página de redirección o sustituir una página existente por una redirección.',
+	'createredirect-desc' => 'Añade la página especial [[Special:CreateRedirect|CreateRedirect]] para facilitar la creación de redirecciones',
+	'createredirect-error' => 'Error: Ha fallado la autenticación.',
+	'createredirect-instructions' => 'Usando el formulario de abajo, puede crear una redirección.',
 	'createredirect-page-title' => 'Título de la página:',
-	'createredirect-redirect-done' => 'Redirección creada de «$1» hacia «$2»',
+	'createredirect-redirect-done' => 'Se ha creado una redirección de [[$1]] a [[$2]]',
 	'createredirect-redirect-to' => 'Redirigir a:',
 	'createredirect-save' => 'Guardar la página',
+	'createredirect-overwritelabel' => 'Sobrescribir las págines que ya existen?',
+	'createredirect-overwrite' => 'Ya existe la página. No se sobrescribe.',
+	'createredirect-overwritenot' => 'No se puede sobrescribir la página que existe: [[$1]]',
+	'createredirect-alreadytarget' => 'La página ya es una redirección a [[$1]]',
+	'createredirect-back' => 'Volver al formularió de redirección',
+	'createredirect-namespaces' => 'Lo sentimos, no se permiten las redirecciones entre diferentes espacios de nombres.'
 );
 
 /** Estonian (eesti)
