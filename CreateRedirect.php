@@ -52,6 +52,10 @@ $wgSpecialPageGroups['CreateRedirect'] = 'pagetools';
 $wgExtensionMessagesFiles['CreateRedirect'] = $dir . 'CreateRedirect.i18n.php';
 $wgExtensionMessagesFiles['CreateRedirectAlias'] = $dir . 'CreateRedirect.alias.php';
 
+// Who can overwrite existing pages - default sysop
+$wgCreateRedirectOverwriteGroups = array('sysop');
+$wgCreateRedirectSameNS = false;
+
 // Add a shortcut link to the toolbox.
 $wgHooks['SkinTemplateToolboxEnd'][] = 'createRedirect_addToolboxLink';
 

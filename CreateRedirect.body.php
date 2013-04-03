@@ -3,8 +3,10 @@
  * MediaWiki Extension
  * CreateRedirect
  * By Marco Zafra ("Digi")
+ * Toni Hermoso ("toniher")
  * Started: September 18, 2007
- *
+ * Continued: Apr, 2013
+ * 
  * Adds a special page that eases creation of redirects via a simple form.
  * Also adds a menu item to the sidebar as a shortcut.
  *
@@ -45,19 +47,29 @@ class SpecialCreateRedirect extends SpecialPage {
 	public function execute( $par ) {
 		global $wgRequest, $wgOut, $wgUser;
 
+		global $wgCreateRedirectOverwriteGroups; // Whether we allow overwrites
+		global $wgCreateRedirectSameNS; // Check if same NS
+
 		if( wfReadOnly() ) {
 			$wgOut->readOnlyPage();
 			return;
 		}
 
+		$ugroups = $wgUser->getEffectiveGroups( true );
+		$match = array_intersect( $ugroups, $wgCreateRedirectOverwriteGroups );
+
 		$this->setHeaders();
 
 		if ( $wgRequest->wasPosted() ) {
+		
 			// 1. Retrieve POST vars. First, we want "crOrigTitle", holding the
 			// title of the page we're writing to, and "crRedirectTitle",
 			// holding the title of the page we're redirecting to.
 			$crOrigTitle = $wgRequest->getText( 'crOrigTitle' );
 			$crRedirectTitle = $wgRequest->getText( 'crRedirectTitle' );
+
+			// Whether we overwrite or not
+			$crRedirectOverwrite = $wgRequest->getCheck( 'crRedirectOverwrite' );
 
 			// 2. We need to construct a "FauxRequest", or fake a request that
 			// MediaWiki would otherwise get naturally by a client browser to
@@ -112,6 +124,50 @@ class SpecialCreateRedirect extends SpecialPage {
 			$crEdit->importFormData( $crRequest );
 
 			$permErrors = $crEditTitle->getUserPermissionsErrors( 'edit', $wgUser );
+			$backmsg = "[[Special:CreateRedirect|".wfMessage( 'createredirect-back' )."]]";
+
+			// If title exists, unless redirection, can be overwrite
+			if ( $crEditTitle->exists() && ! $crRedirectOverwrite ) {
+				wfDebug( __METHOD__ . ": Overwrite not allowed\n" );
+
+				// First error
+				$wgOut->addWikiMsg( 'createredirect-overwrite' );
+
+				// Then, provide more info
+				// Get wikipage
+				$wikipage = WikiPage::factory ( $crEditTitle );
+
+				// If redirect, explain more
+				if ( $wikipage->isRedirect() ) {
+					$target = $wikipage->getRedirectTarget();
+					$wgOut->addWikiMsg( 'createredirect-alreadytarget', $target );
+				}
+
+				$wgOut->addWikiText( $backmsg );
+				return;
+			}
+
+			if ( $crEditTitle->exists() && $crRedirectOverwrite ) {
+
+				if (! $match ) {
+					$notmsg = $wgOut->addWikiMsg( 'createredirect-overwritenot',  $crEditTitle->getPrefixedText() );
+					$wgOut->addWikiText( $notmsg );
+					$wgOut->addWikiText( $backmsg );
+					return;
+				}
+			}
+
+			if ( $wgCreateRedirectSameNS ) {
+				$nsedit = $crEditTitle->getNamespace();
+				$nsredir = Title::newFromText( $crRedirectTitle )->getNamespace();
+
+				if ( $nsedit != $nsredir ) {
+					$wgOut->addWikiMsg( 'createredirect-namespaces' );
+					$wgOut->addWikiText( $backmsg );
+					return;
+				}
+			}
+			
 			// Can this title be created?
 			if ( !$crEditTitle->exists() ) {
 				$permErrors = array_merge( $permErrors,
@@ -175,13 +231,25 @@ class SpecialCreateRedirect extends SpecialPage {
 		$crTitle = Title::newFromText( $crTitle );
 		$crTitle = htmlspecialchars( isset( $crTitle ) ? $crTitle->getPrefixedText() : '' );
 
-		$msgPageTitle = wfMsgHtml( 'createredirect-page-title' );
-		$msgRedirectTo = wfMsgHtml( 'createredirect-redirect-to' );
-		$msgSave = wfMsgHtml( 'createredirect-save' );
+		$msgPageTitle = wfMessage( 'createredirect-page-title' );
+		$msgRedirectTo = wfMessage( 'createredirect-redirect-to' );
+		$msgSave = wfMessage( 'createredirect-save' );
+		$msgOverwrite = wfMessage( 'createredirect-overwritelabel' );
+
+
+		$strOverwrite = "";
+
+		if ( $match ) {
+
+			$strOverwrite = '<tr>'.
+			'<td><label for="crRedirectOverwrite">'.$msgOverwrite.'</label></td>'.
+			'<td><input type="checkbox" name="crRedirectOverwrite" id="crRedirectOverwrite" /></td>'.
+			'</tr>';
+		}
 		
 		// 2. Start rendering the output! The output is entirely the form.
 		// It's all HTML, and may be self-explanatory.
-		$wgOut->addHTML( wfMsgHtml( 'createredirect-instructions' ) );
+		$wgOut->addHTML( wfMessage( 'createredirect-instructions' ) );
 		$wgOut->addHTML( <<<END
 <form id="redirectform" name="redirectform" method="post" action="$action">
 <table>
@@ -192,7 +260,7 @@ class SpecialCreateRedirect extends SpecialPage {
 <tr>
 <td><label for="crRedirectTitle">$msgRedirectTo</label></td>
 <td><input type="text" name="crRedirectTitle" id="crRedirectTitle" value="{$crTitle}" size="60" tabindex="2" /></td>
-</tr>
+</tr>$strOverwrite
 <tr>
 <td></td>
 <td><input type="submit" name="crWrite" id="crWrite" value="$msgSave" tabindex="4" /></td>
