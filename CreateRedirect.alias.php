@@ -18,7 +18,7 @@ $specialPageAliases['ar'] = array(
 	'CreateRedirect' => array( 'تحويل_تصنيف' ),
 );
 
-/** Assamese (অসমীয়া) */
+/** Assamese (অসমীয়া) */
 $specialPageAliases['as'] = array(
 	'CreateRedirect' => array( 'পুণঃনিৰ্দেশনা_সৃষ্টি' ),
 );
