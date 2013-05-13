@@ -38,6 +38,11 @@ $specialPageAliases['diq'] = array(
 	'CreateRedirect' => array( 'HetenayışVıraştış' ),
 );
 
+/** Greek (Ελληνικά) */
+$specialPageAliases['el'] = array(
+	'CreateRedirect' => array( 'ΔημιουργίαΑνακατεύθυνσης' ),
+);
+
 /** Esperanto (Esperanto) */
 $specialPageAliases['eo'] = array(
 	'CreateRedirect' => array( 'Krei_alidirektilon', 'Krei_alidirekton', 'Kreu_alidirekton' ),
