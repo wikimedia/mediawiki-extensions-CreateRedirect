@@ -158,6 +158,11 @@ $specialPageAliases['ur'] = array(
 	'CreateRedirect' => array( 'تخلیق_رجوع_مکرر' ),
 );
 
+/** Vietnamese (Tiếng Việt) */
+$specialPageAliases['vi'] = array(
+	'CreateRedirect' => array( 'Tạo_đổi_hướng' ),
+);
+
 /** Simplified Chinese (中文（简体）‎) */
 $specialPageAliases['zh-hans'] = array(
 	'CreateRedirect' => array( '创建重定向页' ),
