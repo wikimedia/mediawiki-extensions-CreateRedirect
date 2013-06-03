@@ -679,7 +679,7 @@ $messages['mzn'] = array(
 	'createredirect-redirect-done' => 'از «$1» به «$2» مسیرتغییر ایجاد بیه.',
 );
 
-/** Norwegian Bokmål (norsk (bokmål)‎)
+/** Norwegian Bokmål (norsk bokmål)
  * @author Nghtwlkr
  */
 $messages['nb'] = array(
@@ -735,14 +735,14 @@ $messages['nl-informal'] = array(
 	'createredirect-instructions' => 'Via het onderstaande formulier kan je een doorverwijzingspagina aanmaken of een bestaande pagina vervangen door een doorverwijzing.',
 );
 
-/** Norwegian Nynorsk (norsk (nynorsk)‎)
+/** Norwegian Nynorsk (norsk nynorsk)
  * @author Ranveig
  */
 $messages['nn'] = array(
 	'createredirect-instructions' => 'Ved å bruke skjemaet under kan du opprette ei omdirigeringsside eller erstatte ei side som finst me ei omdirigering.',
 );
 
-/** Oriya (ଓଡ଼ିଆ)
+/** Oriya (ଓଡ଼ିଆ)
  * @author Psubhashish
  */
 $messages['or'] = array(
