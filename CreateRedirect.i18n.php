@@ -795,15 +795,16 @@ $messages['ps'] = array(
 
 /** Portuguese (português)
  * @author Hamilton Abreu
+ * @author Luckas
  */
 $messages['pt'] = array(
-	'createredirect' => 'Criar Redireccionamento',
-	'createredirect-desc' => 'Acrescenta uma página especial [[Special:CreateRedirect|Criar redireccionamento]] para criar redireccionamentos de forma simples',
+	'createredirect' => 'Criar redirecionamento',
+	'createredirect-desc' => 'Acrescenta uma página especial [[Special:CreateRedirect|Criar redirecionamento]] para criar redirecionamentos de forma simples',
 	'createredirect-error' => 'Erro: Falha na autenticação.',
-	'createredirect-instructions' => 'Usando o formulário abaixo pode criar uma página de redireccionamento, ou substituir uma página existente por um redireccionamento.',
+	'createredirect-instructions' => 'Usando o formulário abaixo pode criar uma página de redirecionamento, ou substituir uma página existente por um redirecionamento.',
 	'createredirect-page-title' => 'Título da página:',
-	'createredirect-redirect-done' => 'Redireccionamento criado de "$1" para "$2"',
-	'createredirect-redirect-to' => 'Redireccionar para:',
+	'createredirect-redirect-done' => 'Redirecionamento criado de "$1" para "$2"',
+	'createredirect-redirect-to' => 'Redirecionar para:',
 	'createredirect-save' => 'Gravar página',
 );
 
