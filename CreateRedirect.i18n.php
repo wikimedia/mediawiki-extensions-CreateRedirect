@@ -174,6 +174,13 @@ $messages['ca'] = array(
 	'createredirect-save' => 'Desa la pàgina',
 );
 
+/** Chechen (нохчийн)
+ * @author Умар
+ */
+$messages['ce'] = array(
+	'createredirect-page-title' => 'АгӀона цӀе:',
+);
+
 /** Sorani Kurdish (کوردی)
  * @author Calak
  */
