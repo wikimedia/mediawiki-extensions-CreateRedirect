@@ -749,6 +749,13 @@ $messages['nn'] = array(
 	'createredirect-instructions' => 'Ved å bruke skjemaet under kan du opprette ei omdirigeringsside eller erstatte ei side som finst me ei omdirigering.',
 );
 
+/** Occitan (occitan)
+ * @author Cedric31
+ */
+$messages['oc'] = array(
+	'createredirect' => 'Crear una redireccion',
+);
+
 /** Oriya (ଓଡ଼ିଆ)
  * @author Psubhashish
  */
