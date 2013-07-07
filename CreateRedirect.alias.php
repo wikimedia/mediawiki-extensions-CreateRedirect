@@ -90,7 +90,7 @@ $specialPageAliases['it'] = array(
 
 /** Japanese (日本語) */
 $specialPageAliases['ja'] = array(
-	'CreateRedirect' => array( 'リダイレクト作成' ),
+	'CreateRedirect' => array( 'リダイレクト作成', '転送作成' ),
 );
 
 /** Khmer (ភាសាខ្មែរ) */
