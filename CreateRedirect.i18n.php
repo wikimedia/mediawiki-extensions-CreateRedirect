@@ -587,6 +587,7 @@ $messages['lb'] = array(
  * @author Eitvys200
  */
 $messages['lt'] = array(
+	'createredirect' => 'Kurti Nukreipimą',
 	'createredirect-page-title' => 'Puslapio antraštė:',
 	'createredirect-redirect-to' => 'Nukreipti į:',
 	'createredirect-save' => 'Išsaugoti puslapį',
