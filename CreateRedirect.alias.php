@@ -28,6 +28,11 @@ $specialPageAliases['br'] = array(
 	'CreateRedirect' => array( 'KrouiñAdkas' ),
 );
 
+/** Min Dong Chinese (Mìng-dĕ̤ng-ngṳ̄) */
+$specialPageAliases['cdo'] = array(
+	'CreateRedirect' => array( '創建重定向' ),
+);
+
 /** German (Deutsch) */
 $specialPageAliases['de'] = array(
 	'CreateRedirect' => array( 'Weiterleitung_erstellen' ),
