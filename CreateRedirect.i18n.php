@@ -346,6 +346,18 @@ $messages['fi'] = array(
 	'createredirect-save' => 'Tallenna sivu',
 );
 
+/** Faroese (føroyskt)
+ * @author EileenSanda
+ */
+$messages['fo'] = array(
+	'createredirect' => 'Upprætta snarveg',
+	'createredirect-desc' => 'Leggur afturat serstaka síðu [[Special:CreateRedirect|CreateRedirect]] fyri á lættan hátt at upprætta snarvegir (umstillingar).',
+	'createredirect-page-title' => 'Síðuheiti:',
+	'createredirect-redirect-done' => 'Snarvegur upprættaður frá "$1" til "$2"',
+	'createredirect-redirect-to' => 'Snarvegur til:',
+	'createredirect-save' => 'Goym síðu',
+);
+
 /** French (français)
  * @author McDutchie
  * @author Peter17
