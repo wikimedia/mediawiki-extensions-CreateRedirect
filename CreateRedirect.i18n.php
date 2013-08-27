@@ -767,6 +767,9 @@ $messages['nn'] = array(
  */
 $messages['oc'] = array(
 	'createredirect' => 'Crear una redireccion',
+	'createredirect-page-title' => 'Títol de la pagina :',
+	'createredirect-redirect-to' => 'Redirigir cap a :',
+	'createredirect-save' => 'Enregistrar la pagina',
 );
 
 /** Oriya (ଓଡ଼ିଆ)
