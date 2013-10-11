@@ -839,7 +839,7 @@ $messages['pt'] = array(
 	'createredirect-page-title' => 'Título da página:',
 	'createredirect-redirect-done' => 'Redirecionamento criado de "$1" para "$2"',
 	'createredirect-redirect-to' => 'Redirecionar para:',
-	'createredirect-save' => 'Salvar página',
+	'createredirect-save' => 'Gravar página',
 );
 
 /** Brazilian Portuguese (português do Brasil)
