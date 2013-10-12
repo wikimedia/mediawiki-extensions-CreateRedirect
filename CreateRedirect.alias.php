@@ -176,7 +176,7 @@ $specialPageAliases['vi'] = array(
 
 /** Simplified Chinese (中文（简体）‎) */
 $specialPageAliases['zh-hans'] = array(
-	'CreateRedirect' => array( '创建重定向页' ),
+	'CreateRedirect' => array( '创建重定向', '创建重定向页' ),
 );
 
 /** Traditional Chinese (中文（繁體）‎) */
