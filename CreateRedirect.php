@@ -69,12 +69,7 @@ function createRedirect_AddToolboxLink( &$tpl ) {
 	// where it's inappropriate for the link to appear.
 	// 2. Check the title. Is it a "Special:" page? Don't display the link.
 	$action = $wgRequest->getText( 'action', 'view' );
-	if ( method_exists( $tpl, 'getSkin' ) ) {
-		$title = $tpl->getSkin()->getTitle();
-	} else {
-		global $wgTitle;
-		$title = $wgTitle;
-	}
+	$title = $tpl->getSkin()->getTitle();
 
 	if( $action != 'view' && $action != 'purge' && !$title->isSpecialPage() ) {
 		return true;
