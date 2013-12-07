@@ -188,7 +188,7 @@ $messages['ckb'] = array(
 	'createredirect-page-title' => 'سەردێڕی پەڕە:',
 );
 
-/** Czech (česky)
+/** Czech (čeština)
  * @author Jkjk
  * @author Vks
  */
