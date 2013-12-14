@@ -583,10 +583,11 @@ $messages['ku-latn'] = array(
 /** Luxembourgish (Lëtzebuergesch)
  * @author McDutchie
  * @author Robby
+ * @author Soued031
  */
 $messages['lb'] = array(
 	'createredirect' => 'Viruleedung uleeën',
-	'createredirect-desc' => 'Setzt eng Spezialsäit [[Special:CreateRedirect|Viruleedung uleeën]] derbäi fir Viruleedungen einfach ze maachen',
+	'createredirect-desc' => 'Setzt eng Spezialsäit [[Special:CreateRedirect|Viruleedung uleeën]] dobäi fir Viruleedungen einfach ze maachen',
 	'createredirect-error' => 'Feeler: Authentifikatioun huet net geklappt.',
 	'createredirect-instructions' => 'Mat dësem Formulaire kënnt Dir eng Viruleedungssäit uleeën oder eng Säit déi et gëtt duerch en Viruleedung ersetzen.',
 	'createredirect-page-title' => 'Titel vun der Säit:',
