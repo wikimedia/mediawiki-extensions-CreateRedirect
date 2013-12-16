@@ -199,6 +199,7 @@ $messages['cs'] = array(
 );
 
 /** Welsh (Cymraeg)
+ * @author Cymrodor
  * @author Lloffiwr
  */
 $messages['cy'] = array(
@@ -209,7 +210,7 @@ $messages['cy'] = array(
 	'createredirect-page-title' => 'Teitl y dudalen:',
 	'createredirect-redirect-done' => 'Gosodwyd ailgyfeiriad o "$1" i "$2"',
 	'createredirect-redirect-to' => 'Ailgyfeirio i:',
-	'createredirect-save' => 'Cadwer y dudalen',
+	'createredirect-save' => "Cadw'r dudalen",
 );
 
 /** Danish (dansk)
