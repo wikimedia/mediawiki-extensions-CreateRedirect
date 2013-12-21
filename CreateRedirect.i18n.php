@@ -386,6 +386,13 @@ $messages['frp'] = array(
 	'createredirect-save' => 'Encartar la pâge',
 );
 
+/** Western Frisian (Frysk)
+ * @author Kening Aldgilles
+ */
+$messages['fy'] = array(
+	'createredirect-save' => 'Fêstlizze',
+);
+
 /** Galician (galego)
  * @author Toliño
  */
