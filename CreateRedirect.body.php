@@ -168,7 +168,7 @@ class SpecialCreateRedirect extends SpecialPage {
 			// TODO: Implement error handling (i.e. "Edit conflict!" or "You don't have permissions to edit this page!") --Digi 11/4/07
 		}
 
-		$action = htmlspecialchars( $this->getTitle()->getLocalURL() );
+		$action = htmlspecialchars( $this->getPageTitle()->getLocalURL() );
 		// Also retrieve "crTitle". If this GET var is found, we autofill the
 		// "Redirect to:" field with that text.
 		$crTitle = $wgRequest->getText( 'crRedirectTitle', $wgRequest->getText( 'crTitle', $par ) );
