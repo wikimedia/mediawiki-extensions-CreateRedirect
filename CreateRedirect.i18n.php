@@ -557,7 +557,7 @@ $messages['km'] = array(
  */
 $messages['ko'] = array(
 	'createredirect' => '넘겨주기 만들기',
-	'createredirect-desc' => '넘겨주기를 쉽게 만드는 [[Special:CreateRedirect|넘겨주기만들기]] 특수 문서 추가',
+	'createredirect-desc' => '넘겨주기를 쉽게 만드는 [[Special:CreateRedirect|넘겨주기만들기]] 특수 문서를 추가합니다',
 	'createredirect-error' => '오류: 인증을 실패했습니다.',
 	'createredirect-instructions' => '아래의 양식을 사용하여 넘겨주기 문서를 만들거나 넘겨주기로 된 기존 문서를 바꿀 수 있습니다.',
 	'createredirect-page-title' => '문서 제목:',
