@@ -75,7 +75,7 @@ class SpecialCreateRedirect extends SpecialPage {
 			$wpTextbox1 = "#REDIRECT [[$crRedirectTitle]]\r\n"; // POST var "wpTextbox1" stores the content that's actually going to be written. This is where we write the #REDIRECT [[Article]] stuff. We plug in $crRedirectTitle here.
 			$wpSave = 1;
 			$wpMinoredit = 1; // TODO: Decide on this; should this really be marked and hardcoded as a minor edit, or not? Or should we provide an option? --Digi 11/4/07
-			$wpEditToken = htmlspecialchars( $wgUser->editToken() );
+			$wpEditToken = htmlspecialchars( $wgUser->getEditToken() );
 
 			// 3. Put together the params that we'll use in "FauxRequest" into a single array.
 			$crRequestParams = array(
@@ -178,7 +178,7 @@ class SpecialCreateRedirect extends SpecialPage {
 		$msgPageTitle = wfMsgHtml( 'createredirect-page-title' );
 		$msgRedirectTo = wfMsgHtml( 'createredirect-redirect-to' );
 		$msgSave = wfMsgHtml( 'createredirect-save' );
-		
+
 		// 2. Start rendering the output! The output is entirely the form.
 		// It's all HTML, and may be self-explanatory.
 		$wgOut->addHTML( wfMsgHtml( 'createredirect-instructions' ) );
