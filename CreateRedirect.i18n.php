@@ -263,9 +263,10 @@ $messages['de-formal'] = array(
 
 /** Zazaki (Zazaki)
  * @author Erdemaslancan
+ * @author Mirzali
  */
 $messages['diq'] = array(
-	'createredirect' => 'Hetenayış vırazê',
+	'createredirect' => 'Serçarnayış Vıraze',
 	'createredirect-error' => 'Xırab:Araşt kerdış nêbı',
 	'createredirect-page-title' => 'Sernamey pela:',
 	'createredirect-redirect-done' => '"$1" ra "$2" hetanayış vıraziya',
