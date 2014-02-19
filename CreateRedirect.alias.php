@@ -16,7 +16,12 @@ $specialPageAliases['en'] = array(
 
 /** Arabic (العربية) */
 $specialPageAliases['ar'] = array(
-	'CreateRedirect' => array( 'تحويل_تصنيف' ),
+	'CreateRedirect' => array( 'إنشاء_تحويلة' ),
+);
+
+/** Egyptian Spoken Arabic (مصرى) */
+$specialPageAliases['arz'] = array(
+	'CreateRedirect' => array( 'عمل_تحويله' ),
 );
 
 /** Assamese (অসমীয়া) */
