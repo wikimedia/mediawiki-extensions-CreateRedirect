@@ -179,9 +179,13 @@ $messages['bs'] = array(
 
 /** Catalan (català)
  * @author Arnaugir
+ * @author Toniher
  */
 $messages['ca'] = array(
 	'createredirect' => 'Crea una redirecció',
+	'createredirect-desc' => 'Afegeix la pàgina especial[[Special:CreateRedirect|CreateRedirect]] per crear fàcilment redireccions.',
+	'createredirect-error' => "Error: l'autenticació ha fallat.",
+	'createredirect-instructions' => 'Utilitza el formulari a continuació podeu crear una pàgina de redirecció o reemplaçar una pàgina existent amb una redirecció.',
 	'createredirect-page-title' => 'Títol de la pàgina:',
 	'createredirect-redirect-done' => 'Redirigir creada de "$1" a "$2"',
 	'createredirect-redirect-to' => 'Redirigeix a:',
