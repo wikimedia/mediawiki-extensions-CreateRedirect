@@ -39,7 +39,7 @@ $wgExtensionCredits['specialpage'][] = array(
 	'path'  => __FILE__,
 	'name' => 'CreateRedirect',
 	'author' => 'Marco Zafra',
-	'version' => '1.0.1',
+	'version' => '1.1.0',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:CreateRedirect',
 	'descriptionmsg' => 'createredirect-desc',
 );
@@ -49,6 +49,7 @@ $dir = dirname( __FILE__ ) . '/';
 $wgAutoloadClasses['SpecialCreateRedirect'] = $dir . 'CreateRedirect.body.php';
 $wgSpecialPages['CreateRedirect'] = 'SpecialCreateRedirect';
 $wgSpecialPageGroups['CreateRedirect'] = 'pagetools';
+$wgMessagesDirs['CreateRedirect'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['CreateRedirect'] = $dir . 'CreateRedirect.i18n.php';
 $wgExtensionMessagesFiles['CreateRedirectAlias'] = $dir . 'CreateRedirect.alias.php';
 

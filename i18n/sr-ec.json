@@ -1,0 +1,13 @@
+{
+    "@metadata": {
+        "authors": [
+            "Rancher"
+        ]
+    },
+    "createredirect": "Направи преусмерење",
+    "createredirect-error": "Грешка: аутентификација није успела.",
+    "createredirect-page-title": "Наслов странице:",
+    "createredirect-redirect-done": "Преусмерење са „$1“ на „$2“",
+    "createredirect-redirect-to": "Преусмери на:",
+    "createredirect-save": "Сачувај"
+}

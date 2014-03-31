@@ -1,0 +1,15 @@
+{
+    "@metadata": {
+        "authors": [
+            "Nghtwlkr"
+        ]
+    },
+    "createredirect": "Opprett omdirigering",
+    "createredirect-desc": "Legger til spesialsiden [[Special:CreateRedirect|CreateRedirect]] for å enkelt opprette omdirigeringer",
+    "createredirect-error": "Feil: Autentisering mislyktes.",
+    "createredirect-instructions": "Ved å brukes skjemaet nedenfor kan du opprette en omdirigeringsside eller erstatte en eksisterende side med en omdirigering.",
+    "createredirect-page-title": "Sidetittel:",
+    "createredirect-redirect-done": "Omdirigering opprettet fra «$1» til «$2»",
+    "createredirect-redirect-to": "Omdiriger til:",
+    "createredirect-save": "Lagre siden"
+}

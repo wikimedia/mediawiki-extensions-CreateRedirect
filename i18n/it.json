@@ -1,0 +1,15 @@
+{
+    "@metadata": {
+        "authors": [
+            "Beta16"
+        ]
+    },
+    "createredirect": "Crea redirect",
+    "createredirect-desc": "Aggiunge la pagina speciale [[Special:CreateRedirect|CreateRedirect]] per creare facilmente redirect",
+    "createredirect-error": "Errore: autenticazione fallita.",
+    "createredirect-instructions": "Utilizzando questo modulo, puoi creare una pagina di reindirizzamento o sostituire una pagina esistente con un rimando.",
+    "createredirect-page-title": "Titolo della pagina:",
+    "createredirect-redirect-done": "Rimando creato da \"$1\" a \"$2\"",
+    "createredirect-redirect-to": "Reindirizza a:",
+    "createredirect-save": "Salva la pagina"
+}
