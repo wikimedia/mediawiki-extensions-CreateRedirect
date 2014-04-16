@@ -1,16 +1,16 @@
 {
-    "@metadata": {
-        "authors": [
-            "Bjankuloski06",
-            "McDutchie"
-        ]
-    },
-    "createredirect": "Направи пренасочување",
-    "createredirect-desc": "Додава специјална страница [[Special:CreateRedirect|НаправиПренасочување]] за лесно правње на пренасочувања",
-    "createredirect-error": "Грешка: Заверката не успеа.",
-    "createredirect-instructions": "Со образецов можете да создавате пренасочувачки страници или да замените постоечка страница со пренасочување.",
-    "createredirect-page-title": "Наслов на страницата:",
-    "createredirect-redirect-done": "Пренасочувањето од „$1“ кон „$2“ е создадено",
-    "createredirect-redirect-to": "Пренасочи кон:",
-    "createredirect-save": "Зачувај"
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06",
+			"McDutchie"
+		]
+	},
+	"createredirect": "Направи пренасочување",
+	"createredirect-desc": "Додава специјална страница [[Special:CreateRedirect|НаправиПренасочување]] за лесно правње на пренасочувања",
+	"createredirect-error": "Грешка: Заверката не успеа.",
+	"createredirect-instructions": "Со образецов можете да создавате пренасочувачки страници или да замените постоечка страница со пренасочување.",
+	"createredirect-page-title": "Наслов на страницата:",
+	"createredirect-redirect-done": "Пренасочувањето од „$1“ кон „$2“ е создадено",
+	"createredirect-redirect-to": "Пренасочи кон:",
+	"createredirect-save": "Зачувај"
 }

@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Suelnur"
-        ]
-    },
-    "createredirect": "Yönlendirme oluştur",
-    "createredirect-save": "Sayfayı kaydet"
+	"@metadata": {
+		"authors": [
+			"Suelnur"
+		]
+	},
+	"createredirect": "Yönlendirme oluştur",
+	"createredirect-save": "Sayfayı kaydet"
 }

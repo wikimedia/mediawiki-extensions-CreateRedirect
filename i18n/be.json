@@ -1,10 +1,10 @@
 {
-    "@metadata": {
-        "authors": [
-            "Хомелка"
-        ]
-    },
-    "createredirect": "Стварыць перанакіраванне",
-    "createredirect-page-title": "Назва старонкі",
-    "createredirect-save": "Захаваць старонку"
+	"@metadata": {
+		"authors": [
+			"Хомелка"
+		]
+	},
+	"createredirect": "Стварыць перанакіраванне",
+	"createredirect-page-title": "Назва старонкі",
+	"createredirect-save": "Захаваць старонку"
 }

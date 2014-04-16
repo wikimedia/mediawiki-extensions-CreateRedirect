@@ -1,16 +1,16 @@
 {
-    "@metadata": {
-        "authors": [
-            "McDutchie",
-            "Peter17"
-        ]
-    },
-    "createredirect": "Créer une redirection",
-    "createredirect-desc": "Ajoute une page spéciale [[Special:CreateRedirect|Créer une redirection]] pour créer facilement des redirections",
-    "createredirect-error": "Erreur : Échec de l’identification.",
-    "createredirect-instructions": "En utilisant le formulaire ci-dessous, vous pouvez créer une page de redirection ou remplacer une page existante par une redirection.",
-    "createredirect-page-title": "Titre de la page :",
-    "createredirect-redirect-done": "Redirection créée de « $1 » vers « $2 »",
-    "createredirect-redirect-to": "Rediriger vers :",
-    "createredirect-save": "Enregistrer la page"
+	"@metadata": {
+		"authors": [
+			"McDutchie",
+			"Peter17"
+		]
+	},
+	"createredirect": "Créer une redirection",
+	"createredirect-desc": "Ajoute une page spéciale [[Special:CreateRedirect|Créer une redirection]] pour créer facilement des redirections",
+	"createredirect-error": "Erreur : Échec de l’identification.",
+	"createredirect-instructions": "En utilisant le formulaire ci-dessous, vous pouvez créer une page de redirection ou remplacer une page existante par une redirection.",
+	"createredirect-page-title": "Titre de la page :",
+	"createredirect-redirect-done": "Redirection créée de « $1 » vers « $2 »",
+	"createredirect-redirect-to": "Rediriger vers :",
+	"createredirect-save": "Enregistrer la page"
 }
