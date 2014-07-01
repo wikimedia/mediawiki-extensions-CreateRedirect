@@ -139,6 +139,11 @@ $specialPageAliases['ml'] = array(
 	'CreateRedirect' => array( 'തിരിച്ചുവിടൽസൃഷ്ടിക്കുക' ),
 );
 
+/** Malay (Bahasa Melayu) */
+$specialPageAliases['ms'] = array(
+	'CreateRedirect' => array( 'Cipta_lencongan' ),
+);
+
 /** Norwegian Bokmål (norsk bokmål) */
 $specialPageAliases['nb'] = array(
 	'CreateRedirect' => array( 'Opprett_omdirigering' ),
