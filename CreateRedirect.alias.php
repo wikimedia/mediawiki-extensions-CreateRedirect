@@ -79,6 +79,11 @@ $specialPageAliases['gl'] = array(
 	'CreateRedirect' => array( 'Crear_unha_redirección' ),
 );
 
+/** Hebrew (עברית) */
+$specialPageAliases['he'] = array(
+	'CreateRedirect' => array( 'יצירת_הפניה' ),
+);
+
 /** Haitian (Kreyòl ayisyen) */
 $specialPageAliases['ht'] = array(
 	'CreateRedirect' => array( 'FèRedireksyon' ),
