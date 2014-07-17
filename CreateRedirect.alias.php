@@ -174,6 +174,11 @@ $specialPageAliases['scn'] = array(
 	'CreateRedirect' => array( 'CreaRedirect' ),
 );
 
+/** Swedish (svenska) */
+$specialPageAliases['sv'] = array(
+	'CreateRedirect' => array( 'Skapa_omdirigering' ),
+);
+
 /** Turkish (Türkçe) */
 $specialPageAliases['tr'] = array(
 	'CreateRedirect' => array( 'YönlendirmeOluştur' ),
