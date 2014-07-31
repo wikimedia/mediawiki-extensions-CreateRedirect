@@ -201,5 +201,10 @@ $specialPageAliases['zh-hans'] = array(
 
 /** Traditional Chinese (中文（繁體）‎) */
 $specialPageAliases['zh-hant'] = array(
-	'CreateRedirect' => array( '創建重定向' ),
+	'CreateRedirect' => array( '建立重定向' ),
+);
+
+/** Chinese (Taiwan) (中文（台灣）‎) */
+$specialPageAliases['zh-tw'] = array(
+	'CreateRedirect' => array( '建立重定向' ),
 );
