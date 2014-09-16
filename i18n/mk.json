@@ -6,7 +6,7 @@
 		]
 	},
 	"createredirect": "Направи пренасочување",
-	"createredirect-desc": "Додава специјална страница [[Special:CreateRedirect|НаправиПренасочување]] за лесно правње на пренасочувања",
+	"createredirect-desc": "Додава службена страница [[Special:CreateRedirect|НаправиПренасочување]] за лесно правње на пренасочувања",
 	"createredirect-error": "Грешка: Заверката не успеа.",
 	"createredirect-instructions": "Со образецов можете да создавате пренасочувачки страници или да замените постоечка страница со пренасочување.",
 	"createredirect-page-title": "Наслов на страницата:",
