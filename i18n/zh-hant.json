@@ -5,7 +5,7 @@
 			"LNDDYL"
 		]
 	},
-	"createredirect": "創建重定向",
+	"createredirect": "建立重定向",
 	"createredirect-desc": "添加特殊頁 [[Special:CreateRedirect|CreateRedirect]] 可以輕鬆地創建重定向",
 	"createredirect-error": "錯誤：身份驗證失敗。",
 	"createredirect-instructions": "使用下面的表單，可以建立重新導向頁面或取代現有的重新導向頁面。",
