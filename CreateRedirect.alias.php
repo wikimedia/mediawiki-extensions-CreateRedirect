@@ -64,6 +64,11 @@ $specialPageAliases['fa'] = array(
 	'CreateRedirect' => array( 'ایجاد_تغییرمسیر' ),
 );
 
+/** Finnish (suomi) */
+$specialPageAliases['fi'] = array(
+	'CreateRedirect' => array( 'Luo_ohjaus' ),
+);
+
 /** French (français) */
 $specialPageAliases['fr'] = array(
 	'CreateRedirect' => array( 'CréerRedirection', 'Créer_redirection' ),
