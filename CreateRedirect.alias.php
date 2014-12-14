@@ -204,6 +204,11 @@ $specialPageAliases['vi'] = array(
 	'CreateRedirect' => array( 'Tạo_đổi_hướng' ),
 );
 
+/** Chinese (中文) */
+$specialPageAliases['zh'] = array(
+	'CreateRedirect' => array( '创建重定向', '創建重定向', '建立重定向', '建立重新導向' ),
+);
+
 /** Simplified Chinese (中文（简体）‎) */
 $specialPageAliases['zh-hans'] = array(
 	'CreateRedirect' => array( '创建重定向', '创建重定向页' ),
