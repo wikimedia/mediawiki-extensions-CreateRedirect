@@ -2,11 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Shirayuki",
-			"The Evil IP address"
+			"The Evil IP address",
+			"Umherirrender"
 		]
 	},
 	"createredirect": "{{doc-special|CreateRedirect}}",
-	"createredirect-desc": "{{desc|name=Create Redirect|url=http://www.mediawiki.org/wiki/Extension:CreateRedirect}}",
+	"createredirect-desc": "{{desc|name=Create Redirect|url=https://www.mediawiki.org/wiki/Extension:CreateRedirect}}",
 	"createredirect-error": "Unused at this time.\n\nUsed as error message.",
 	"createredirect-instructions": "Used as instructions message.\n\nThis message is followed by the Redirect form.",
 	"createredirect-page-title": "Used as label for Original Title input box.\n{{Identical|Page title}}",
