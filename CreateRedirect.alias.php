@@ -179,6 +179,11 @@ $specialPageAliases['pa'] = array(
 	'CreateRedirect' => array( 'ਰੀਡਿਰੈਕਟ_ਬਣਾਓ' ),
 );
 
+/** Brazilian Portuguese (português do Brasil) */
+$specialPageAliases['pt-br'] = array(
+	'CreateRedirect' => array( 'Criar_redirecionamento' ),
+);
+
 /** Sicilian (sicilianu) */
 $specialPageAliases['scn'] = array(
 	'CreateRedirect' => array( 'CreaRedirect' ),
