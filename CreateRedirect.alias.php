@@ -134,6 +134,11 @@ $specialPageAliases['lb'] = array(
 	'CreateRedirect' => array( 'Viruleedung_uleeën' ),
 );
 
+/** لوری (لوری) */
+$specialPageAliases['lrc'] = array(
+	'CreateRedirect' => array( 'راس_کردن_واگردونی' ),
+);
+
 /** Malagasy (Malagasy) */
 $specialPageAliases['mg'] = array(
 	'CreateRedirect' => array( 'HamoronaFihodinana' ),
