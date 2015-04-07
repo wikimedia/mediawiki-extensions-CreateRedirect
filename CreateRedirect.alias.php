@@ -29,6 +29,11 @@ $specialPageAliases['as'] = array(
 	'CreateRedirect' => array( 'পুণঃনিৰ্দেশনা_সৃষ্টি' ),
 );
 
+/** Western Balochi (بلوچی رخشانی) */
+$specialPageAliases['bgn'] = array(
+	'CreateRedirect' => array( 'تغیری_مسیری_ئی_جۆڑ_کورتین' ),
+);
+
 /** Breton (brezhoneg) */
 $specialPageAliases['br'] = array(
 	'CreateRedirect' => array( 'KrouiñAdkas' ),
