@@ -44,6 +44,11 @@ $specialPageAliases['cdo'] = array(
 	'CreateRedirect' => array( '創建重定向' ),
 );
 
+/** Czech (čeština) */
+$specialPageAliases['cs'] = array(
+	'CreateRedirect' => array( 'Vytvořit_přesměrování', 'Vytvorit_presmerovani' ),
+);
+
 /** German (Deutsch) */
 $specialPageAliases['de'] = array(
 	'CreateRedirect' => array( 'Weiterleitung_erstellen' ),
