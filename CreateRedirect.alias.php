@@ -19,7 +19,7 @@ $specialPageAliases['ar'] = array(
 	'CreateRedirect' => array( 'إنشاء_تحويلة' ),
 );
 
-/** Egyptian Spoken Arabic (مصرى) */
+/** Egyptian Arabic (مصرى) */
 $specialPageAliases['arz'] = array(
 	'CreateRedirect' => array( 'عمل_تحويله' ),
 );
@@ -84,7 +84,7 @@ $specialPageAliases['fr'] = array(
 	'CreateRedirect' => array( 'CréerRedirection', 'Créer_redirection' ),
 );
 
-/** Franco-Provençal (arpetan) */
+/** Arpitan (arpetan) */
 $specialPageAliases['frp'] = array(
 	'CreateRedirect' => array( 'Fâre_una_redirèccion', 'FâreUnaRedirèccion' ),
 );
@@ -144,7 +144,7 @@ $specialPageAliases['lb'] = array(
 	'CreateRedirect' => array( 'Viruleedung_uleeën' ),
 );
 
-/** لوری (لوری) */
+/** لوری مینجایی (لوری مینجایی) */
 $specialPageAliases['lrc'] = array(
 	'CreateRedirect' => array( 'راس_کردن_واگردونی' ),
 );
