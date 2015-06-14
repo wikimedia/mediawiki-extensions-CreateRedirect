@@ -144,7 +144,7 @@ $specialPageAliases['lb'] = array(
 	'CreateRedirect' => array( 'Viruleedung_uleeën' ),
 );
 
-/** Northern Luri (لوری مینجایی) */
+/** Northern Luri (لۊری شومالی) */
 $specialPageAliases['lrc'] = array(
 	'CreateRedirect' => array( 'راس_کئردئن_ڤاگأردونی' ),
 );
