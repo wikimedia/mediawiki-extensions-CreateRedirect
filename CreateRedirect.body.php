@@ -203,4 +203,7 @@ END
 		);
 	}
 
+	protected function getGroupName() {
+		return 'pagetools';
+	}
 }

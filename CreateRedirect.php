@@ -48,7 +48,6 @@ $wgExtensionCredits['specialpage'][] = array(
 $dir = dirname( __FILE__ ) . '/';
 $wgAutoloadClasses['SpecialCreateRedirect'] = $dir . 'CreateRedirect.body.php';
 $wgSpecialPages['CreateRedirect'] = 'SpecialCreateRedirect';
-$wgSpecialPageGroups['CreateRedirect'] = 'pagetools';
 $wgMessagesDirs['CreateRedirect'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['CreateRedirect'] = $dir . 'CreateRedirect.i18n.php';
 $wgExtensionMessagesFiles['CreateRedirectAlias'] = $dir . 'CreateRedirect.alias.php';
