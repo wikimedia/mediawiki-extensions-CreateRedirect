@@ -175,13 +175,13 @@ class SpecialCreateRedirect extends SpecialPage {
 		$crTitle = Title::newFromText( $crTitle );
 		$crTitle = htmlspecialchars( isset( $crTitle ) ? $crTitle->getPrefixedText() : '' );
 
-		$msgPageTitle = wfMsgHtml( 'createredirect-page-title' );
-		$msgRedirectTo = wfMsgHtml( 'createredirect-redirect-to' );
-		$msgSave = wfMsgHtml( 'createredirect-save' );
+		$msgPageTitle = wfMessage( 'createredirect-page-title' )->escaped();
+		$msgRedirectTo = wfMessage( 'createredirect-redirect-to' )->escaped();
+		$msgSave = wfMessage( 'createredirect-save' )->escaped();
 
 		// 2. Start rendering the output! The output is entirely the form.
 		// It's all HTML, and may be self-explanatory.
-		$wgOut->addHTML( wfMsgHtml( 'createredirect-instructions' ) );
+		$wgOut->addHTML( wfMessage( 'createredirect-instructions' )->escaped() );
 		$wgOut->addHTML( <<<END
 <form id="redirectform" name="redirectform" method="post" action="$action">
 <table>

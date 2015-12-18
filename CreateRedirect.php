@@ -77,7 +77,7 @@ function createRedirect_AddToolboxLink( &$tpl ) {
 
 	// 3. Add the link!
 	$href = SpecialPage::getTitleFor( 'CreateRedirect', $title->getPrefixedText() )->getLocalURL();
-	echo Html::rawElement( 'li', null, Html::element( 'a', array( 'href' => $href ), wfMsg( 'createredirect' ) ) );
+	echo Html::rawElement( 'li', null, Html::element( 'a', array( 'href' => $href ), wfMessage( 'createredirect' )->text() ) );
 
 	return true;
 }
