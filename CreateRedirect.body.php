@@ -37,6 +37,10 @@ class SpecialCreateRedirect extends SpecialPage {
 		parent::__construct( 'CreateRedirect' );
 	}
 
+	public function doesWrites() {
+		return true;
+	}
+
 	/**
 	 * Show the special page.
 	 *
