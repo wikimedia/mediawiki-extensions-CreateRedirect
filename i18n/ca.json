@@ -6,7 +6,7 @@
 		]
 	},
 	"createredirect": "Crea una redirecció",
-	"createredirect-desc": "Afegeix la pàgina especial[[Special:CreateRedirect|CreateRedirect]] per crear fàcilment redireccions.",
+	"createredirect-desc": "Afegeix la pàgina especial [[Special:CreateRedirect|CreateRedirect]] per crear fàcilment redireccions.",
 	"createredirect-error": "Error: l'autenticació ha fallat.",
 	"createredirect-instructions": "Utilitza el formulari a continuació podeu crear una pàgina de redirecció o reemplaçar una pàgina existent amb una redirecció.",
 	"createredirect-page-title": "Títol de la pàgina:",
