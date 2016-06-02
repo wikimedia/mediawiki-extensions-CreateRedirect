@@ -1,8 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Yekrats"
+			"Yekrats",
+			"Robin van der Vliet"
 		]
 	},
+	"createredirect": "Krei alidirektilon",
+	"createredirect-page-title": "Titolo de la paĝo:",
+	"createredirect-redirect-to": "Alidirektas al:",
 	"createredirect-save": "Konservi paĝon"
 }
