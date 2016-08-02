@@ -12,5 +12,5 @@
 	"createredirect-page-title": "页面标题：",
 	"createredirect-redirect-done": "创建重定向从 \"$1\" 到 \"$2\"",
 	"createredirect-redirect-to": "重定向至：",
-	"createredirect-save": "保存网页"
+	"createredirect-save": "保存页面"
 }

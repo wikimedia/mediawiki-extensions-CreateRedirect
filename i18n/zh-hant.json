@@ -4,7 +4,8 @@
 			"Simon Shek",
 			"LNDDYL",
 			"Zhxy 519",
-			"Cwlin0416"
+			"Cwlin0416",
+			"Liuxinyu970226"
 		]
 	},
 	"createredirect": "建立重新導向",
@@ -14,5 +15,5 @@
 	"createredirect-page-title": "頁面標題:",
 	"createredirect-redirect-done": "建立重新導向從 \"$1\" 至 \"$2\"",
 	"createredirect-redirect-to": "重新導向至：",
-	"createredirect-save": "儲存本頁"
+	"createredirect-save": "儲存頁面"
 }
