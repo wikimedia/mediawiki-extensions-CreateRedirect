@@ -7,239 +7,239 @@
  */
 // @codingStandardsIgnoreFile
 
-$specialPageAliases = array();
+$specialPageAliases = [];
 
-/** English (English) */
-$specialPageAliases['en'] = array(
-	'CreateRedirect' => array( 'CreateRedirect' ),
-);
+/** English */
+$specialPageAliases['en'] = [
+	'CreateRedirect' => [ 'CreateRedirect' ],
+];
 
 /** Arabic (العربية) */
-$specialPageAliases['ar'] = array(
-	'CreateRedirect' => array( 'إنشاء_تحويلة' ),
-);
+$specialPageAliases['ar'] = [
+	'CreateRedirect' => [ 'إنشاء_تحويلة' ],
+];
 
 /** Egyptian Arabic (مصرى) */
-$specialPageAliases['arz'] = array(
-	'CreateRedirect' => array( 'عمل_تحويله' ),
-);
+$specialPageAliases['arz'] = [
+	'CreateRedirect' => [ 'عمل_تحويله' ],
+];
 
 /** Assamese (অসমীয়া) */
-$specialPageAliases['as'] = array(
-	'CreateRedirect' => array( 'পুণঃনিৰ্দেশনা_সৃষ্টি' ),
-);
+$specialPageAliases['as'] = [
+	'CreateRedirect' => [ 'পুণঃনিৰ্দেশনা_সৃষ্টি' ],
+];
 
 /** Western Balochi (بلوچی رخشانی) */
-$specialPageAliases['bgn'] = array(
-	'CreateRedirect' => array( 'تغیری_مسیری_ئی_جۆڑ_کورتین' ),
-);
+$specialPageAliases['bgn'] = [
+	'CreateRedirect' => [ 'تغیری_مسیری_ئی_جۆڑ_کورتین' ],
+];
 
 /** Breton (brezhoneg) */
-$specialPageAliases['br'] = array(
-	'CreateRedirect' => array( 'KrouiñAdkas' ),
-);
+$specialPageAliases['br'] = [
+	'CreateRedirect' => [ 'KrouiñAdkas' ],
+];
 
 /** Min Dong Chinese (Mìng-dĕ̤ng-ngṳ̄) */
-$specialPageAliases['cdo'] = array(
-	'CreateRedirect' => array( '創建重定向' ),
-);
+$specialPageAliases['cdo'] = [
+	'CreateRedirect' => [ '創建重定向' ],
+];
 
 /** Czech (čeština) */
-$specialPageAliases['cs'] = array(
-	'CreateRedirect' => array( 'Vytvořit_přesměrování', 'Vytvorit_presmerovani' ),
-);
+$specialPageAliases['cs'] = [
+	'CreateRedirect' => [ 'Vytvořit_přesměrování', 'Vytvorit_presmerovani' ],
+];
 
 /** German (Deutsch) */
-$specialPageAliases['de'] = array(
-	'CreateRedirect' => array( 'Weiterleitung_erstellen' ),
-);
+$specialPageAliases['de'] = [
+	'CreateRedirect' => [ 'Weiterleitung_erstellen' ],
+];
 
 /** Zazaki (Zazaki) */
-$specialPageAliases['diq'] = array(
-	'CreateRedirect' => array( 'SerberdışVıraze' ),
-);
+$specialPageAliases['diq'] = [
+	'CreateRedirect' => [ 'SerberdışVıraze' ],
+];
 
 /** Greek (Ελληνικά) */
-$specialPageAliases['el'] = array(
-	'CreateRedirect' => array( 'ΔημιουργίαΑνακατεύθυνσης' ),
-);
+$specialPageAliases['el'] = [
+	'CreateRedirect' => [ 'ΔημιουργίαΑνακατεύθυνσης' ],
+];
 
 /** Esperanto (Esperanto) */
-$specialPageAliases['eo'] = array(
-	'CreateRedirect' => array( 'Krei_alidirektilon', 'Krei_alidirekton', 'Kreu_alidirekton' ),
-);
+$specialPageAliases['eo'] = [
+	'CreateRedirect' => [ 'Krei_alidirektilon', 'Krei_alidirekton', 'Kreu_alidirekton' ],
+];
 
 /** Persian (فارسی) */
-$specialPageAliases['fa'] = array(
-	'CreateRedirect' => array( 'ایجاد_تغییرمسیر' ),
-);
+$specialPageAliases['fa'] = [
+	'CreateRedirect' => [ 'ایجاد_تغییرمسیر' ],
+];
 
 /** Finnish (suomi) */
-$specialPageAliases['fi'] = array(
-	'CreateRedirect' => array( 'Luo_ohjaus' ),
-);
+$specialPageAliases['fi'] = [
+	'CreateRedirect' => [ 'Luo_ohjaus' ],
+];
 
 /** French (français) */
-$specialPageAliases['fr'] = array(
-	'CreateRedirect' => array( 'CréerRedirection', 'Créer_redirection' ),
-);
+$specialPageAliases['fr'] = [
+	'CreateRedirect' => [ 'CréerRedirection', 'Créer_redirection' ],
+];
 
 /** Arpitan (arpetan) */
-$specialPageAliases['frp'] = array(
-	'CreateRedirect' => array( 'Fâre_una_redirèccion', 'FâreUnaRedirèccion' ),
-);
+$specialPageAliases['frp'] = [
+	'CreateRedirect' => [ 'Fâre_una_redirèccion', 'FâreUnaRedirèccion' ],
+];
 
 /** Galician (galego) */
-$specialPageAliases['gl'] = array(
-	'CreateRedirect' => array( 'Crear_unha_redirección' ),
-);
+$specialPageAliases['gl'] = [
+	'CreateRedirect' => [ 'Crear_unha_redirección' ],
+];
 
 /** Hebrew (עברית) */
-$specialPageAliases['he'] = array(
-	'CreateRedirect' => array( 'יצירת_הפניה' ),
-);
+$specialPageAliases['he'] = [
+	'CreateRedirect' => [ 'יצירת_הפניה' ],
+];
 
 /** Haitian (Kreyòl ayisyen) */
-$specialPageAliases['ht'] = array(
-	'CreateRedirect' => array( 'FèRedireksyon' ),
-);
+$specialPageAliases['ht'] = [
+	'CreateRedirect' => [ 'FèRedireksyon' ],
+];
 
 /** Interlingua (interlingua) */
-$specialPageAliases['ia'] = array(
-	'CreateRedirect' => array( 'Crear_redirection' ),
-);
+$specialPageAliases['ia'] = [
+	'CreateRedirect' => [ 'Crear_redirection' ],
+];
 
 /** Indonesian (Bahasa Indonesia) */
-$specialPageAliases['id'] = array(
-	'CreateRedirect' => array( 'Buat_pengalihan', 'BuatPengalihan' ),
-);
+$specialPageAliases['id'] = [
+	'CreateRedirect' => [ 'Buat_pengalihan', 'BuatPengalihan' ],
+];
 
 /** Italian (italiano) */
-$specialPageAliases['it'] = array(
-	'CreateRedirect' => array( 'CreaRedirect' ),
-);
+$specialPageAliases['it'] = [
+	'CreateRedirect' => [ 'CreaRedirect' ],
+];
 
 /** Japanese (日本語) */
-$specialPageAliases['ja'] = array(
-	'CreateRedirect' => array( 'リダイレクト作成', '転送作成' ),
-);
+$specialPageAliases['ja'] = [
+	'CreateRedirect' => [ 'リダイレクト作成', '転送作成' ],
+];
 
 /** Khmer (ភាសាខ្មែរ) */
-$specialPageAliases['km'] = array(
-	'CreateRedirect' => array( 'បង្កើតការបញ្ចូនបន្ត' ),
-);
+$specialPageAliases['km'] = [
+	'CreateRedirect' => [ 'បង្កើតការបញ្ចូនបន្ត' ],
+];
 
 /** Korean (한국어) */
-$specialPageAliases['ko'] = array(
-	'CreateRedirect' => array( '넘겨주기만들기' ),
-);
+$specialPageAliases['ko'] = [
+	'CreateRedirect' => [ '넘겨주기만들기' ],
+];
 
 /** Cornish (kernowek) */
-$specialPageAliases['kw'] = array(
-	'CreateRedirect' => array( 'GwruthylDaskedyans' ),
-);
+$specialPageAliases['kw'] = [
+	'CreateRedirect' => [ 'GwruthylDaskedyans' ],
+];
 
 /** Luxembourgish (Lëtzebuergesch) */
-$specialPageAliases['lb'] = array(
-	'CreateRedirect' => array( 'Viruleedung_uleeën' ),
-);
+$specialPageAliases['lb'] = [
+	'CreateRedirect' => [ 'Viruleedung_uleeën' ],
+];
 
 /** Northern Luri (لۊری شومالی) */
-$specialPageAliases['lrc'] = array(
-	'CreateRedirect' => array( 'راس_کئردئن_ڤاگأردونی' ),
-);
+$specialPageAliases['lrc'] = [
+	'CreateRedirect' => [ 'راس_کئردئن_ڤاگأردونی' ],
+];
 
 /** Malagasy (Malagasy) */
-$specialPageAliases['mg'] = array(
-	'CreateRedirect' => array( 'HamoronaFihodinana' ),
-);
+$specialPageAliases['mg'] = [
+	'CreateRedirect' => [ 'HamoronaFihodinana' ],
+];
 
 /** Minangkabau (Baso Minangkabau) */
-$specialPageAliases['min'] = array(
-	'CreateRedirect' => array( 'BuekPangaliahan' ),
-);
+$specialPageAliases['min'] = [
+	'CreateRedirect' => [ 'BuekPangaliahan' ],
+];
 
 /** Macedonian (македонски) */
-$specialPageAliases['mk'] = array(
-	'CreateRedirect' => array( 'СоздајПренасочување' ),
-);
+$specialPageAliases['mk'] = [
+	'CreateRedirect' => [ 'СоздајПренасочување' ],
+];
 
 /** Malayalam (മലയാളം) */
-$specialPageAliases['ml'] = array(
-	'CreateRedirect' => array( 'തിരിച്ചുവിടൽസൃഷ്ടിക്കുക' ),
-);
+$specialPageAliases['ml'] = [
+	'CreateRedirect' => [ 'തിരിച്ചുവിടൽസൃഷ്ടിക്കുക' ],
+];
 
 /** Malay (Bahasa Melayu) */
-$specialPageAliases['ms'] = array(
-	'CreateRedirect' => array( 'Cipta_lencongan' ),
-);
+$specialPageAliases['ms'] = [
+	'CreateRedirect' => [ 'Cipta_lencongan' ],
+];
 
 /** Norwegian Bokmål (norsk bokmål) */
-$specialPageAliases['nb'] = array(
-	'CreateRedirect' => array( 'Opprett_omdirigering' ),
-);
+$specialPageAliases['nb'] = [
+	'CreateRedirect' => [ 'Opprett_omdirigering' ],
+];
 
 /** Low Saxon (Netherlands) (Nedersaksies) */
-$specialPageAliases['nds-nl'] = array(
-	'CreateRedirect' => array( 'Deurverwiezing_anmaken' ),
-);
+$specialPageAliases['nds-nl'] = [
+	'CreateRedirect' => [ 'Deurverwiezing_anmaken' ],
+];
 
 /** Dutch (Nederlands) */
-$specialPageAliases['nl'] = array(
-	'CreateRedirect' => array( 'DoorverwijzingAanmaken' ),
-);
+$specialPageAliases['nl'] = [
+	'CreateRedirect' => [ 'DoorverwijzingAanmaken' ],
+];
 
 /** Punjabi (ਪੰਜਾਬੀ) */
-$specialPageAliases['pa'] = array(
-	'CreateRedirect' => array( 'ਰੀਡਿਰੈਕਟ_ਬਣਾਓ' ),
-);
+$specialPageAliases['pa'] = [
+	'CreateRedirect' => [ 'ਰੀਡਿਰੈਕਟ_ਬਣਾਓ' ],
+];
 
 /** Brazilian Portuguese (português do Brasil) */
-$specialPageAliases['pt-br'] = array(
-	'CreateRedirect' => array( 'Criar_redirecionamento' ),
-);
+$specialPageAliases['pt-br'] = [
+	'CreateRedirect' => [ 'Criar_redirecionamento' ],
+];
 
 /** Sicilian (sicilianu) */
-$specialPageAliases['scn'] = array(
-	'CreateRedirect' => array( 'CreaRedirect' ),
-);
+$specialPageAliases['scn'] = [
+	'CreateRedirect' => [ 'CreaRedirect' ],
+];
 
 /** Swedish (svenska) */
-$specialPageAliases['sv'] = array(
-	'CreateRedirect' => array( 'Skapa_omdirigering' ),
-);
+$specialPageAliases['sv'] = [
+	'CreateRedirect' => [ 'Skapa_omdirigering' ],
+];
 
 /** Turkish (Türkçe) */
-$specialPageAliases['tr'] = array(
-	'CreateRedirect' => array( 'YönlendirmeOluştur' ),
-);
+$specialPageAliases['tr'] = [
+	'CreateRedirect' => [ 'YönlendirmeOluştur' ],
+];
 
 /** Urdu (اردو) */
-$specialPageAliases['ur'] = array(
-	'CreateRedirect' => array( 'تخلیق_رجوع_مکرر' ),
-);
+$specialPageAliases['ur'] = [
+	'CreateRedirect' => [ 'تخلیق_رجوع_مکرر' ],
+];
 
 /** Vietnamese (Tiếng Việt) */
-$specialPageAliases['vi'] = array(
-	'CreateRedirect' => array( 'Tạo_đổi_hướng' ),
-);
+$specialPageAliases['vi'] = [
+	'CreateRedirect' => [ 'Tạo_đổi_hướng' ],
+];
 
 /** Chinese (中文) */
-$specialPageAliases['zh'] = array(
-	'CreateRedirect' => array( '创建重定向', '創建重定向', '建立重定向', '建立重新導向' ),
-);
+$specialPageAliases['zh'] = [
+	'CreateRedirect' => [ '创建重定向', '創建重定向', '建立重定向', '建立重新導向' ],
+];
 
 /** Simplified Chinese (中文（简体）‎) */
-$specialPageAliases['zh-hans'] = array(
-	'CreateRedirect' => array( '创建重定向', '创建重定向页' ),
-);
+$specialPageAliases['zh-hans'] = [
+	'CreateRedirect' => [ '创建重定向', '创建重定向页' ],
+];
 
 /** Traditional Chinese (中文（繁體）‎) */
-$specialPageAliases['zh-hant'] = array(
-	'CreateRedirect' => array( '建立重新導向' ),
-);
+$specialPageAliases['zh-hant'] = [
+	'CreateRedirect' => [ '建立重新導向' ],
+];
 
 /** Chinese (Taiwan) (中文（台灣）‎) */
-$specialPageAliases['zh-tw'] = array(
-	'CreateRedirect' => array( '建立重定向' ),
-);
+$specialPageAliases['zh-tw'] = [
+	'CreateRedirect' => [ '建立重定向' ],
+];
