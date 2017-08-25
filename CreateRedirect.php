@@ -29,55 +29,14 @@
  * along with CreateRedirect.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-if( !defined( 'MEDIAWIKI' ) ) {
-	echo( "This file is an extension to the MediaWiki software and cannot be used standalone.\n" );
-	die( 1 );
-}
-
-// Add this extension to Special:Credits.
-$wgExtensionCredits['specialpage'][] = array(
-	'path'  => __FILE__,
-	'name' => 'CreateRedirect',
-	'author' => 'Marco Zafra',
-	'version' => '1.1.0',
-	'url' => 'https://www.mediawiki.org/wiki/Extension:CreateRedirect',
-	'descriptionmsg' => 'createredirect-desc',
-);
-
-// Set up the actual extension functionality.
-$dir = dirname( __FILE__ ) . '/';
-$wgAutoloadClasses['SpecialCreateRedirect'] = $dir . 'CreateRedirect.body.php';
-$wgSpecialPages['CreateRedirect'] = 'SpecialCreateRedirect';
-$wgMessagesDirs['CreateRedirect'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['CreateRedirect'] = $dir . 'CreateRedirect.i18n.php';
-$wgExtensionMessagesFiles['CreateRedirectAlias'] = $dir . 'CreateRedirect.alias.php';
-
-// Add a shortcut link to the toolbox.
-$wgHooks['SkinTemplateToolboxEnd'][] = 'createRedirect_addToolboxLink';
-
-/**
- * Adds a shortcut link pointing to Special:CreateRedirect to the "toolbox" menu.
- * If applicable, also adds a reference to the current title as a GET param.
- *
- * @return Boolean: true
- */
-function createRedirect_AddToolboxLink( &$tpl ) {
-	global $wgRequest;
-
-	// 1. Determine whether to actually add the link at all.
-	// There are certain cases, e.g. in the edit dialog, in a special page,
-	// where it's inappropriate for the link to appear.
-	// 2. Check the title. Is it a "Special:" page? Don't display the link.
-	$action = $wgRequest->getText( 'action', 'view' );
-	$title = $tpl->getSkin()->getTitle();
-
-	if( $action != 'view' && $action != 'purge' && !$title->isSpecialPage() ) {
-		return true;
-	}
-
-	// 3. Add the link!
-	$href = SpecialPage::getTitleFor( 'CreateRedirect', $title->getPrefixedText() )->getLocalURL();
-	echo Html::rawElement( 'li', null, Html::element( 'a', array( 'href' => $href ), wfMessage( 'createredirect' )->text() ) );
-
-	return true;
+if ( function_exists( 'wfLoadExtension' ) ) {
+	wfLoadExtension( 'CreateRedirect' );
+	$wgMessageDirs['CreateRedirect'] = __DIR__ . '/i18n';
+	wfWarn(
+		'Deprecated PHP entry point used for CreateRedirect extension. ' .
+		'Please use wfLoadExtension instead, ' .
+		'see https://www.mediawiki.org/wiki/Extension_registration for more details.'
+	);
+} else {
+	die( 'This version of the CreateRedirect extension requires MediaWiki 1.29+' );
 }
