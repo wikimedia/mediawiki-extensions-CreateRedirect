@@ -1,0 +1,30 @@
+{
+	"name": "CreateRedirect",
+	"version": "1.1.0",
+	"author": [
+		"[https://www.mediawiki.org/wiki/User:Digiku Marco Zafra]"
+	],
+	"type": "specialpage",
+	"url": "https://www.mediawiki.org/wiki/Extension:CreateRedirect",
+	"descriptionmsg": "createredirect-desc",
+	"license-name": "GPL-2.0+",
+	"AutoloadClasses": {
+		"SpecialCreateRedirect": "CreateRedirect.body.php"
+		"SpecialCreateRedirectHooks": "CreateRedirect.hooks.php"
+	},
+	"MessagesDirs": {
+		"CreateRedirect": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"CreateRedirect": "CreateRedirect.i18n.php",
+		"CreateRedirectAlias": "CreateRedirect.alias.php"
+	},
+	"Hooks": {
+		"SkinTemplateToolboxEnd": "createRedirect_addToolboxLink"
+		"CreateRedirectHooks": "SpecialCreateRedirectHooks::createRedirect_AddToolboxLink",
+
+	},
+	"manifest_version": 2
+}
