@@ -1,0 +1,119 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4e7eab26_4137f2fb",
+        "filename": "CreateRedirect.body.php",
+        "patchSetId": 1
+      },
+      "lineNbr": 209,
+      "author": {
+        "id": 4064
+      },
+      "writtenOn": "2017-08-25T08:12:23Z",
+      "side": 1,
+      "message": "Stray tab",
+      "range": {
+        "startLine": 209,
+        "startChar": 0,
+        "endLine": 209,
+        "endChar": 1
+      },
+      "revId": "526fda84849a2a32e10195ad2551b68b43305054",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4e7eab26_a1057617",
+        "filename": "CreateRedirect.body.php",
+        "patchSetId": 1
+      },
+      "lineNbr": 215,
+      "author": {
+        "id": 4064
+      },
+      "writtenOn": "2017-08-25T08:12:23Z",
+      "side": 1,
+      "message": "This does not align with the comment above, it should be indented one tab more",
+      "range": {
+        "startLine": 211,
+        "startChar": 0,
+        "endLine": 215,
+        "endChar": 3
+      },
+      "revId": "526fda84849a2a32e10195ad2551b68b43305054",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4e7eab26_61230eb6",
+        "filename": "CreateRedirect.body.php",
+        "patchSetId": 1
+      },
+      "lineNbr": 216,
+      "author": {
+        "id": 4064
+      },
+      "writtenOn": "2017-08-25T08:12:23Z",
+      "side": 1,
+      "message": "For this hook to work, this needs to be a public static function. It should also be indented one tab more.",
+      "range": {
+        "startLine": 216,
+        "startChar": 0,
+        "endLine": 216,
+        "endChar": 49
+      },
+      "revId": "526fda84849a2a32e10195ad2551b68b43305054",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4e7eab26_81315a03",
+        "filename": "CreateRedirect.body.php",
+        "patchSetId": 1
+      },
+      "lineNbr": 235,
+      "author": {
+        "id": 4064
+      },
+      "writtenOn": "2017-08-25T08:12:23Z",
+      "side": 1,
+      "message": "This should be indented one tab more",
+      "range": {
+        "startLine": 217,
+        "startChar": 0,
+        "endLine": 235,
+        "endChar": 1
+      },
+      "revId": "526fda84849a2a32e10195ad2551b68b43305054",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4e7eab26_0c036111",
+        "filename": "extension.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 4064
+      },
+      "writtenOn": "2017-08-25T08:12:23Z",
+      "side": 1,
+      "message": "This is missing the class name in which the hook function resides.",
+      "range": {
+        "startLine": 24,
+        "startChar": 29,
+        "endLine": 24,
+        "endChar": 58
+      },
+      "revId": "526fda84849a2a32e10195ad2551b68b43305054",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    }
+  ]
+}
