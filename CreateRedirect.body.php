@@ -23,11 +23,6 @@
  * The bulk of the routines are stored here. This is where all the internal processing actually occurs.
  */
 
-if( !defined( 'MEDIAWIKI' ) ) {
-	echo( "This file is an extension to the MediaWiki software and cannot be used standalone.\n" );
-	die( 1 );
-}
-
 class SpecialCreateRedirect extends SpecialPage {
 
 	/**
@@ -44,24 +39,23 @@ class SpecialCreateRedirect extends SpecialPage {
 	/**
 	 * Show the special page.
 	 *
-	 * @param $par Mixed: parameter passed to the special page or null
+	 * @param mixed|null $par Parameter passed to the special page
 	 */
 	public function execute( $par ) {
-		global $wgRequest, $wgOut, $wgUser;
+		$out = $this->getOutput();
+		$request = $this->getRequest();
+		$user = $this->getUser();
 
-		if( wfReadOnly() ) {
-			$wgOut->readOnlyPage();
-			return;
-		}
+		$this->checkReadOnly();
 
 		$this->setHeaders();
 
-		if ( $wgRequest->wasPosted() ) {
+		if ( $request->wasPosted() ) {
 			// 1. Retrieve POST vars. First, we want "crOrigTitle", holding the
 			// title of the page we're writing to, and "crRedirectTitle",
 			// holding the title of the page we're redirecting to.
-			$crOrigTitle = $wgRequest->getText( 'crOrigTitle' );
-			$crRedirectTitle = $wgRequest->getText( 'crRedirectTitle' );
+			$crOrigTitle = $request->getText( 'crOrigTitle' );
+			$crRedirectTitle = $request->getText( 'crRedirectTitle' );
 
 			// 2. We need to construct a "FauxRequest", or fake a request that
 			// MediaWiki would otherwise get naturally by a client browser to
@@ -79,10 +73,10 @@ class SpecialCreateRedirect extends SpecialPage {
 			$wpTextbox1 = "#REDIRECT [[$crRedirectTitle]]\r\n"; // POST var "wpTextbox1" stores the content that's actually going to be written. This is where we write the #REDIRECT [[Article]] stuff. We plug in $crRedirectTitle here.
 			$wpSave = 1;
 			$wpMinoredit = 1; // TODO: Decide on this; should this really be marked and hardcoded as a minor edit, or not? Or should we provide an option? --Digi 11/4/07
-			$wpEditToken = htmlspecialchars( $wgUser->getEditToken() );
+			$wpEditToken = htmlspecialchars( $user->getEditToken() );
 
 			// 3. Put together the params that we'll use in "FauxRequest" into a single array.
-			$crRequestParams = array(
+			$crRequestParams = [
 				'title' => $title,
 				'wpStarttime' => $wpStarttime,
 				'wpEdittime' => $wpEdittime,
@@ -90,7 +84,7 @@ class SpecialCreateRedirect extends SpecialPage {
 				'wpSave' => $wpSave,
 				'wpMinoredit' => $wpMinoredit,
 				'wpEditToken' => $wpEditToken
-			);
+			];
 
 			// 4. Construct "FauxRequest"! Using a FauxRequest object allows
 			// for a transparent interface of generated request params that
@@ -101,6 +95,13 @@ class SpecialCreateRedirect extends SpecialPage {
 			// 5. Construct "EditPage", which contains routines to write all
 			// the data. This is where all the magic happens.
 			$crEdit = new EditPage( $crEditArticle ); // We plug in the "Article" object here so EditPage can center on the article that we need to edit.
+
+			// Set the correct title for real. This is needed to prevent
+			// "Invalid or virtual namespace -1 given." exceptions from happening
+			// when the SpamBlacklist extension (and/or other extensions using
+			// the same core hook(s)) is installed.
+			$crEdit->getContext()->setTitle( $crEditTitle );
+
 			// a. We have to plug in the correct information that we just
 			// generated. While we fed EditPage with the correct "Article"
 			// object, it doesn't have the correct "Title" object.
@@ -115,27 +116,26 @@ class SpecialCreateRedirect extends SpecialPage {
 			// generated.
 			$crEdit->importFormData( $crRequest );
 
-			$permErrors = $crEditTitle->getUserPermissionsErrors( 'edit', $wgUser );
+			$permErrors = $crEditTitle->getUserPermissionsErrors( 'edit', $user );
 			// Can this title be created?
 			if ( !$crEditTitle->exists() ) {
 				$permErrors = array_merge( $permErrors,
-					wfArrayDiff2( $crEditTitle->getUserPermissionsErrors( 'create', $wgUser ), $permErrors ) );
+					wfArrayDiff2( $crEditTitle->getUserPermissionsErrors( 'create', $user ), $permErrors ) );
 			}
 			if ( $permErrors ) {
 				wfDebug( __METHOD__ . ": User can't edit\n" );
-				$wgOut->addWikiText( $crEdit->formatPermissionsErrorMessage( $permErrors, 'edit' ) );
-				wfProfileOut( __METHOD__ );
+				$out->addWikiText( $crEdit->formatPermissionsErrorMessage( $permErrors, 'edit' ) );
 				return;
 			}
 
 			$resultDetails = false;
-			$status = $crEdit->internalAttemptSave( $resultDetails, $wgUser->isAllowed( 'bot' ) && $wgRequest->getBool( 'bot', true ) );
+			$status = $crEdit->internalAttemptSave( $resultDetails, $user->isAllowed( 'bot' ) && $request->getBool( 'bot', true ) );
 			$value = $status->value;
 
 			if ( $value == EditPage::AS_SUCCESS_UPDATE || $value == EditPage::AS_SUCCESS_NEW_ARTICLE ) {
-				$wgOut->wrapWikiMsg(
+				$out->wrapWikiMsg(
 					"<div class=\"mw-createredirect-done\">\n$1</div>",
-					array( 'createredirect-redirect-done', $crOrigTitle, $crRedirectTitle )
+					[ 'createredirect-redirect-done', $crOrigTitle, $crRedirectTitle ]
 				);
 			}
 
@@ -152,22 +152,22 @@ class SpecialCreateRedirect extends SpecialPage {
 					$crEdit->userNotLoggedInPage();
 					return;
 
-			 	case EditPage::AS_READ_ONLY_PAGE_LOGGED:
-			 	case EditPage::AS_READ_ONLY_PAGE:
-			 		$wgOut->readOnlyPage();
+				case EditPage::AS_READ_ONLY_PAGE_LOGGED:
+				case EditPage::AS_READ_ONLY_PAGE:
+					throw new ReadOnlyError;
 					return;
 
-			 	case EditPage::AS_RATE_LIMITED:
-			 		$wgOut->rateLimited();
+				case EditPage::AS_RATE_LIMITED:
+					throw new ThrottledError;
 					break;
 
-			 	case EditPage::AS_NO_CREATE_PERMISSION:
-			 		$crEdit->noCreatePermission();
+				case EditPage::AS_NO_CREATE_PERMISSION:
+					$crEdit->noCreatePermission();
 					return;
 			}
 
-			$wgOut->mRedirect = '';
-			$wgOut->mRedirectCode = '';
+			$out->mRedirect = '';
+			$out->mRedirectCode = '';
 
 			// TODO: Implement error handling (i.e. "Edit conflict!" or "You don't have permissions to edit this page!") --Digi 11/4/07
 		}
@@ -175,18 +175,18 @@ class SpecialCreateRedirect extends SpecialPage {
 		$action = htmlspecialchars( $this->getPageTitle()->getLocalURL() );
 		// Also retrieve "crTitle". If this GET var is found, we autofill the
 		// "Redirect to:" field with that text.
-		$crTitle = $wgRequest->getText( 'crRedirectTitle', $wgRequest->getText( 'crTitle', $par ) );
+		$crTitle = $request->getText( 'crRedirectTitle', $request->getText( 'crTitle', $par ) );
 		$crTitle = Title::newFromText( $crTitle );
 		$crTitle = htmlspecialchars( isset( $crTitle ) ? $crTitle->getPrefixedText() : '' );
 
-		$msgPageTitle = wfMessage( 'createredirect-page-title' )->escaped();
-		$msgRedirectTo = wfMessage( 'createredirect-redirect-to' )->escaped();
-		$msgSave = wfMessage( 'createredirect-save' )->escaped();
+		$msgPageTitle = $this->msg( 'createredirect-page-title' )->escaped();
+		$msgRedirectTo = $this->msg( 'createredirect-redirect-to' )->escaped();
+		$msgSave = $this->msg( 'createredirect-save' )->escaped();
 
 		// 2. Start rendering the output! The output is entirely the form.
 		// It's all HTML, and may be self-explanatory.
-		$wgOut->addHTML( wfMessage( 'createredirect-instructions' )->escaped() );
-		$wgOut->addHTML( <<<END
+		$out->addHTML( $this->msg( 'createredirect-instructions' )->escaped() );
+		$out->addHTML( <<<END
 <form id="redirectform" name="redirectform" method="post" action="$action">
 <table>
 <tr>
