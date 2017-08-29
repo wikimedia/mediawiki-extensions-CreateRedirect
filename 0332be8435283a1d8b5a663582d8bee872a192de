@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "4e7eab26_662b0830",
+        "filename": "CreateRedirect.hooks.php",
+        "patchSetId": 4
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 4064
+      },
+      "writtenOn": "2017-08-29T18:57:07Z",
+      "side": 1,
+      "message": "Also, invalid character",
+      "range": {
+        "startLine": 1,
+        "startChar": 5,
+        "endLine": 1,
+        "endChar": 6
+      },
+      "revId": "0332be8435283a1d8b5a663582d8bee872a192de",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "4e7eab26_e6f858c2",
         "filename": "CreateRedirect.hooks.php",
         "patchSetId": 4
