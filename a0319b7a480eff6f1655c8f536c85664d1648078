@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4e7eab26_8635d443",
+        "filename": "extension.json",
+        "patchSetId": 6
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 4064
+      },
+      "writtenOn": "2017-08-29T19:26:04Z",
+      "side": 1,
+      "message": "Missing comma",
+      "range": {
+        "startLine": 12,
+        "startChar": 51,
+        "endLine": 12,
+        "endChar": 52
+      },
+      "revId": "a0319b7a480eff6f1655c8f536c85664d1648078",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    }
+  ]
+}
