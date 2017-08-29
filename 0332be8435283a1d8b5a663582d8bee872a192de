@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4e7eab26_e6f858c2",
+        "filename": "CreateRedirect.hooks.php",
+        "patchSetId": 4
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 4064
+      },
+      "writtenOn": "2017-08-29T18:56:23Z",
+      "side": 1,
+      "message": "It appears this whole block should be indented one tab back. The comma there is also invalid PHP.",
+      "range": {
+        "startLine": 28,
+        "startChar": 3,
+        "endLine": 30,
+        "endChar": 2
+      },
+      "revId": "0332be8435283a1d8b5a663582d8bee872a192de",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    }
+  ]
+}
