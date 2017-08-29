@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4e7eab26_66d78850",
+        "filename": "CreateRedirect.hooks.php",
+        "patchSetId": 3
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 4064
+      },
+      "writtenOn": "2017-08-29T18:47:47Z",
+      "side": 1,
+      "message": "This should be indented one tab more",
+      "range": {
+        "startLine": 11,
+        "startChar": 1,
+        "endLine": 20,
+        "endChar": 76
+      },
+      "revId": "43955598ac7adee836699b6620258608bebf5f48",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4e7eab26_46d04c54",
+        "filename": "CreateRedirect.hooks.php",
+        "patchSetId": 3
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 4064
+      },
+      "writtenOn": "2017-08-29T18:47:47Z",
+      "side": 1,
+      "message": "As should this",
+      "range": {
+        "startLine": 22,
+        "startChar": 1,
+        "endLine": 26,
+        "endChar": 124
+      },
+      "revId": "43955598ac7adee836699b6620258608bebf5f48",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4e7eab26_e6cb78a5",
+        "filename": "extension.json",
+        "patchSetId": 3
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 4064
+      },
+      "writtenOn": "2017-08-29T18:47:47Z",
+      "side": 1,
+      "message": "This part doesn\u0027t belong here; the class name is CreateRedirectHooks",
+      "range": {
+        "startLine": 13,
+        "startChar": 3,
+        "endLine": 13,
+        "endChar": 10
+      },
+      "revId": "43955598ac7adee836699b6620258608bebf5f48",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4e7eab26_a6c1f084",
+        "filename": "extension.json",
+        "patchSetId": 3
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 4064
+      },
+      "writtenOn": "2017-08-29T18:47:47Z",
+      "side": 1,
+      "message": "This block is incorrect, it should contain one line only:\n\"SkinTemplateToolboxEnd\": \"CreateRedirectHooks::createRedirect_AddToolboxLink\"",
+      "range": {
+        "startLine": 25,
+        "startChar": 2,
+        "endLine": 26,
+        "endChar": 84
+      },
+      "revId": "43955598ac7adee836699b6620258608bebf5f48",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    }
+  ]
+}
