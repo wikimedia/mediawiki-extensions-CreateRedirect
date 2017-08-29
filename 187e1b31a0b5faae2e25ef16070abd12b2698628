@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4e7eab26_46ba8cdb",
+        "filename": "CreateRedirect.hooks.php",
+        "patchSetId": 5
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 4064
+      },
+      "writtenOn": "2017-08-29T19:02:06Z",
+      "side": 1,
+      "message": "Invalid character",
+      "range": {
+        "startLine": 1,
+        "startChar": 5,
+        "endLine": 1,
+        "endChar": 6
+      },
+      "revId": "187e1b31a0b5faae2e25ef16070abd12b2698628",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    }
+  ]
+}
