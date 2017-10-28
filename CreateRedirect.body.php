@@ -145,11 +145,11 @@ class SpecialCreateRedirect extends SpecialPage {
 					return;
 
 				case EditPage::AS_BLOCKED_PAGE_FOR_USER:
-					$crEdit->blockedPage();
+					throw new UserBlockedError( $user->getBlock() );
 					return;
 
 				case EditPage::AS_READ_ONLY_PAGE_ANON:
-					$crEdit->userNotLoggedInPage();
+					throw new PermissionsError( 'edit' );
 					return;
 
 				case EditPage::AS_READ_ONLY_PAGE_LOGGED:
@@ -162,7 +162,8 @@ class SpecialCreateRedirect extends SpecialPage {
 					break;
 
 				case EditPage::AS_NO_CREATE_PERMISSION:
-					$crEdit->noCreatePermission();
+					$permission = $crEdit->mTitle->isTalkPage() ? 'createtalk' : 'createpage';
+					throw new PermissionsError( $permission );
 					return;
 			}
 
