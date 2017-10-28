@@ -23,7 +23,7 @@
 	"Hooks": {
 		"SkinTemplateToolboxEnd": "CreateRedirectHooks::onSkinTemplateToolboxEnd"
 	},
-  	"SpecialPages": {
+	"SpecialPages": {
 		"CreateRedirect": "SpecialCreateRedirect"
 	},
 	"manifest_version": 2
