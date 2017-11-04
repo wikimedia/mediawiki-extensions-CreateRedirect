@@ -50,7 +50,7 @@ class SpecialCreateRedirect extends SpecialPage {
 
 		$this->setHeaders();
 
-		if ( $request->wasPosted() ) {
+		if ( $request->wasPosted() && $user->matchEditToken( $request->getVal( 'wpEditToken' ) ) ) {
 			// 1. Retrieve POST vars. First, we want "crOrigTitle", holding the
 			// title of the page we're writing to, and "crRedirectTitle",
 			// holding the title of the page we're redirecting to.
@@ -73,7 +73,8 @@ class SpecialCreateRedirect extends SpecialPage {
 			$wpTextbox1 = "#REDIRECT [[$crRedirectTitle]]\r\n"; // POST var "wpTextbox1" stores the content that's actually going to be written. This is where we write the #REDIRECT [[Article]] stuff. We plug in $crRedirectTitle here.
 			$wpSave = 1;
 			$wpMinoredit = 1; // TODO: Decide on this; should this really be marked and hardcoded as a minor edit, or not? Or should we provide an option? --Digi 11/4/07
-			$wpEditToken = htmlspecialchars( $user->getEditToken() );
+			// Per note on T178787, this should _not_ be ran through htmlspecialchars()
+			$wpEditToken = $request->getVal( 'wpEditToken' );
 
 			// 3. Put together the params that we'll use in "FauxRequest" into a single array.
 			$crRequestParams = [
@@ -171,6 +172,10 @@ class SpecialCreateRedirect extends SpecialPage {
 			$out->mRedirectCode = '';
 
 			// TODO: Implement error handling (i.e. "Edit conflict!" or "You don't have permissions to edit this page!") --Digi 11/4/07
+		} elseif ( $request->wasPosted() && !$user->matchEditToken( $request->getVal( 'wpEditToken' ) ) ) {
+			// Possibly a CSRF attempt
+			$out->setPageTitle( $this->msg( 'sessionfailure-title' ) );
+			$out->addWikiMsg( 'sessionfailure' );
 		}
 
 		$action = htmlspecialchars( $this->getPageTitle()->getLocalURL() );
@@ -183,6 +188,10 @@ class SpecialCreateRedirect extends SpecialPage {
 		$msgPageTitle = $this->msg( 'createredirect-page-title' )->escaped();
 		$msgRedirectTo = $this->msg( 'createredirect-redirect-to' )->escaped();
 		$msgSave = $this->msg( 'createredirect-save' )->escaped();
+
+		// Edit token
+		// @see https://phabricator.wikimedia.org/T178787
+		$token = Html::hidden( 'wpEditToken', $user->getEditToken() );
 
 		// 2. Start rendering the output! The output is entirely the form.
 		// It's all HTML, and may be self-explanatory.
@@ -203,6 +212,7 @@ class SpecialCreateRedirect extends SpecialPage {
 <td><input type="submit" name="crWrite" id="crWrite" value="$msgSave" tabindex="4" /></td>
 </tr>
 </table>
+{$token}
 </form>
 END
 		);
