@@ -7,7 +7,7 @@
 	"type": "specialpage",
 	"url": "https://www.mediawiki.org/wiki/Extension:CreateRedirect",
 	"descriptionmsg": "createredirect-desc",
-	"license-name": "GPL-2.0+",
+	"license-name": "GPL-2.0-or-later",
 	"AutoloadClasses": {
 		"SpecialCreateRedirect": "CreateRedirect.body.php",
 		"CreateRedirectHooks": "CreateRedirect.hooks.php"
