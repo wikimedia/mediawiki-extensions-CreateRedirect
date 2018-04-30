@@ -1,9 +1,16 @@
 {
 	"@metadata": {
 		"authors": [
-			"روخو"
+			"روخو",
+			"ديفيد"
 		]
 	},
+	"createredirect": "إنشاء تحويلة",
+	"createredirect-desc": "يضيف الصفحة الخاصة [[Special:CreateRedirect|إنشاء تحويلة]] لإنشاء تحويلات بسهولة",
+	"createredirect-error": "خطأ: فشلت المصادقة.",
+	"createredirect-instructions": "باستخدام النموذج أدناه، يمكنك إنشاء صفحة تحويل أو استبدال صفحة موجودة بتحويلة.",
+	"createredirect-page-title": "عنوان الصفحة:",
+	"createredirect-redirect-done": "تم إنشاء تحويلة من \"$1\" إلى \"$2\"",
 	"createredirect-redirect-to": "إعادة توجيه إلى:",
 	"createredirect-save": "احفظ الصفحة"
 }
