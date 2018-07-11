@@ -70,6 +70,7 @@ class SpecialCreateRedirect extends SpecialPage {
 			$crEditArticle = new Article( $crEditTitle, 0 ); // Then, construct "Article". This is where most of the article's information is.
 			$wpStarttime = wfTimestampNow(); // POST var "wpStarttime" stores when the edit was started.
 			$wpEdittime = $crEditArticle->getTimestamp(); // POST var "wpEdittime" stores when the article was ''last edited''. This is used to check against edit conflicts, and also why we needed to construct "Article" so early. "Article" contains the article's last edittime.
+			$latestRevId = $crEditArticle->getRevision()->getId(); // New conflict detection variable.
 			$wpTextbox1 = "#REDIRECT [[$crRedirectTitle]]\r\n"; // POST var "wpTextbox1" stores the content that's actually going to be written. This is where we write the #REDIRECT [[Article]] stuff. We plug in $crRedirectTitle here.
 			$wpSave = 1;
 			$wpMinoredit = 1; // TODO: Decide on this; should this really be marked and hardcoded as a minor edit, or not? Or should we provide an option? --Digi 11/4/07
@@ -81,6 +82,7 @@ class SpecialCreateRedirect extends SpecialPage {
 				'title' => $title,
 				'wpStarttime' => $wpStarttime,
 				'wpEdittime' => $wpEdittime,
+				'editRevId' => $latestRevId,
 				'wpTextbox1' => $wpTextbox1,
 				'wpSave' => $wpSave,
 				'wpMinoredit' => $wpMinoredit,
