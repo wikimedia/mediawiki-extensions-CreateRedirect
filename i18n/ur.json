@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"පසිඳු කාවින්ද",
-			"Obaid Raza"
+			"Obaid Raza",
+			"BukhariSaeed"
 		]
 	},
 	"createredirect": "رجوع مکرر تخلیق کریں",
@@ -10,5 +11,5 @@
 	"createredirect-page-title": "صفحہ کا عنوان:",
 	"createredirect-redirect-done": "رجوع مکرر \"$1\" برائے \"$2\" تخلیق کیا گیا",
 	"createredirect-redirect-to": "رجوع مکرر برائے:",
-	"createredirect-save": "صفحہ کو محفوظ کریں"
+	"createredirect-save": "صفحہ محفوظ کریں"
 }
