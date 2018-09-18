@@ -82,6 +82,7 @@ class SpecialCreateRedirect extends SpecialPage {
 				'wpStarttime' => $wpStarttime,
 				'wpEdittime' => $wpEdittime,
 				'wpTextbox1' => $wpTextbox1,
+				'wpUnicodeCheck' => 'ℳ𝒲♥𝓊𝓃𝒾𝒸ℴ𝒹ℯ',
 				'wpSave' => $wpSave,
 				'wpMinoredit' => $wpMinoredit,
 				'wpEditToken' => $wpEditToken
