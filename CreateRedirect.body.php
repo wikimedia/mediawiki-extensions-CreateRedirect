@@ -148,25 +148,20 @@ class SpecialCreateRedirect extends SpecialPage {
 
 				case EditPage::AS_BLOCKED_PAGE_FOR_USER:
 					throw new UserBlockedError( $user->getBlock() );
-					return;
 
 				case EditPage::AS_READ_ONLY_PAGE_ANON:
 					throw new PermissionsError( 'edit' );
-					return;
 
 				case EditPage::AS_READ_ONLY_PAGE_LOGGED:
 				case EditPage::AS_READ_ONLY_PAGE:
 					throw new ReadOnlyError;
-					return;
 
 				case EditPage::AS_RATE_LIMITED:
 					throw new ThrottledError;
-					break;
 
 				case EditPage::AS_NO_CREATE_PERMISSION:
 					$permission = $crEdit->mTitle->isTalkPage() ? 'createtalk' : 'createpage';
 					throw new PermissionsError( $permission );
-					return;
 			}
 
 			$out->mRedirect = '';
