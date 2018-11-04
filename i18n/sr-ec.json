@@ -5,10 +5,12 @@
 			"BadDog"
 		]
 	},
-	"createredirect": "Направи преусмерење",
-	"createredirect-error": "Грешка: аутентификација није успела.",
+	"createredirect": "Прављење преусмеравања",
+	"createredirect-desc": "Додаје посебну страницу „[[Special:CreateRedirect|Прављење преусмеравања]]” за једноставно прављење преусмеравања",
+	"createredirect-error": "Грешка: Потврда идентитета није успела.",
+	"createredirect-instructions": "Коришћењем обрасца испод, можете да направите преусмеравање или замените постојећу страницу са преусмеравањем.",
 	"createredirect-page-title": "Наслов странице:",
-	"createredirect-redirect-done": "Преусмерење са „$1“ на „$2“",
+	"createredirect-redirect-done": "Направљено преусмеравање са „$1” на „$2”",
 	"createredirect-redirect-to": "Преусмери на:",
-	"createredirect-save": "Сачувај"
+	"createredirect-save": "Сачувај страницу"
 }
