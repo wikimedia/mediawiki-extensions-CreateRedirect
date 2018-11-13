@@ -181,37 +181,39 @@ class SpecialCreateRedirect extends SpecialPage {
 		$crTitle = Title::newFromText( $crTitle );
 		$crTitle = htmlspecialchars( isset( $crTitle ) ? $crTitle->getPrefixedText() : '' );
 
-		$msgPageTitle = $this->msg( 'createredirect-page-title' )->escaped();
-		$msgRedirectTo = $this->msg( 'createredirect-redirect-to' )->escaped();
-		$msgSave = $this->msg( 'createredirect-save' )->escaped();
-
-		// Edit token
-		// @see https://phabricator.wikimedia.org/T178787
-		$token = Html::hidden( 'wpEditToken', $user->getEditToken() );
-
 		// 2. Start rendering the output! The output is entirely the form.
 		// It's all HTML, and may be self-explanatory.
 		$out->addHTML( $this->msg( 'createredirect-instructions' )->escaped() );
-		$out->addHTML( <<<END
-<form id="redirectform" name="redirectform" method="post" action="$action">
-<table>
-<tr>
-<td><label for="crOrigTitle">$msgPageTitle</label></td>
-<td><input type="text" name="crOrigTitle" id="crOrigTitle" size="60" tabindex="1" /></td>
-</tr>
-<tr>
-<td><label for="crRedirectTitle">$msgRedirectTo</label></td>
-<td><input type="text" name="crRedirectTitle" id="crRedirectTitle" value="{$crTitle}" size="60" tabindex="2" /></td>
-</tr>
-<tr>
-<td></td>
-<td><input type="submit" name="crWrite" id="crWrite" value="$msgSave" tabindex="4" /></td>
-</tr>
-</table>
-{$token}
-</form>
-END
-		);
+
+		$formDescriptor = [
+			'crOrigTitle' => [
+				'type' => 'text',
+				'name' => 'crOrigTitle',
+				'id' => 'crOrigTitle',
+				'size' => 60,
+				'label-message' => 'createredirect-page-title',
+			],
+			'crRedirectTitle' => [
+				'type' => 'text',
+				'name' => 'crRedirectTitle',
+				'id' => 'crRedirectTitle',
+				'size' => 60,
+				'label-message' => 'createredirect-redirect-to',
+				'default' => $crTitle,
+			]
+		];
+
+		$htmlForm = HTMLForm::factory( 'ooui', $formDescriptor, $this->getContext() );
+		$htmlForm
+			->setAction( $action )
+			->setId( 'redirectform' )
+			->setName( 'redirectform' )
+			->setSubmitID( 'crWrite' )
+			->setSubmitName( 'crWrite' )
+			->setSubmitTextMsg( 'createredirect-save' )
+			->setWrapperLegend( null )
+			->prepareForm()
+			->displayForm( false );
 	}
 
 	protected function getGroupName() {
