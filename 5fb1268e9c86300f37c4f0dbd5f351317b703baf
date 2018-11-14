@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "19326617_7a148a94",
+        "filename": "CreateRedirect.body.php",
+        "patchSetId": 1
+      },
+      "lineNbr": 194,
+      "author": {
+        "id": 2604
+      },
+      "writtenOn": "2018-11-14T06:20:59Z",
+      "side": 1,
+      "message": "Let\u0027s remove tabindex in both cases, there\u0027s nor reason for those here and it hurts keyboard accessibility in some cases",
+      "revId": "5fb1268e9c86300f37c4f0dbd5f351317b703baf",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    }
+  ]
+}
