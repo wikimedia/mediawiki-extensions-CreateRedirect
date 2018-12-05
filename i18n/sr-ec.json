@@ -10,7 +10,7 @@
 	"createredirect-error": "Грешка: Потврда идентитета није успела.",
 	"createredirect-instructions": "Коришћењем обрасца испод, можете да направите преусмеравање или замените постојећу страницу са преусмеравањем.",
 	"createredirect-page-title": "Наслов странице:",
-	"createredirect-redirect-done": "Направљено преусмеравање са „$1” на „$2”",
+	"createredirect-redirect-done": "Направљено преусмерење са „$1” на „$2”",
 	"createredirect-redirect-to": "Преусмери на:",
 	"createredirect-save": "Сачувај страницу"
 }
