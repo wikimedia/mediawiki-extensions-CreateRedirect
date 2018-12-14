@@ -1,9 +1,16 @@
 {
 	"@metadata": {
 		"authors": [
-			"Suelnur"
+			"Suelnur",
+			"Hedda"
 		]
 	},
 	"createredirect": "Yönlendirme oluştur",
+	"createredirect-desc": "Kolayca yönlendirme oluşturmak için özel sayfa [[Special:CreateRedirect|YönlendirmeOluştur]] ekler",
+	"createredirect-error": "Hata: Kimlik doğrulama başarısız.",
+	"createredirect-instructions": "Aşağıdaki formu kullanarak bir yönlendirme sayfası oluşturabilir veya mevcut bir sayfayı yönlendirme ile değiştirebilirsiniz.",
+	"createredirect-page-title": "Sayfa başlığı:",
+	"createredirect-redirect-done": "\"$1\" sayfasından \"$2\" sayfasına yönlendirme oluşturuldu",
+	"createredirect-redirect-to": "Şuraya yönlendir:",
 	"createredirect-save": "Sayfayı kaydet"
 }
