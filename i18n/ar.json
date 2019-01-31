@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"روخو",
-			"ديفيد"
+			"ديفيد",
+			"Meno25"
 		]
 	},
 	"createredirect": "إنشاء تحويلة",
@@ -12,5 +13,5 @@
 	"createredirect-page-title": "عنوان الصفحة:",
 	"createredirect-redirect-done": "تم إنشاء تحويلة من \"$1\" إلى \"$2\"",
 	"createredirect-redirect-to": "إعادة توجيه إلى:",
-	"createredirect-save": "احفظ الصفحة"
+	"createredirect-save": "حفظ الصفحة"
 }
