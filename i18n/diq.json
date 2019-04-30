@@ -2,11 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"Erdemaslancan",
-			"Mirzali"
+			"Mirzali",
+			"Orbot707"
 		]
 	},
 	"createredirect": "Serçarnayış Vıraze",
+	"createredirect-desc": "Rehat hetenayış vıraştışi rê pela xısusi [[Special:CreateRedirect|hetenayış vıraze ]] dekeno",
 	"createredirect-error": "Xırab:Araşt kerdış nêbı",
+	"createredirect-instructions": "Formê cêrêni karıtışa yew pela hetenayışi şenê vırazê ya ki mewcud yew pele, hetenayışa şenê bıvurnên",
 	"createredirect-page-title": "Sernameyê pele:",
 	"createredirect-redirect-done": "\"$1\" ra \"$2\" hetanayış vıraziya",
 	"createredirect-redirect-to": "Hetanayışê cı:",
