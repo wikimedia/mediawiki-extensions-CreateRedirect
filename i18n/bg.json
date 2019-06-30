@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Vlad5250"
+			"Vlad5250",
+			"StanProg"
 		]
 	},
 	"createredirect": "Създаване на пренасочване",
@@ -11,5 +12,5 @@
 	"createredirect-page-title": "Заглавие на страницата:",
 	"createredirect-redirect-done": "Пренасочването от „$1“ към „$2“ е създадено",
 	"createredirect-redirect-to": "Пренасочване към:",
-	"createredirect-save": "Съхраняване"
+	"createredirect-save": "Съхраняване на страницата"
 }
