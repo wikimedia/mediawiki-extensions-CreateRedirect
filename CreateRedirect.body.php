@@ -126,7 +126,7 @@ class SpecialCreateRedirect extends SpecialPage {
 			}
 			if ( $permErrors ) {
 				wfDebug( __METHOD__ . ": User can't edit\n" );
-				$out->addWikiText( $out->formatPermissionsErrorMessage( $permErrors, 'edit' ) );
+				$out->addWikiTextAsInterface( $out->formatPermissionsErrorMessage( $permErrors, 'edit' ) );
 				return;
 			}
 
