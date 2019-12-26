@@ -11,7 +11,8 @@
  * This program, CreateRedirect, is Copyright (C) 2007 Marco Zafra.
  * CreateRedirect is released under the GNU Lesser General Public License version 3.
  *
- * This file is part of CreateRedirect. See the main file ("CreateRedirect.php") for additional information.
+ * This file is part of CreateRedirect.
+ * See the main file ("CreateRedirect.php") for additional information.
  *
  * CreateRedirect is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License as published by
@@ -20,7 +21,8 @@
  */
 
 /* Body file:
- * The bulk of the routines are stored here. This is where all the internal processing actually occurs.
+ * The bulk of the routines are stored here.
+ * This is where all the internal processing actually occurs.
  */
 
 class SpecialCreateRedirect extends SpecialPage {
@@ -66,13 +68,25 @@ class SpecialCreateRedirect extends SpecialPage {
 			// FauxRequest, but they're required for the writing process,
 			// and they contain important information on the article in
 			// question that's being edited.
-			$crEditTitle = Title::newFromText( $crOrigTitle ); // First, construct "Title". "Article" relies on the former object being set.
-			$crEditArticle = new Article( $crEditTitle, 0 ); // Then, construct "Article". This is where most of the article's information is.
-			$wpStarttime = wfTimestampNow(); // POST var "wpStarttime" stores when the edit was started.
-			$wpEdittime = $crEditArticle->getTimestamp(); // POST var "wpEdittime" stores when the article was ''last edited''. This is used to check against edit conflicts, and also why we needed to construct "Article" so early. "Article" contains the article's last edittime.
-			$wpTextbox1 = "#REDIRECT [[$crRedirectTitle]]\r\n"; // POST var "wpTextbox1" stores the content that's actually going to be written. This is where we write the #REDIRECT [[Article]] stuff. We plug in $crRedirectTitle here.
+
+			// First, construct "Title". "Article" relies on the former object being set.
+			$crEditTitle = Title::newFromText( $crOrigTitle );
+			// Then, construct "Article". This is where most of the article's information is.
+			$crEditArticle = new Article( $crEditTitle, 0 );
+			// POST var "wpStarttime" stores when the edit was started.
+			$wpStarttime = wfTimestampNow();
+			// POST var "wpEdittime" stores when the article was ''last edited''.
+			// This is used to check against edit conflicts,
+			// and also why we needed to construct "Article"
+			// so early. "Article" contains the article's last edittime.
+			$wpEdittime = $crEditArticle->getTimestamp();
+			// POST var "wpTextbox1" stores the content that's actually going to be written.
+			// This is where we write the #REDIRECT [[Article]] stuff. We plug in $crRedirectTitle here.
+			$wpTextbox1 = "#REDIRECT [[$crRedirectTitle]]\r\n";
 			$wpSave = 1;
-			$wpMinoredit = 1; // TODO: Decide on this; should this really be marked and hardcoded as a minor edit, or not? Or should we provide an option? --Digi 11/4/07
+			$wpMinoredit = 1;
+			// TODO: Decide on this; should this really be marked and hardcoded
+			// as a minor edit, or not? Or should we provide an option? --Digi 11/4/07
 			// Per note on T178787, this should _not_ be ran through htmlspecialchars()
 			$wpEditToken = $request->getVal( 'wpEditToken' );
 
@@ -96,7 +110,9 @@ class SpecialCreateRedirect extends SpecialPage {
 
 			// 5. Construct "EditPage", which contains routines to write all
 			// the data. This is where all the magic happens.
-			$crEdit = new EditPage( $crEditArticle ); // We plug in the "Article" object here so EditPage can center on the article that we need to edit.
+			// We plug in the "Article" object here so EditPage can center
+			// on the article that we need to edit.
+			$crEdit = new EditPage( $crEditArticle );
 
 			// Set the correct title for real. This is needed to prevent
 			// "Invalid or virtual namespace -1 given." exceptions from happening
@@ -167,7 +183,8 @@ class SpecialCreateRedirect extends SpecialPage {
 			$out->mRedirect = '';
 			$out->mRedirectCode = '';
 
-			// TODO: Implement error handling (i.e. "Edit conflict!" or "You don't have permissions to edit this page!") --Digi 11/4/07
+			// TODO: Implement error handling (i.e. "Edit conflict!" or
+			// "You don't have permissions to edit this page!") --Digi 11/4/07
 		} elseif ( $request->wasPosted() && !$user->matchEditToken( $request->getVal( 'wpEditToken' ) ) ) {
 			// Possibly a CSRF attempt
 			$out->setPageTitle( $this->msg( 'sessionfailure-title' ) );
@@ -216,6 +233,9 @@ class SpecialCreateRedirect extends SpecialPage {
 			->displayForm( false );
 	}
 
+	/**
+	 * @inheritDoc
+	 */
 	protected function getGroupName() {
 		return 'pagetools';
 	}

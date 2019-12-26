@@ -12,8 +12,8 @@
 		"MediaWiki": ">= 1.32.0"
 	},
 	"AutoloadClasses": {
-		"SpecialCreateRedirect": "CreateRedirect.body.php",
-		"CreateRedirectHooks": "CreateRedirect.hooks.php"
+		"SpecialCreateRedirect": "SpecialCreateRedirect.php",
+		"CreateRedirectHooks": "CreateRedirectHooks.php"
 	},
 	"MessagesDirs": {
 		"CreateRedirect": [

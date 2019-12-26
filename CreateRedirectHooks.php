@@ -24,7 +24,9 @@ class CreateRedirectHooks {
 
 		// 3. Add the link!
 		$href = SpecialPage::getTitleFor( 'CreateRedirect', $title->getPrefixedText() )->getLocalURL();
-		echo Html::rawElement( 'li', null, Html::element( 'a', [ 'href' => $href ], $skin->msg( 'createredirect' )->text() ) );
+		echo Html::rawElement(
+			'li', null, Html::element( 'a', [ 'href' => $href ], $skin->msg( 'createredirect' )->text() )
+		);
 
 		return true;
 	}
