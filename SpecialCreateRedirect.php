@@ -25,7 +25,13 @@
  * This is where all the internal processing actually occurs.
  */
 
-class SpecialCreateRedirect extends SpecialPage {
+class SpecialCreateRedirect extends FormSpecialPage {
+
+	/**
+	 * @var int
+	 * Number of edits made in onSubmit().
+	 */
+	protected $editCount = 0;
 
 	/**
 	 * Constructor -- set up the new special page
@@ -34,203 +40,146 @@ class SpecialCreateRedirect extends SpecialPage {
 		parent::__construct( 'CreateRedirect' );
 	}
 
-	public function doesWrites() {
-		return true;
+	/**
+	 * @inheritDoc
+	 */
+	public function onSubmit( array $data ) {
+		$redirectTarget = Title::newFromText( $data['crRedirectTitle'] );
+		if ( !$redirectTarget ) {
+			return Status::newFatal( 'createredirect-invalid-title', $data['crRedirectTitle'] );
+		}
+
+		$origTitles = array_filter( preg_split( "/[\r\n]+/", $data['crOrigTitle'] ) );
+
+		$status = Status::newGood();
+		foreach ( $origTitles as $pageName ) {
+			$this->createOneRedirect( $pageName, $status, $redirectTarget, $data['crOverwrite'] );
+		}
+
+		if ( !$this->editCount && $status->isGood() ) {
+			return false; // Empty multiline field. Show the form again.
+		}
+
+		return $status;
 	}
 
 	/**
-	 * Show the special page.
+	 * Create redirect from page A to page B.
 	 *
-	 * @param mixed|null $par Parameter passed to the special page
+	 * @param string $pageName Title of original page. (we are making a redirect to this page)
+	 * @param Status $status Status object for placing errors into it.
+	 * @param Title $redirectTarget Title of redirect page.
+	 * @param bool $overwrite Whether to allow overwriting the existing page with the new redirect.
 	 */
-	public function execute( $par ) {
-		$out = $this->getOutput();
-		$request = $this->getRequest();
-		$user = $this->getUser();
-
-		$this->checkReadOnly();
-
-		$this->setHeaders();
-
-		if ( $request->wasPosted() && $user->matchEditToken( $request->getVal( 'wpEditToken' ) ) ) {
-			// 1. Retrieve POST vars. First, we want "crOrigTitle", holding the
-			// title of the page we're writing to, and "crRedirectTitle",
-			// holding the title of the page we're redirecting to.
-			$crOrigTitle = $request->getText( 'crOrigTitle' );
-			$crRedirectTitle = $request->getText( 'crRedirectTitle' );
-
-			// 2. We need to construct a "FauxRequest", or fake a request that
-			// MediaWiki would otherwise get naturally by a client browser to
-			// do whatever it has to do. Let's put together the params.
-			$title = $crOrigTitle;
-			// a. We know our title, so we can instantiate a "Title" and
-			// "Article" object. We don't actually plug this into the
-			// FauxRequest, but they're required for the writing process,
-			// and they contain important information on the article in
-			// question that's being edited.
-
-			// First, construct "Title". "Article" relies on the former object being set.
-			$crEditTitle = Title::newFromText( $crOrigTitle );
-			// Then, construct "Article". This is where most of the article's information is.
-			$crEditArticle = new Article( $crEditTitle, 0 );
-			// POST var "wpStarttime" stores when the edit was started.
-			$wpStarttime = wfTimestampNow();
-			// POST var "wpEdittime" stores when the article was ''last edited''.
-			// This is used to check against edit conflicts,
-			// and also why we needed to construct "Article"
-			// so early. "Article" contains the article's last edittime.
-			$wpEdittime = $crEditArticle->getTimestamp();
-			// POST var "wpTextbox1" stores the content that's actually going to be written.
-			// This is where we write the #REDIRECT [[Article]] stuff. We plug in $crRedirectTitle here.
-			$wpTextbox1 = "#REDIRECT [[$crRedirectTitle]]\r\n";
-			$wpSave = 1;
-			$wpMinoredit = 1;
-			// TODO: Decide on this; should this really be marked and hardcoded
-			// as a minor edit, or not? Or should we provide an option? --Digi 11/4/07
-			// Per note on T178787, this should _not_ be ran through htmlspecialchars()
-			$wpEditToken = $request->getVal( 'wpEditToken' );
-
-			// 3. Put together the params that we'll use in "FauxRequest" into a single array.
-			$crRequestParams = [
-				'title' => $title,
-				'wpStarttime' => $wpStarttime,
-				'wpEdittime' => $wpEdittime,
-				'wpTextbox1' => $wpTextbox1,
-				'wpUnicodeCheck' => EditPage::UNICODE_CHECK,
-				'wpSave' => $wpSave,
-				'wpMinoredit' => $wpMinoredit,
-				'wpEditToken' => $wpEditToken
-			];
-
-			// 4. Construct "FauxRequest"! Using a FauxRequest object allows
-			// for a transparent interface of generated request params that
-			// aren't retrieved from the client itself (i.e. $_REQUEST).
-			// It's a very useful tool.
-			$crRequest = new FauxRequest( $crRequestParams, true );
-
-			// 5. Construct "EditPage", which contains routines to write all
-			// the data. This is where all the magic happens.
-			// We plug in the "Article" object here so EditPage can center
-			// on the article that we need to edit.
-			$crEdit = new EditPage( $crEditArticle );
-
-			// Set the correct title for real. This is needed to prevent
-			// "Invalid or virtual namespace -1 given." exceptions from happening
-			// when the SpamBlacklist extension (and/or other extensions using
-			// the same core hook(s)) is installed.
-			$crEdit->getContext()->setTitle( $crEditTitle );
-
-			// a. We have to plug in the correct information that we just
-			// generated. While we fed EditPage with the correct "Article"
-			// object, it doesn't have the correct "Title" object.
-			// The "Title" object actually points to Special:CreateRedirect,
-			// which don't do us any good. Instead, explicitly plug in the
-			// correct objects; the objects "Article" and "Title" that we
-			// generated earlier. This will center EditPage on the correct article.
-			$crEdit->mArticle = $crEditArticle;
-			$crEdit->mTitle = $crEditTitle;
-			// b. Then import the "form data" (or the FauxRequest object that
-			// we just constructed). EditPage now has all the information we
-			// generated.
-			$crEdit->importFormData( $crRequest );
-
-			$permErrors = $crEditTitle->getUserPermissionsErrors( 'edit', $user );
-			// Can this title be created?
-			if ( !$crEditTitle->exists() ) {
-				$permErrors = array_merge( $permErrors,
-					wfArrayDiff2( $crEditTitle->getUserPermissionsErrors( 'create', $user ), $permErrors ) );
-			}
-			if ( $permErrors ) {
-				wfDebug( __METHOD__ . ": User can't edit\n" );
-				$out->addWikiTextAsInterface( $out->formatPermissionsErrorMessage( $permErrors, 'edit' ) );
-				return;
-			}
-
-			$resultDetails = false;
-			$status = $crEdit->internalAttemptSave( $resultDetails, $user->isAllowed( 'bot' ) && $request->getBool( 'bot', true ) );
-			$value = $status->value;
-
-			if ( $value == EditPage::AS_SUCCESS_UPDATE || $value == EditPage::AS_SUCCESS_NEW_ARTICLE ) {
-				$out->wrapWikiMsg(
-					"<div class=\"mw-createredirect-done\">\n$1</div>",
-					[ 'createredirect-redirect-done', $crOrigTitle, $crRedirectTitle ]
-				);
-			}
-
-			switch ( $value ) {
-				case EditPage::AS_SPAM_ERROR:
-					$crEdit->spamPageWithContent( $resultDetails['spam'] );
-					return;
-
-				case EditPage::AS_BLOCKED_PAGE_FOR_USER:
-					throw new UserBlockedError( $user->getBlock() );
-
-				case EditPage::AS_READ_ONLY_PAGE_ANON:
-					throw new PermissionsError( 'edit' );
-
-				case EditPage::AS_READ_ONLY_PAGE_LOGGED:
-				case EditPage::AS_READ_ONLY_PAGE:
-					throw new ReadOnlyError;
-
-				case EditPage::AS_RATE_LIMITED:
-					throw new ThrottledError;
-
-				case EditPage::AS_NO_CREATE_PERMISSION:
-					$permission = $crEdit->mTitle->isTalkPage() ? 'createtalk' : 'createpage';
-					throw new PermissionsError( $permission );
-			}
-
-			$out->mRedirect = '';
-			$out->mRedirectCode = '';
-
-			// TODO: Implement error handling (i.e. "Edit conflict!" or
-			// "You don't have permissions to edit this page!") --Digi 11/4/07
-		} elseif ( $request->wasPosted() && !$user->matchEditToken( $request->getVal( 'wpEditToken' ) ) ) {
-			// Possibly a CSRF attempt
-			$out->setPageTitle( $this->msg( 'sessionfailure-title' ) );
-			$out->addWikiMsg( 'sessionfailure' );
+	protected function createOneRedirect( $pageName, $status,
+		Title $redirectTarget, bool $overwrite
+	) {
+		$crOrigTitle = Title::newFromText( $pageName );
+		if ( !$crOrigTitle ) {
+			return $status->fatal( 'createredirect-invalid-title', $data['crOrigTitle'] );
 		}
 
-		$action = htmlspecialchars( $this->getPageTitle()->getLocalURL() );
-		// Also retrieve "crTitle". If this GET var is found, we autofill the
-		// "Redirect to:" field with that text.
-		$crTitle = $request->getText( 'crRedirectTitle', $request->getText( 'crTitle', $par ) );
-		$crTitle = Title::newFromText( $crTitle );
-		$crTitle = htmlspecialchars( isset( $crTitle ) ? $crTitle->getPrefixedText() : '' );
+		if ( $crOrigTitle->exists() && !$overwrite ) {
+			// Creating this redirect would result in overwriting an existing page.
+			// Warn about that, but provide "create anyway" button.
+			return $status->fatal( 'createredirect-would-overwrite', $crOrigTitle->getFullText() );
+		}
 
-		// 2. Start rendering the output! The output is entirely the form.
-		// It's all HTML, and may be self-explanatory.
-		$out->addHTML( $this->msg( 'createredirect-instructions' )->escaped() );
+		$newWikiText = "#REDIRECT [[" . $redirectTarget->getFullText() . "]]";
+		$content = ContentHandler::makeContent( $newWikiText, null, CONTENT_MODEL_WIKITEXT );
 
-		$formDescriptor = [
+		$page = WikiPage::factory( $crOrigTitle );
+		$saveStatus = $page->doEditContent( $content, '', EDIT_INTERNAL | EDIT_MINOR | EDIT_AUTOSUMMARY );
+
+		if ( $saveStatus->isOK() ) {
+			$this->getOutput()->addHTML( Xml::tags( 'div', [ 'class' => 'mw-createredirect-done' ],
+				wfMessage( 'createredirect-redirect-done' )->rawParams(
+					Linker::link( $crOrigTitle, null, [], [ 'redirect' => 'no' ] ),
+					Linker::link( $redirectTarget )
+				)->escaped()
+			) );
+			$this->editCount ++;
+		}
+
+		$status->merge( $saveStatus );
+	}
+
+	/**
+	 * @inheritDoc
+	 */
+	protected function preText() {
+		return $this->msg( 'createredirect-instructions' )->escaped();
+	}
+
+	/**
+	 * @inheritDoc
+	 */
+	protected function getFormFields() {
+		$request = $this->getRequest();
+		$crTitle = Title::newFromText( $request->getText( 'crRedirectTitle',
+			$request->getText( 'crTitle', $this->par )
+		) );
+
+		$crRedirectTitleDefault = '';
+		$crOrigTitleDefault = '';
+
+		if ( $crTitle ) {
+			$crRedirectTitleDefault = $crTitle->getPrefixedText();
+			if ( $crTitle->getNamespace() != NS_MAIN ) {
+				$crOrigTitleDefault = $crTitle->getNsText() . ':';
+			}
+		}
+
+		$origTitleType = 'text';
+		if ( strpos( $request->getText( 'crOrigTitle' ), "\n" ) !== false ) {
+			$origTitleType = 'textarea';
+		}
+
+		return [
 			'crOrigTitle' => [
-				'type' => 'text',
+				'type' => $origTitleType,
 				'name' => 'crOrigTitle',
 				'id' => 'crOrigTitle',
 				'size' => 60,
+				'rows' => 4,
 				'label-message' => 'createredirect-page-title',
+				'default' => $crOrigTitleDefault,
+				'required' => true
 			],
+			// TODO: non-javascript button id="crMultiLine"?
 			'crRedirectTitle' => [
-				'type' => 'text',
+				'type' => 'title',
 				'name' => 'crRedirectTitle',
 				'id' => 'crRedirectTitle',
 				'size' => 60,
 				'label-message' => 'createredirect-redirect-to',
-				'default' => $crTitle,
+				'default' => $crRedirectTitleDefault,
+				'required' => true,
+				'autocomplete' => false
+			],
+			'crOverwrite' => [
+				'type' => 'check',
+				'label-message' => 'createredirect-overwrite'
 			]
 		];
+	}
 
-		$htmlForm = HTMLForm::factory( 'ooui', $formDescriptor, $this->getContext() );
-		$htmlForm
-			->setAction( $action )
-			->setId( 'redirectform' )
-			->setName( 'redirectform' )
-			->setSubmitID( 'crWrite' )
-			->setSubmitName( 'crWrite' )
+	/**
+	 * @inheritDoc
+	 */
+	protected function alterForm( HTMLForm $form ) {
+		$form->setId( 'redirectform' )
 			->setSubmitTextMsg( 'createredirect-save' )
-			->setWrapperLegend( null )
-			->prepareForm()
-			->displayForm( false );
+			->setWrapperLegend( false );
+
+		$this->getOutput()->addModules( 'ext.createredirect' );
+	}
+
+	/**
+	 * @inheritDoc
+	 */
+	protected function getDisplayFormat() {
+		return 'ooui';
 	}
 
 	/**
