@@ -1,8 +1,9 @@
 {
 	"name": "CreateRedirect",
-	"version": "1.3.0",
+	"version": "1.4.0",
 	"author": [
-		"[https://www.mediawiki.org/wiki/User:Digiku Marco Zafra]"
+		"[https://www.mediawiki.org/wiki/User:Digiku Marco Zafra]",
+		"Edward Chernenko"
 	],
 	"type": "specialpage",
 	"url": "https://www.mediawiki.org/wiki/Extension:CreateRedirect",
@@ -28,6 +29,23 @@
 	},
 	"SpecialPages": {
 		"CreateRedirect": "SpecialCreateRedirect"
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "modules",
+		"remoteExtPath": "CreateRedirect/modules"
+	},
+	"ResourceModules": {
+		"ext.createredirect": {
+			"scripts": "ext.createredirect.js",
+			"styles": "ext.createredirect.css",
+			"targets": [
+				"desktop",
+				"mobile"
+			],
+			"messages": [
+				"createredirect-enable-multiline"
+			]
+		}
 	},
 	"manifest_version": 2
 }
