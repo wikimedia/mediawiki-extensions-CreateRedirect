@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0f5dfa3e_2483b324",
+        "filename": "i18n/en.json",
+        "patchSetId": 4
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 6729
+      },
+      "writtenOn": "2020-01-08T00:01:29Z",
+      "side": 1,
+      "message": "Should start with a leading colon (`[[:$1]]`) to be consistent with other links (eg Category links aren\u0027t shown unless they start with :, and files will be rendered instead of linked to)",
+      "range": {
+        "startLine": 18,
+        "startChar": 52,
+        "endLine": 18,
+        "endChar": 58
+      },
+      "revId": "b766d0ebea2a0347a8223d68f9929a20ad72d628",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "06c91f77_37cbba33",
+        "filename": "i18n/qqq.json",
+        "patchSetId": 4
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 6729
+      },
+      "writtenOn": "2020-01-08T00:01:29Z",
+      "side": 1,
+      "message": "This documentation doesn\u0027t appear to match the message in en.json",
+      "revId": "b766d0ebea2a0347a8223d68f9929a20ad72d628",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    }
+  ]
+}
