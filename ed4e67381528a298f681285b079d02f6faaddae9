@@ -1,0 +1,119 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fc910543_24da6dc8",
+        "filename": "SpecialCreateRedirect.php",
+        "patchSetId": 7
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 243
+      },
+      "writtenOn": "2020-01-22T03:46:09Z",
+      "side": 1,
+      "message": "The whole line could probably just use \u0027single quotes\u0027 instead of double as there\u0027s no pressing need for double quotes, but should this magic word be i18n\u0027ed to the wiki\u0027s content language? OTOH that would make sense, but the English aliases are universal and work everywhere, so there\u0027s also that.",
+      "range": {
+        "startLine": 91,
+        "startChar": 18,
+        "endLine": 91,
+        "endChar": 27
+      },
+      "revId": "ed4e67381528a298f681285b079d02f6faaddae9",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "854c7486_80417990",
+        "filename": "SpecialCreateRedirect.php",
+        "patchSetId": 7
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 243
+      },
+      "writtenOn": "2020-01-22T03:46:09Z",
+      "side": 1,
+      "message": "$this-\u003emsg",
+      "range": {
+        "startLine": 99,
+        "startChar": 4,
+        "endLine": 99,
+        "endChar": 13
+      },
+      "revId": "ed4e67381528a298f681285b079d02f6faaddae9",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a8f76109_36c573c0",
+        "filename": "SpecialCreateRedirect.php",
+        "patchSetId": 7
+      },
+      "lineNbr": 100,
+      "author": {
+        "id": 243
+      },
+      "writtenOn": "2020-01-22T03:46:09Z",
+      "side": 1,
+      "message": "The Linker class is deprecated and should be avoided in new code; use LinkRendered instead. You should be able to get one with $this-\u003egetLinkRenderer() as you\u0027re inside a SpecialPage.",
+      "range": {
+        "startLine": 100,
+        "startChar": 5,
+        "endLine": 100,
+        "endChar": 17
+      },
+      "revId": "ed4e67381528a298f681285b079d02f6faaddae9",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "264dc7a4_7f1e69aa",
+        "filename": "extension.json",
+        "patchSetId": 7
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 243
+      },
+      "writtenOn": "2020-01-22T03:46:09Z",
+      "side": 1,
+      "message": "Could probably bump this",
+      "range": {
+        "startLine": 3,
+        "startChar": 13,
+        "endLine": 3,
+        "endChar": 18
+      },
+      "revId": "ed4e67381528a298f681285b079d02f6faaddae9",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9615bf01_5c974385",
+        "filename": "extension.json",
+        "patchSetId": 7
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 243
+      },
+      "writtenOn": "2020-01-22T03:46:09Z",
+      "side": 1,
+      "message": "This does nothing anymore since MW 1.29, see e.g. T184257.",
+      "range": {
+        "startLine": 39,
+        "startChar": 3,
+        "endLine": 39,
+        "endChar": 24
+      },
+      "revId": "ed4e67381528a298f681285b079d02f6faaddae9",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    }
+  ]
+}
