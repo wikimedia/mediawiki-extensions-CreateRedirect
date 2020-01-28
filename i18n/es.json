@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Sanbec"
+			"Sanbec",
+			"Fitoschido"
 		]
 	},
 	"createredirect": "Crear una redirección",
@@ -11,5 +12,6 @@
 	"createredirect-page-title": "Título de la página:",
 	"createredirect-redirect-done": "Redirección creada de «$1» hacia «$2»",
 	"createredirect-redirect-to": "Redirigir a:",
-	"createredirect-save": "Guardar la página"
+	"createredirect-save": "Guardar la página",
+	"createredirect-would-overwrite": "Atención: ya existe la página «[[:$1]]»."
 }

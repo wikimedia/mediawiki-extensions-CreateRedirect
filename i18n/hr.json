@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bugoslav"
+		]
+	},
+	"createredirect-invalid-title": "Pogrješka: \"$1\" nije valjani naslov.",
+	"createredirect-overwrite": "Zanemari upozorenja"
+}
