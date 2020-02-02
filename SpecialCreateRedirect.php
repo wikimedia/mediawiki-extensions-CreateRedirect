@@ -77,7 +77,7 @@ class SpecialCreateRedirect extends FormSpecialPage {
 	) {
 		$crOrigTitle = Title::newFromText( $pageName );
 		if ( !$crOrigTitle ) {
-			$status->fatal( 'createredirect-invalid-title', $data['crOrigTitle'] );
+			$status->fatal( 'createredirect-invalid-title', $pageName );
 			return;
 		}
 
