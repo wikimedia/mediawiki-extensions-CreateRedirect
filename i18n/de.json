@@ -3,7 +3,8 @@
 		"authors": [
 			"Ameisenigel",
 			"Kghbln",
-			"The Evil IP address"
+			"The Evil IP address",
+			"Umherirrender"
 		]
 	},
 	"createredirect": "Weiterleitung erstellen",
@@ -11,7 +12,7 @@
 	"createredirect-error": "Fehler: Authentifizierung fehlgeschlagen.",
 	"createredirect-enable-multiline": "Mehrere Titel angeben",
 	"createredirect-instructions": "Mit diesem Formular kannst du eine Weiterleitung erstellen oder eine existierende Seite durch eine Weiterleitung ersetzen.",
-	"createredirect-invalid-title": "Fehler: \"$1\" ist kein korrekter Titel.",
+	"createredirect-invalid-title": "Fehler: „$1“ ist kein korrekter Titel.",
 	"createredirect-overwrite": "Warnungen ignorieren",
 	"createredirect-page-title": "Seitenname:",
 	"createredirect-redirect-done": "Weiterleitung von „$1“ auf „$2“ erstellt",
