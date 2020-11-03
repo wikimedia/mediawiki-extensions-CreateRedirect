@@ -1,0 +1,9 @@
+Verified+1: Libraryupgrader <tools.libraryupgrader@tools.wmflabs.org>
+Verified+2: jenkins-bot
+Code-Review+1: Umherirrender <umherirrender_de.wp@web.de>
+Code-Review+2: DannyS712 <DannyS712.enwiki@gmail.com>
+Submitted-by: jenkins-bot
+Submitted-at: Tue, 03 Nov 2020 17:13:27 +0000
+Reviewed-on: https://gerrit.wikimedia.org/r/c/mediawiki/extensions/CreateRedirect/+/638617
+Project: mediawiki/extensions/CreateRedirect
+Branch: refs/heads/master
