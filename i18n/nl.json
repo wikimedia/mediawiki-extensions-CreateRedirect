@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Elroy",
+			"Mainframe98",
 			"Siebrand"
 		]
 	},
@@ -13,5 +14,6 @@
 	"createredirect-page-title": "Paginanaam:",
 	"createredirect-redirect-done": "Doorverwijzing aangemaakt van \"$1\" naar \"$2\"",
 	"createredirect-redirect-to": "Doorverwijzen naar:",
-	"createredirect-save": "Pagina opslaan"
+	"createredirect-save": "Pagina opslaan",
+	"createredirect-would-overwrite": "Waarschuwing: pagina \"[[:$1]]\" bestaat al."
 }
