@@ -2,11 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Base",
+			"DDPAT",
 			"Piramidion"
 		]
 	},
 	"createredirect": "Створити перенаправлення",
-	"createredirect-desc": "Додає спеціальну сторінк [[Special:CreateRedirect|CreateRedirect]] для легкого створення перенаправлень",
+	"createredirect-desc": "Додає спеціальну сторінку [[Special:CreateRedirect|CreateRedirect]] для легкого створення перенаправлень",
 	"createredirect-error": "Помилка: Автентифікація не вдалась.",
 	"createredirect-enable-multiline": "Введіть більше назв",
 	"createredirect-instructions": "Використовуючи форму нижче, Ви можете створити сторіку-перенаправлення або замінити існуючу сторіку перенаправленням.",
