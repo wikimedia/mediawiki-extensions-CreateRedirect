@@ -25,7 +25,7 @@
 		"CreateRedirectAlias": "CreateRedirect.alias.php"
 	},
 	"Hooks": {
-		"SkinTemplateToolboxEnd": "CreateRedirectHooks::onSkinTemplateToolboxEnd"
+		"SidebarBeforeOutput": "CreateRedirectHooks::onSidebarBeforeOutput"
 	},
 	"SpecialPages": {
 		"CreateRedirect": "SpecialCreateRedirect"

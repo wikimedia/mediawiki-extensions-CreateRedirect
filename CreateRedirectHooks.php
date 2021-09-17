@@ -5,12 +5,11 @@ class CreateRedirectHooks {
 	 * Adds a shortcut link pointing to Special:CreateRedirect to the "toolbox" menu.
 	 * If applicable, also adds a reference to the current title as a GET param.
 	 *
-	 * @param BaseTemplate &$tpl
+	 * @param Skin $skin
+	 * @param array &$sidebar
 	 * @return bool
 	 */
-	public static function onSkinTemplateToolboxEnd( &$tpl ) {
-		$skin = $tpl->getSkin();
-
+	public static function onSidebarBeforeOutput( $skin, &$sidebar ) {
 		// 1. Determine whether to actually add the link at all.
 		// There are certain cases, e.g. in the edit dialog, in a special page,
 		// where it's inappropriate for the link to appear.
@@ -24,9 +23,10 @@ class CreateRedirectHooks {
 
 		// 3. Add the link!
 		$href = SpecialPage::getTitleFor( 'CreateRedirect', $title->getPrefixedText() )->getLocalURL();
-		echo Html::rawElement(
-			'li', null, Html::element( 'a', [ 'href' => $href ], $skin->msg( 'createredirect' )->text() )
-		);
+		$sidebar['TOOLBOX']['createredirect'] = [
+			'id' => 't-createredirect',
+			'href' => $href
+		];
 
 		return true;
 	}
