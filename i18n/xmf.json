@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Narazeni"
+		]
+	},
+	"createredirect": "გინოწურაფაშ გოჭყაფა",
+	"createredirect-desc": "გეთმუძინანს გიშაჯერძაფილ ხასჷლას [[Special:CreateRedirect|CreateRedirect]] გინოწურაფეფიშ ლექინას გაჭყაფალო",
+	"createredirect-error": "ჩილათა: ავტორიზაციაქ ვემიხუჯინჷ.",
+	"createredirect-enable-multiline": "გენშეჸონით უმოსი დუდჯოხო",
+	"createredirect-instructions": "გიმე მოჩამილი ფორმაშ გჷმორინაფათ, შეილებჷნა გინოწურაფაშ ხასჷლაშ გოჭყაფა ვარ-და უკვე რინელი ხასჷლაშ გინოღალა გინოწურაფათ.",
+	"createredirect-invalid-title": "ჩილათა: \"$1\" ვა რე თინი ჯოხო.",
+	"createredirect-overwrite": "არძანერი ხვილაფაშ იგნორირაფა",
+	"createredirect-page-title": "ხასჷლაშ დუდჯოხო:",
+	"createredirect-redirect-done": "გინკწურაფაქ გიჭყჷ \"$1\"-შე \"$2\"-შა",
+	"createredirect-redirect-to": "გინოწურაფა:",
+	"createredirect-save": "ხასჷლაშ ჩუალა",
+	"createredirect-would-overwrite": "ხვილაფა: ხასჷლა \"[[:$1]]\" უკვე რე."
+}
