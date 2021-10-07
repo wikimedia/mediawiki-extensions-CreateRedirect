@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ee934eff_1d4e8dc4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 161
+      },
+      "writtenOn": "2021-10-07T19:11:32Z",
+      "side": 1,
+      "message": "Resubmit\n\nnpm ERR! request to https://registry.npmjs.org/yallist/-/yallist-4.0.0.tgz failed, reason: getaddrinfo EAI_AGAIN registry.npmjs.org",
+      "revId": "f873922ffcd17bc4a2209904ace0a5df0f606ac0",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951"
+    }
+  ]
+}
