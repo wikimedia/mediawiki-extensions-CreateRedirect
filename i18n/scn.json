@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ajeje Brazorf"
+		]
+	},
+	"createredirect-enable-multiline": "Nzirisci cchiù tìtuli",
+	"createredirect-invalid-title": "Erruri: \"$1\" nun è nu tìtulu vàliddu.",
+	"createredirect-page-title": "Tìtulu dâ pàggina:",
+	"createredirect-save": "Sarva la pàggina",
+	"createredirect-would-overwrite": "Accura: la pàggina \"[[:$1]]\" già esisti."
+}

@@ -3,12 +3,14 @@
 		"authors": [
 			"Elroy",
 			"Mainframe98",
-			"Siebrand"
+			"Siebrand",
+			"Romaine"
 		]
 	},
 	"createredirect": "Doorverwijzing aanmaken",
 	"createredirect-desc": "Voegt een [[Special:CreateRedirect|speciale pagina]] toe om eenvoudig doorverwijzingen aan te maken",
 	"createredirect-error": "Fout: authenticatie mislukt.",
+	"createredirect-enable-multiline": "Voer meer titels in",
 	"createredirect-instructions": "Via het onderstaande formulier kunt u een doorverwijzingspagina aanmaken of een bestaande pagina vervangen door een doorverwijzing.",
 	"createredirect-overwrite": "Waarschuwingen negeren",
 	"createredirect-page-title": "Paginanaam:",
