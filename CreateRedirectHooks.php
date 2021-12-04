@@ -1,15 +1,15 @@
 <?php
 
-class CreateRedirectHooks {
+use MediaWiki\Hook\SidebarBeforeOutputHook;
+
+class CreateRedirectHooks implements SidebarBeforeOutputHook {
 	/**
 	 * Adds a shortcut link pointing to Special:CreateRedirect to the "toolbox" menu.
 	 * If applicable, also adds a reference to the current title as a GET param.
 	 *
-	 * @param Skin $skin
-	 * @param array &$sidebar
-	 * @return bool
+	 * @inheritDoc
 	 */
-	public static function onSidebarBeforeOutput( $skin, &$sidebar ) {
+	public function onSidebarBeforeOutput( $skin, &$sidebar ): void {
 		// 1. Determine whether to actually add the link at all.
 		// There are certain cases, e.g. in the edit dialog, in a special page,
 		// where it's inappropriate for the link to appear.
@@ -18,7 +18,7 @@ class CreateRedirectHooks {
 		$title = $skin->getTitle();
 
 		if ( $action != 'view' && $action != 'purge' && !$title->isSpecialPage() ) {
-			return true;
+			return;
 		}
 
 		// 3. Add the link!
@@ -27,7 +27,5 @@ class CreateRedirectHooks {
 			'id' => 't-createredirect',
 			'href' => $href
 		];
-
-		return true;
 	}
 }

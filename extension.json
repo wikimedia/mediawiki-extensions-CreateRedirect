@@ -24,8 +24,13 @@
 	"ExtensionMessagesFiles": {
 		"CreateRedirectAlias": "CreateRedirect.alias.php"
 	},
+	"HookHandlers": {
+		"main": {
+			"class": "CreateRedirectHooks"
+		}
+	},
 	"Hooks": {
-		"SidebarBeforeOutput": "CreateRedirectHooks::onSidebarBeforeOutput"
+		"SidebarBeforeOutput": "main"
 	},
 	"SpecialPages": {
 		"CreateRedirect": "SpecialCreateRedirect"
