@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ea6c0137_f2e23549",
+        "filename": "extension.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 161
+      },
+      "writtenOn": "2021-12-06T14:21:19Z",
+      "side": 1,
+      "message": "HookHandler requires 1.35 - I3f51b93a553b11eb85d7cd7b42085a88079794ec",
+      "revId": "26ae26eb2bc2163cacc0cb28a82e081c287fd543",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951"
+    }
+  ]
+}
