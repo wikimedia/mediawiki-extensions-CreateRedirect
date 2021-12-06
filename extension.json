@@ -10,7 +10,7 @@
 	"descriptionmsg": "createredirect-desc",
 	"license-name": "GPL-2.0-or-later",
 	"requires": {
-		"MediaWiki": ">= 1.32.0"
+		"MediaWiki": ">= 1.35.0"
 	},
 	"AutoloadClasses": {
 		"SpecialCreateRedirect": "SpecialCreateRedirect.php",
