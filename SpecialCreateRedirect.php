@@ -1,32 +1,26 @@
 <?php
+
 /**
- * MediaWiki Extension
- * CreateRedirect
- * By Marco Zafra ("Digi")
- * Started: September 18, 2007
+ * Extension:CreateRedirect - MediaWiki extension.
  *
- * Adds a special page that eases creation of redirects via a simple form.
- * Also adds a menu item to the sidebar as a shortcut.
- *
- * This program, CreateRedirect, is Copyright (C) 2007 Marco Zafra.
- * CreateRedirect is released under the GNU Lesser General Public License version 3.
- *
- * This file is part of CreateRedirect.
- * See the main file ("CreateRedirect.php") for additional information.
- *
- * CreateRedirect is free software: you can redistribute it and/or modify
- * it under the terms of the GNU Lesser General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 3 of the License, or
  * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
  */
 
-/* Body file:
- * The bulk of the routines are stored here.
- * This is where all the internal processing actually occurs.
+/**
+ * @file
+ * Adds a special page for creating redirects via a simple form.
+ * Also adds a menu item to the sidebar as a shortcut.
  */
 
 class SpecialCreateRedirect extends FormSpecialPage {
-
 	/**
 	 * @var int
 	 * Number of edits made in onSubmit().
