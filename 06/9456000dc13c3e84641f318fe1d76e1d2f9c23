@@ -1,0 +1,7 @@
+Code-Review+2: Legoktm <legoktm@debian.org>
+Verified+2: jenkins-bot
+Submitted-by: jenkins-bot
+Submitted-at: Sun, 12 Dec 2021 06:48:12 +0000
+Reviewed-on: https://gerrit.wikimedia.org/r/c/mediawiki/extensions/CreateRedirect/+/745219
+Project: mediawiki/extensions/CreateRedirect
+Branch: refs/heads/master
