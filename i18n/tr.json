@@ -3,11 +3,12 @@
 		"authors": [
 			"BaRaN6161 TURK",
 			"Hedda",
-			"Suelnur"
+			"Suelnur",
+			"MuratTheTurkish"
 		]
 	},
-	"createredirect": "Yönlendirme oluştur",
-	"createredirect-desc": "Kolayca yönlendirme oluşturmak için özel sayfa [[Special:CreateRedirect|YönlendirmeOluştur]] ekler",
+	"createredirect": "Yönlendirme Oluştur",
+	"createredirect-desc": "Kolayca yönlendirme oluşturmak için [[Special:CreateRedirect|CreateRedirect]] özel sayfası ekler",
 	"createredirect-error": "Hata: Kimlik doğrulama başarısız.",
 	"createredirect-enable-multiline": "Daha fazla başlık girin",
 	"createredirect-instructions": "Aşağıdaki formu kullanarak bir yönlendirme sayfası oluşturabilir veya mevcut bir sayfayı yönlendirme ile değiştirebilirsiniz.",

@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Sarrus"
+			"Sarrus",
+			"Saederup92"
 		]
 	},
 	"createredirect": "Opret omdirigering",
+	"createredirect-overwrite": "Ignorer advarsler",
 	"createredirect-page-title": "Sidetitel:",
 	"createredirect-redirect-done": "En omdirigering fra \"$1\" til \"$2\" er oprettet",
 	"createredirect-redirect-to": "Omdiriger til:",
