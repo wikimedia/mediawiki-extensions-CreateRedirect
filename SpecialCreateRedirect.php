@@ -1,4 +1,8 @@
 <?php
+
+use MediaWiki\MediaWikiServices;
+use MediaWiki\Revision\SlotRecord;
+
 /**
  * MediaWiki Extension
  * CreateRedirect
@@ -91,8 +95,16 @@ class SpecialCreateRedirect extends FormSpecialPage {
 		$contentHandler = new WikitextContentHandler();
 		$content = $contentHandler->makeRedirectContent( $redirectTarget );
 
-		$page = WikiPage::factory( $crOrigTitle );
-		$saveStatus = $page->doEditContent( $content, '', EDIT_INTERNAL | EDIT_MINOR | EDIT_AUTOSUMMARY );
+		$pageUpdater = MediaWikiServices::getInstance()
+			->getWikiPageFactory()
+			->newFromTitle( $crOrigTitle )
+			->newPageUpdater( $this->getUser() );
+		$pageUpdater->setContent( SlotRecord::MAIN, $content );
+		$pageUpdater->saveRevision(
+			CommentStoreComment::newUnsavedComment( '' ),
+			EDIT_INTERNAL | EDIT_MINOR | EDIT_AUTOSUMMARY
+		);
+		$saveStatus = $pageUpdater->getStatus();
 
 		if ( $saveStatus->isOK() ) {
 			$linkRenderer = $this->getLinkRenderer();
