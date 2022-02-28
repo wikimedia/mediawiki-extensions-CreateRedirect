@@ -12,6 +12,7 @@
 	"createredirect-error": "Fout: authenticatie mislukt.",
 	"createredirect-enable-multiline": "Voer meer titels in",
 	"createredirect-instructions": "Via het onderstaande formulier kunt u een doorverwijzingspagina aanmaken of een bestaande pagina vervangen door een doorverwijzing.",
+	"createredirect-invalid-title": "Fout: \"$1\" is niet een correcte titel.",
 	"createredirect-overwrite": "Waarschuwingen negeren",
 	"createredirect-page-title": "Paginanaam:",
 	"createredirect-redirect-done": "Doorverwijzing aangemaakt van \"$1\" naar \"$2\"",
