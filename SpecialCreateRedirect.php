@@ -46,7 +46,9 @@ class SpecialCreateRedirect extends FormSpecialPage {
 			return Status::newFatal( 'createredirect-invalid-title', $data['crRedirectTitle'] );
 		}
 
-		$origTitles = array_filter( preg_split( "/[\r\n]+/", $data['crOrigTitle'] ) );
+		$origTitles = array_filter( array_map( static function( $ele ) {
+			return $ele[0] ?? null;
+		}, $data['crOrigTitle'] ) );
 
 		$status = Status::newGood();
 		foreach ( $origTitles as $pageName ) {
@@ -139,23 +141,25 @@ class SpecialCreateRedirect extends FormSpecialPage {
 			}
 		}
 
-		$origTitleType = 'text';
-		if ( strpos( $request->getText( 'crOrigTitle' ), "\n" ) !== false ) {
-			$origTitleType = 'textarea';
-		}
-
 		return [
 			'crOrigTitle' => [
-				'type' => $origTitleType,
+				'type' => 'cloner',
 				'name' => 'crOrigTitle',
 				'id' => 'crOrigTitle',
-				'size' => 60,
-				'rows' => 4,
+				'fields' => [
+					[
+						'type' => 'title',
+						'required' => false,
+						'creatable' => true,
+						'exists' => false,
+					],
+				],
 				'label-message' => 'createredirect-page-title',
-				'default' => $crOrigTitleDefault,
+				'default' => [
+					[ $crOrigTitleDefault ]
+				],
 				'required' => true
 			],
-			// TODO: non-javascript button id="crMultiLine"?
 			'crRedirectTitle' => [
 				'type' => 'title',
 				'name' => 'crRedirectTitle',
