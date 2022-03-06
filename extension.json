@@ -39,18 +39,5 @@
 		"localBasePath": "modules",
 		"remoteExtPath": "CreateRedirect/modules"
 	},
-	"ResourceModules": {
-		"ext.createredirect": {
-			"scripts": "ext.createredirect.js",
-			"styles": "ext.createredirect.css",
-			"targets": [
-				"desktop",
-				"mobile"
-			],
-			"messages": [
-				"createredirect-enable-multiline"
-			]
-		}
-	},
 	"manifest_version": 2
 }
