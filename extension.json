@@ -41,7 +41,6 @@
 	},
 	"ResourceModules": {
 		"ext.createredirect": {
-			"scripts": "ext.createredirect.js",
 			"styles": "ext.createredirect.css",
 			"targets": [
 				"desktop",

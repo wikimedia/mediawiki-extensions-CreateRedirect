@@ -8,7 +8,6 @@
 	"createredirect": "Create Redirect",
 	"createredirect-desc": "Adds special page [[Special:CreateRedirect|CreateRedirect]] to easily create redirects",
 	"createredirect-error": "Error: Authentication failed.",
-	"createredirect-enable-multiline": "Enter more titles",
 	"createredirect-instructions": "Using the form below, you can create a redirect page or replace an existing page with a redirect.",
 	"createredirect-invalid-title": "Error: \"$1\" is not a correct title.",
 	"createredirect-overwrite": "Ignore warnings",
