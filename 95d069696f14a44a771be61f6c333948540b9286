@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "867cfe20_3150fb8c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2412
+      },
+      "writtenOn": "2022-03-18T12:27:07Z",
+      "side": 1,
+      "message": "Thank you for your contribution.\n\nI tested the resulting form (with HTMLFormFieldCloner), and while it works correctly function-wise, its UI is now significantly less intuitive to the user.\nUser would have no idea what \"Remove\" and \"Add more\" buttons mean, while the meaning of \"Enter more titles\" was clear.\n\nThe following improvements are needed for this change to not make UX worse:\n1) \"Remove\" buttons should be hidden. They are not needed for 99% users (others can just leave the field empty, which is identical to using \"Remove\").\n2) Label of \"Add more\" button should be renamed to \"Enter more titles\" (same text as before).\n3) CSS nitpick: need to remove bullet marker and left-margin near each \u003cinput\u003e (with page titles). They are currently misaligned (not on the same line as \u003cinput\u003e) and weren\u0027t needed in the first place.\n\nI suspect that most users are only creating 1 redirect at a time, so making UI easy for them is a priority. (they know they don\u0027t need to \"Enter more titles\")\n",
+      "revId": "95d069696f14a44a771be61f6c333948540b9286",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951"
+    }
+  ]
+}
