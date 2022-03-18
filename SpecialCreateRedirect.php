@@ -46,7 +46,9 @@ class SpecialCreateRedirect extends FormSpecialPage {
 			return Status::newFatal( 'createredirect-invalid-title', $data['crRedirectTitle'] );
 		}
 
-		$origTitles = array_filter( preg_split( "/[\r\n]+/", $data['crOrigTitle'] ) );
+		$origTitles = array_filter( array_map( static function ( $ele ) {
+			return $ele[0] ?? null;
+		}, $data['crOrigTitle'] ) );
 
 		$status = Status::newGood();
 		foreach ( $origTitles as $pageName ) {
@@ -139,23 +141,35 @@ class SpecialCreateRedirect extends FormSpecialPage {
 			}
 		}
 
-		$origTitleType = 'text';
-		if ( strpos( $request->getText( 'crOrigTitle' ), "\n" ) !== false ) {
-			$origTitleType = 'textarea';
-		}
-
 		return [
 			'crOrigTitle' => [
-				'type' => $origTitleType,
+				'type' => 'cloner',
 				'name' => 'crOrigTitle',
 				'id' => 'crOrigTitle',
-				'size' => 60,
-				'rows' => 4,
+				'cssclass' => 'createredirect-cloner',
+				'fields' => [
+					[
+						'type' => 'title',
+						'required' => false,
+						'creatable' => true,
+						'exists' => false,
+					],
+					// Disables delete button and hides using CSS. They are not needed for 99% users
+					// (others can just leave the field empty, which is identical to using
+					// "Remove").
+					'delete' => [
+						'type' => 'submit',
+						'disabled' => true,
+						'cssclass' => 'createredirect-delete',
+					],
+				],
 				'label-message' => 'createredirect-page-title',
-				'default' => $crOrigTitleDefault,
+				'create-button-message' => 'createredirect-enable-multiline',
+				'default' => [
+					[ $crOrigTitleDefault ]
+				],
 				'required' => true
 			],
-			// TODO: non-javascript button id="crMultiLine"?
 			'crRedirectTitle' => [
 				'type' => 'title',
 				'name' => 'crRedirectTitle',
@@ -181,7 +195,7 @@ class SpecialCreateRedirect extends FormSpecialPage {
 			->setSubmitTextMsg( 'createredirect-save' )
 			->setWrapperLegend( false );
 
-		$this->getOutput()->addModules( 'ext.createredirect' );
+			$this->getOutput()->addModuleStyles( 'ext.createredirect' );
 	}
 
 	/**
