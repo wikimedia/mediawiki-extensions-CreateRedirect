@@ -36,15 +36,7 @@
 	},
 	"ResourceModules": {
 		"ext.createredirect": {
-			"scripts": "ext.createredirect.js",
-			"styles": "ext.createredirect.css",
-			"targets": [
-				"desktop",
-				"mobile"
-			],
-			"messages": [
-				"createredirect-enable-multiline"
-			]
+			"styles": "ext.createredirect.css"
 		}
 	},
 	"manifest_version": 2
