@@ -1,6 +1,10 @@
 {
 	"name": "CreateRedirect",
+<<<<<<< HEAD   (f460c0 Use HTMLFormFieldCloner for origin titles)
 	"version": "1.4.0",
+=======
+	"version": "1.5.0",
+>>>>>>> CHANGE (a327fa (security) Deny access if user is not allowed to create/edit)
 	"author": [
 		"[https://www.mediawiki.org/wiki/User:Digiku Marco Zafra]",
 		"Edward Chernenko"
@@ -28,7 +32,12 @@
 		"SkinTemplateToolboxEnd": "CreateRedirectHooks::onSkinTemplateToolboxEnd"
 	},
 	"SpecialPages": {
-		"CreateRedirect": "SpecialCreateRedirect"
+		"CreateRedirect": {
+			"class": "SpecialCreateRedirect",
+			"services": [
+				"PermissionManager"
+			]
+		}
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "modules",
