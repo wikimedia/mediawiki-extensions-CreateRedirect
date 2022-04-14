@@ -1,6 +1,6 @@
 {
 	"name": "CreateRedirect",
-	"version": "1.4.1",
+	"version": "1.5.0",
 	"author": [
 		"[https://www.mediawiki.org/wiki/User:Digiku Marco Zafra]",
 		"Edward Chernenko"
@@ -33,7 +33,12 @@
 		"SidebarBeforeOutput": "main"
 	},
 	"SpecialPages": {
-		"CreateRedirect": "SpecialCreateRedirect"
+		"CreateRedirect":  {
+			"class": "SpecialCreateRedirect",
+			"services": [
+				"PermissionManager"
+			]
+		}
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "modules",
