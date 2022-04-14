@@ -1,6 +1,7 @@
 <?php
 
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Permissions\PermissionManager;
 use MediaWiki\Revision\SlotRecord;
 
 /**
@@ -30,11 +31,16 @@ class SpecialCreateRedirect extends FormSpecialPage {
 	 */
 	protected $editCount = 0;
 
+	/** @var PermissionManager */
+	private $permissionManager;
+
 	/**
-	 * Constructor -- set up the new special page
+	 * @param PermissionManager $permissionManager
 	 */
-	public function __construct() {
-		parent::__construct( 'CreateRedirect' );
+	public function __construct( PermissionManager $permissionManager ) {
+		parent::__construct( 'CreateRedirect', 'edit' );
+
+		$this->permissionManager = $permissionManager;
 	}
 
 	/**
@@ -78,20 +84,31 @@ class SpecialCreateRedirect extends FormSpecialPage {
 			return;
 		}
 
-		if ( $crOrigTitle->exists() && !$overwrite ) {
+		$exists = $crOrigTitle->exists();
+		if ( $exists && !$overwrite ) {
 			// Creating this redirect would result in overwriting an existing page.
 			// Warn about that, but provide "create anyway" button.
 			$status->fatal( 'createredirect-would-overwrite', $crOrigTitle->getFullText() );
 			return;
 		}
 
+		// Security: check if user is allowed to create a new page (createpage/createtalk).
+		// Doesn't check the "edit" right, which was already supplied as required right in constructor.
+		$user = $this->getUser();
+		$errors = $this->permissionManager->getPermissionErrors( 'create', $user, $crOrigTitle );
+		if ( $errors ) {
+			$missingRight = $exists ? 'edit' : ( $crOrigTitle->isTalkPage() ? 'createtalk' : 'createpage' );
+			throw new PermissionsError( $missingRight, $errors );
+		}
+
+		// Make an edit that will create a redirect.
 		$contentHandler = new WikitextContentHandler();
 		$content = $contentHandler->makeRedirectContent( $redirectTarget );
 
 		$pageUpdater = MediaWikiServices::getInstance()
 			->getWikiPageFactory()
 			->newFromTitle( $crOrigTitle )
-			->newPageUpdater( $this->getUser() );
+			->newPageUpdater( $user );
 		$pageUpdater->setContent( SlotRecord::MAIN, $content );
 		$pageUpdater->saveRevision(
 			CommentStoreComment::newUnsavedComment( '' ),
@@ -196,5 +213,12 @@ class SpecialCreateRedirect extends FormSpecialPage {
 	 */
 	protected function getGroupName() {
 		return 'pagetools';
+	}
+
+	/**
+	 * @inheritDoc
+	 */
+	public function doesWrites() {
+		return true;
 	}
 }
