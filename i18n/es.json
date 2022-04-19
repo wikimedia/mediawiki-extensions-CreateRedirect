@@ -2,14 +2,17 @@
 	"@metadata": {
 		"authors": [
 			"Fitoschido",
-			"Sanbec"
+			"Sanbec",
+			"DiegoAmbrocio"
 		]
 	},
 	"createredirect": "Crear una redirección",
 	"createredirect-desc": "Añade una [[Special:CreateRedirect|página especial]] para crear redirecciones de una manera sencilla",
 	"createredirect-error": "Error : Fallo de la identificación.",
+	"createredirect-enable-multiline": "Introduzca más títulos",
 	"createredirect-instructions": "Empleando el formulario de abajo, puede crear una página de redirección o sustituir una página existente por una redirección.",
 	"createredirect-invalid-title": "Error: «$1» es un título incorrecto.",
+	"createredirect-overwrite": "Ignorar cualquier alerta",
 	"createredirect-page-title": "Título de la página:",
 	"createredirect-redirect-done": "Redirección creada de «$1» hacia «$2»",
 	"createredirect-redirect-to": "Redirigir a:",
