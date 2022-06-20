@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Chrisportelli"
+			"Chrisportelli",
+			"ToniSant"
 		]
 	},
 	"createredirect": "Oħloq ir-rindirizz",
@@ -11,5 +12,5 @@
 	"createredirect-page-title": "Titlu tal-paġna:",
 	"createredirect-redirect-done": "Rindirizz maħluq minn \"$1\" għal \"$2\"",
 	"createredirect-redirect-to": "Rindirizz lejn:",
-	"createredirect-save": "Salva l-paġna"
+	"createredirect-save": "Ippubblika l-paġna"
 }
