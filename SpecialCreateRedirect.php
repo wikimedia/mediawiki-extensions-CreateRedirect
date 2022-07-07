@@ -135,7 +135,7 @@ class SpecialCreateRedirect extends FormSpecialPage {
 	/**
 	 * @inheritDoc
 	 */
-	protected function preText() {
+	protected function preHtml() {
 		return $this->msg( 'createredirect-instructions' )->escaped();
 	}
 
