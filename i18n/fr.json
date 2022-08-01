@@ -4,7 +4,8 @@
 			"Gomoko",
 			"McDutchie",
 			"Peter17",
-			"Thibaut120094"
+			"Thibaut120094",
+			"Verdy p"
 		]
 	},
 	"createredirect": "Créer une redirection",
@@ -18,5 +19,5 @@
 	"createredirect-redirect-done": "Redirection créée de « $1 » vers « $2 »",
 	"createredirect-redirect-to": "Rediriger vers :",
 	"createredirect-save": "Enregistrer la page",
-	"createredirect-would-overwrite": "Attention : la page « [[:$1]] » existe déjà."
+	"createredirect-would-overwrite": "Attention : la page « [[:$1]] » existe déjà."
 }
