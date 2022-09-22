@@ -8,8 +8,11 @@
 	"createredirect-desc": "Dodaje posebnu stranicu [[Special:CreateRedirect|NapraviPreusmjerenje]] za lahko pravljenje preusmjerenja",
 	"createredirect-error": "Greška: Autentifikacija nije uspjela.",
 	"createredirect-instructions": "Uz ovaj obrazac možete stvoriti stranice za preusmjeravanje ili zamijeniti postojeću stranicu sa preusmjeravanjem.",
+	"createredirect-invalid-title": "Greška: »$1« nije valjani naslov.",
+	"createredirect-overwrite": "Zanemari upozorenja",
 	"createredirect-page-title": "Naslov stranice:",
 	"createredirect-redirect-done": "Napravljeno preusmjerenje sa \"$1\" na \"$2\"",
 	"createredirect-redirect-to": "Preusmjerenje na:",
-	"createredirect-save": "Spremi stranicu"
+	"createredirect-save": "Spremi stranicu",
+	"createredirect-would-overwrite": "Upozorenje: stranica \"[[:$1]]\" već postoji."
 }
