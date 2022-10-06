@@ -2,15 +2,20 @@
 	"@metadata": {
 		"authors": [
 			"Guycn2",
-			"YaronSh"
+			"YaronSh",
+			"Amire80"
 		]
 	},
 	"createredirect": "יצירת הפניה",
-	"createredirect-desc": "הוספת דף מיוחד [[Special:CreateRedirect|CreateRedirect]] ליצירת הפניות בפשטות",
+	"createredirect-desc": "הוספת הדף המיוחד [[Special:CreateRedirect|CreateRedirect]] ליצירת הפניות בפשטות",
 	"createredirect-error": "שגיאה: האימות נכשל.",
+	"createredirect-enable-multiline": "נא להזין עוד כותרות",
 	"createredirect-instructions": "באמצעות הטופס שלהלן, באפשרותך ליצור דף הפניה או להחליף דף קיים בהפניה.",
-	"createredirect-page-title": "שם הדף:",
+	"createredirect-invalid-title": "שגיאה: \"$1\" אינה כותרת נכונה.",
+	"createredirect-overwrite": "להתעלם מאזהרות",
+	"createredirect-page-title": "כותרת הדף:",
 	"createredirect-redirect-done": "נוצרה הפניה מהדף \"$1\" לדף \"$2\"",
-	"createredirect-redirect-to": "הפניה אל:",
-	"createredirect-save": "שמירת הדף"
+	"createredirect-redirect-to": "להפנות לדף:",
+	"createredirect-save": "שמירת הדף",
+	"createredirect-would-overwrite": "אזהרה: הדף \"[[:$1]]\" כבר קיים."
 }
