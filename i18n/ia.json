@@ -13,7 +13,7 @@
 	"createredirect-overwrite": "Ignorar advertimentos",
 	"createredirect-page-title": "Titulo del pagina:",
 	"createredirect-redirect-done": "Redirection create ab \"$1\" verso \"$2\"",
-	"createredirect-redirect-to": "Rediriger vers :",
+	"createredirect-redirect-to": "Rediriger verso:",
 	"createredirect-save": "Publicar pagina",
 	"createredirect-would-overwrite": "Attention: le pagina \"[[:$1]]\" jam existe."
 }
