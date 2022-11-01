@@ -7,6 +7,7 @@
 	"createredirect": "Napravi preusmjerenje",
 	"createredirect-desc": "Dodaje posebnu stranicu [[Special:CreateRedirect|NapraviPreusmjerenje]] za lahko pravljenje preusmjerenja",
 	"createredirect-error": "Greška: Autentifikacija nije uspjela.",
+	"createredirect-enable-multiline": "Unesi još naslova",
 	"createredirect-instructions": "Uz ovaj obrazac možete stvoriti stranice za preusmjeravanje ili zamijeniti postojeću stranicu sa preusmjeravanjem.",
 	"createredirect-invalid-title": "Greška: »$1« nije valjani naslov.",
 	"createredirect-overwrite": "Zanemari upozorenja",
