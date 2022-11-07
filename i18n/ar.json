@@ -12,9 +12,11 @@
 	"createredirect-error": "خطأ: فشلت المصادقة.",
 	"createredirect-enable-multiline": "أضف المزيد من العناوين",
 	"createredirect-instructions": "باستخدام النموذج أدناه، يمكنك إنشاء صفحة تحويل أو استبدال صفحة موجودة بتحويلة.",
+	"createredirect-invalid-title": "خطأ: \" $1 \" ليس عنوانًا صحيحًا.",
 	"createredirect-overwrite": "تجاهل التحذيرات",
 	"createredirect-page-title": "عنوان الصفحة:",
 	"createredirect-redirect-done": "تم إنشاء تحويلة من \"$1\" إلى \"$2\"",
 	"createredirect-redirect-to": "إعادة توجيه إلى:",
-	"createredirect-save": "حفظ الصفحة"
+	"createredirect-save": "حفظ الصفحة",
+	"createredirect-would-overwrite": "تحذير: الصفحة \"[[:$1]]\" موجودة بالفعل."
 }
