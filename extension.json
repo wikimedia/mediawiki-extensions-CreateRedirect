@@ -1,6 +1,6 @@
 {
 	"name": "CreateRedirect",
-	"version": "1.5.0",
+	"version": "1.5.1",
 	"author": [
 		"[https://www.mediawiki.org/wiki/User:Digiku Marco Zafra]",
 		"Edward Chernenko"
@@ -36,6 +36,7 @@
 		"CreateRedirect": {
 			"class": "SpecialCreateRedirect",
 			"services": [
+				"ContentHandlerFactory",
 				"PermissionManager"
 			]
 		}

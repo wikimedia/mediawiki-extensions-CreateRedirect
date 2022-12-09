@@ -1,5 +1,6 @@
 <?php
 
+use MediaWiki\Content\ContentHandlerFactory;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Permissions\PermissionManager;
 use MediaWiki\Revision\SlotRecord;
@@ -31,15 +32,21 @@ class SpecialCreateRedirect extends FormSpecialPage {
 	 */
 	protected $editCount = 0;
 
+	/** @var ContentHandlerFactory */
+	private $contentHandlerFactory;
+
+
 	/** @var PermissionManager */
 	private $permissionManager;
 
 	/**
+	 * @param ContentHandlerFactory $contentHandlerFactory
 	 * @param PermissionManager $permissionManager
 	 */
-	public function __construct( PermissionManager $permissionManager ) {
+	public function __construct( ContentHandlerFactory $contentHandlerFactory, PermissionManager $permissionManager ) {
 		parent::__construct( 'CreateRedirect', 'edit' );
 
+		$this->contentHandlerFactory = $contentHandlerFactory;
 		$this->permissionManager = $permissionManager;
 	}
 
@@ -104,7 +111,9 @@ class SpecialCreateRedirect extends FormSpecialPage {
 		}
 
 		// Make an edit that will create a redirect.
-		$contentHandler = new WikitextContentHandler();
+		$contentHandler = $this->contentHandlerFactory
+			->getContentHandler( CONTENT_MODEL_WIKITEXT );
+
 		$content = $contentHandler->makeRedirectContent( $redirectTarget );
 
 		$pageUpdater = MediaWikiServices::getInstance()
