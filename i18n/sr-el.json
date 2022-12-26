@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"createredirect": "Pravljenje preusmeravanja",
+	"createredirect-desc": "Dodaje posebnu stranicu „[[Special:CreateRedirect|Pravljenje preusmeravanja]]” za jednostavno pravljenje preusmeravanja",
+	"createredirect-error": "Greška: Potvrda identiteta nije uspela.",
+	"createredirect-enable-multiline": "Unesite više naslova",
+	"createredirect-instructions": "Korišćenjem obrasca ispod, možete da napravite preusmeravanje ili zamenite postojeću stranicu sa preusmeravanjem.",
+	"createredirect-invalid-title": "Greška: „$1” nije važeći naslov.",
+	"createredirect-overwrite": "Zanemari upozorenja",
+	"createredirect-page-title": "Naslov stranice:",
+	"createredirect-redirect-done": "Napravljeno preusmerenje sa „$1” na „$2”",
+	"createredirect-redirect-to": "Preusmeri na:",
+	"createredirect-save": "Sačuvaj stranicu",
+	"createredirect-would-overwrite": "Upozorenje: Stranica „[[:$1]]” već postoji."
+}
