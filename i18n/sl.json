@@ -4,6 +4,16 @@
 			"Eleassar"
 		]
 	},
+	"createredirect": "Ustvari preusmeritev",
+	"createredirect-desc": "Doda posebno stran [[Special:CreateRedirect|CreateRedirect]] za preprosto ustvarjanje preusmeritev",
+	"createredirect-error": "Napaka: Avtentikacija ni uspela.",
+	"createredirect-enable-multiline": "Vnesite več naslovov",
+	"createredirect-instructions": "S spodnjim obrazcem lahko ustvarite stran za preusmeritev ali zamenjate obstoječo stran s preusmeritvijo.",
+	"createredirect-invalid-title": "Napaka: »$1« ni pravilen naslov.",
+	"createredirect-overwrite": "Prezri opozorila",
 	"createredirect-page-title": "Naslov strani:",
-	"createredirect-save": "Shrani stran"
+	"createredirect-redirect-done": "Preusmeritev z »$1« na »$2« ustvarjena",
+	"createredirect-redirect-to": "Preusmeri na:",
+	"createredirect-save": "Shrani stran",
+	"createredirect-would-overwrite": "Opozorilo: stran »[[:$1]]« že obstaja."
 }
