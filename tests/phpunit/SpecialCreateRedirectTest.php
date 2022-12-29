@@ -386,14 +386,11 @@ class SpecialCreateRedirectTest extends SpecialPageTestBase {
 	 * @return array
 	 */
 	protected function runSpecial( array $query = [], $isPosted = false, $subpage = '' ) {
-		// HTMLForm sometimes calls wfMessage() without context, so we must set $wgLang
-		global $wgLang;
-		$wgLang = Language::factory( 'qqx' );
+		$this->setUserLang( 'qqx' );
 
 		return $this->executeSpecialPage(
 			$subpage,
-			new FauxRequest( $query, $isPosted ),
-			$wgLang
+			new FauxRequest( $query, $isPosted )
 		);
 	}
 
