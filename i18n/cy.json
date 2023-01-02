@@ -2,13 +2,15 @@
 	"@metadata": {
 		"authors": [
 			"Cymrodor",
-			"Lloffiwr"
+			"Lloffiwr",
+			"Afalau"
 		]
 	},
 	"createredirect": "Gosod Ailgyfeiriad",
 	"createredirect-desc": "Yn ychwanegu tudalen arbennig [[Special:CreateRedirect|CreateRedirect]] sy'n gosod ailgyfeiriadau'n ddi-drafferth",
 	"createredirect-error": "Gwall: Methwyd â dilysu.",
 	"createredirect-instructions": "Gan ddefnyddio'r ffurflen isod, gallwch osod tudalen ailgyfeirio neu ddisodli tudalen gydag ailgyfeiriad.",
+	"createredirect-overwrite": "Anwybyddu rhybuddion",
 	"createredirect-page-title": "Teitl y dudalen:",
 	"createredirect-redirect-done": "Gosodwyd ailgyfeiriad o \"$1\" i \"$2\"",
 	"createredirect-redirect-to": "Ailgyfeirio i:",
