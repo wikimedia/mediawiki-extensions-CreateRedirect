@@ -3,16 +3,20 @@
 		"authors": [
 			"Afalau",
 			"Cymrodor",
+			"JonesT143",
 			"Lloffiwr"
 		]
 	},
-	"createredirect": "Gosod Ailgyfeiriad",
+	"createredirect": "Creu Ailgyfeiriad",
 	"createredirect-desc": "Yn ychwanegu tudalen arbennig [[Special:CreateRedirect|CreateRedirect]] sy'n gosod ailgyfeiriadau'n ddi-drafferth",
 	"createredirect-error": "Gwall: Methwyd â dilysu.",
+	"createredirect-enable-multiline": "Mewnbynnu teitlau eraill",
 	"createredirect-instructions": "Gan ddefnyddio'r ffurflen isod, gallwch osod tudalen ailgyfeirio neu ddisodli tudalen gydag ailgyfeiriad.",
-	"createredirect-overwrite": "Anwybyddu rhybuddion",
+	"createredirect-invalid-title": "Gwall: Nid yw \"$1\" yn deitl dilys.",
+	"createredirect-overwrite": "Anwybyddu'r rhybuddion",
 	"createredirect-page-title": "Teitl y dudalen:",
 	"createredirect-redirect-done": "Gosodwyd ailgyfeiriad o \"$1\" i \"$2\"",
 	"createredirect-redirect-to": "Ailgyfeirio i:",
-	"createredirect-save": "Cadw'r dudalen"
+	"createredirect-save": "Cadw'r dudalen",
+	"createredirect-would-overwrite": "Rhybudd: mae'r dudalen \"[[:$1]]\" eisioes yn bodoli."
 }
