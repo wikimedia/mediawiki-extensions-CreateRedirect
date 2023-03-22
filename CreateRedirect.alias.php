@@ -223,11 +223,6 @@ $specialPageAliases['vi'] = [
 	'CreateRedirect' => [ 'Tạo_đổi_hướng' ],
 ];
 
-/** Chinese (中文) */
-$specialPageAliases['zh'] = [
-	'CreateRedirect' => [ '创建重定向', '創建重定向', '建立重定向', '建立重新導向' ],
-];
-
 /** Simplified Chinese (中文（简体）‎) */
 $specialPageAliases['zh-hans'] = [
 	'CreateRedirect' => [ '创建重定向', '创建重定向页' ],
@@ -235,10 +230,5 @@ $specialPageAliases['zh-hans'] = [
 
 /** Traditional Chinese (中文（繁體）‎) */
 $specialPageAliases['zh-hant'] = [
-	'CreateRedirect' => [ '建立重新導向' ],
-];
-
-/** Chinese (Taiwan) (中文（台灣）‎) */
-$specialPageAliases['zh-tw'] = [
-	'CreateRedirect' => [ '建立重定向' ],
+	'CreateRedirect' => [ '建立重新導向', '建立重定向', '創建重定向' ],
 ];
