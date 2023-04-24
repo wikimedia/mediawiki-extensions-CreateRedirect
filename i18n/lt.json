@@ -10,9 +10,13 @@
 	"createredirect": "Kurti nukreipimą",
 	"createredirect-desc": "Prideda specialų puslapį [[Special:CreateRedirect|CreateRedirect]], lengvam nukreipimų kūrimui",
 	"createredirect-error": "Klaida: Autentifikavimas nepavyko.",
+	"createredirect-enable-multiline": "Įveskite daugiau pavadinimų",
 	"createredirect-instructions": "Naudojant žemiau esančią formą galite sukurti nukreipimo puslapį arba pakeisti egzistuojantį puslapį nukreipimu.",
+	"createredirect-invalid-title": "Klaida: „$1“ nėra teisingas pavadinimas.",
+	"createredirect-overwrite": "Ignoruoti įspėjimus",
 	"createredirect-page-title": "Puslapio antraštė:",
 	"createredirect-redirect-done": "Nukreipimas iš \"$1\" į \"$2\" sukurtas",
 	"createredirect-redirect-to": "Nukreipti į:",
-	"createredirect-save": "Išsaugoti puslapį"
+	"createredirect-save": "Išsaugoti puslapį",
+	"createredirect-would-overwrite": "Įspėjimas: puslapis „[[:$1]]“ jau egzistuoja."
 }
