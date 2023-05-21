@@ -104,7 +104,7 @@ class SpecialCreateRedirectTest extends SpecialPageTestBase {
 	/**
 	 * Data provider for testFormWithDefaultTitle().
 	 */
-	public function defaultTitleDataProvider() {
+	public static function defaultTitleDataProvider() {
 		yield "no title provided" => [ '', '', [] ];
 
 		yield "title provided via ?crRedirectTitle=something" =>
