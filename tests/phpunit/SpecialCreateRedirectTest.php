@@ -33,10 +33,6 @@ class SpecialCreateRedirectTest extends SpecialPageTestBase {
 		return MediaWikiServices::getInstance()->getSpecialPageFactory()->getPage( 'CreateRedirect' );
 	}
 
-	public function needsDB() {
-		return true;
-	}
-
 	/**
 	 * Checks the form when Special:CreateRedirect is opened.
 	 * @covers SpecialCreateRedirect::getFormFields
