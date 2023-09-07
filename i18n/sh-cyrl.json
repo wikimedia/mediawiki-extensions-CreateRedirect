@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Vlad5250"
+		]
+	},
+	"createredirect": "Прављење преусмјеравања",
+	"createredirect-desc": "Додаје посебну страницу „[[Special:CreateRedirect|Прављење преусмјеравања]]” за једноставно прављење преусмјеравања",
+	"createredirect-error": "Грешка: Аутентификација није успјела.",
+	"createredirect-enable-multiline": "Унеси још наслова",
+	"createredirect-instructions": "Уз овај образац можете направити преусмјеравање или замијенити постојећу страницу са преусмјеравањем.",
+	"createredirect-invalid-title": "Грешка: „$1” није важећи наслов.",
+	"createredirect-overwrite": "Занемари упозорења",
+	"createredirect-page-title": "Наслов странице:",
+	"createredirect-redirect-done": "Направљено преусмјерење са „$1” на „$2”",
+	"createredirect-redirect-to": "Преусмјери на:",
+	"createredirect-save": "Сачувај страницу",
+	"createredirect-would-overwrite": "Упозорење: страница „[[:$1]]” већ постоји."
+}
