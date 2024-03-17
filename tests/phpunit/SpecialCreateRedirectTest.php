@@ -39,7 +39,7 @@ class SpecialCreateRedirectTest extends SpecialPageTestBase {
 	 * @covers SpecialCreateRedirect::alterForm
 	 */
 	public function testForm() {
-		list( $html, ) = $this->runSpecial();
+		[ $html, ] = $this->runSpecial();
 
 		$dom = new DomDocument;
 		$dom->loadHTML( $html );
@@ -81,7 +81,7 @@ class SpecialCreateRedirectTest extends SpecialPageTestBase {
 	public function testFormWithDefaultTitle( $expectedInputFrom, $expectedInputTo,
 		array $query, $subpage = ''
 	) {
-		list( $html, ) = $this->runSpecial( $query, false, $subpage );
+		[ $html, ] = $this->runSpecial( $query, false, $subpage );
 
 		$dom = new DomDocument;
 		$dom->loadHTML( $html );
@@ -335,7 +335,7 @@ class SpecialCreateRedirectTest extends SpecialPageTestBase {
 	private function runSubmitTest( array $query ) {
 		$query['wpEditToken'] = RequestContext::getMain()->getCsrfTokenSet()->getToken();
 
-		list( $html ) = $this->runSpecial( $query,  true );
+		[ $html ] = $this->runSpecial( $query, true );
 
 		$dom = new DomDocument;
 		$dom->loadHTML( $html );

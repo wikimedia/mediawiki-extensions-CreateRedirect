@@ -134,7 +134,7 @@ class SpecialCreateRedirect extends FormSpecialPage {
 					$linkRenderer->makeKnownLink( $redirectTarget )
 				)->escaped()
 			) );
-			$this->editCount ++;
+			$this->editCount++;
 		}
 
 		$status->merge( $saveStatus );
