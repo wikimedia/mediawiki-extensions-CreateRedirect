@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Salvare",
 			"Shirayuki",
 			"青子守歌"
 		]
@@ -8,9 +9,13 @@
 	"createredirect": "転送を作成",
 	"createredirect-desc": "転送を簡単に作成する[[Special:CreateRedirect|転送作成]]特別ページを追加する",
 	"createredirect-error": "エラー: 認証に失敗しました。",
+	"createredirect-enable-multiline": "さらにタイトルを入力",
 	"createredirect-instructions": "下記のフォームを使用して、新しく転送ページを作成したり、既存のページを転送に置き換えることができます。",
+	"createredirect-invalid-title": "エラー: 「$1」は正しいタイトルではありません。",
+	"createredirect-overwrite": "警告を無視する",
 	"createredirect-page-title": "ページ名:",
 	"createredirect-redirect-done": "「$1」から「$2」への転送が作成されました",
 	"createredirect-redirect-to": "転送先:",
-	"createredirect-save": "ページを保存"
+	"createredirect-save": "ページを保存",
+	"createredirect-would-overwrite": "警告: ページ「[[:$1]]」はすでに存在します。"
 }
