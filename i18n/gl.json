@@ -7,9 +7,13 @@
 	"createredirect": "Crear unha redirección",
 	"createredirect-desc": "Engade unha [[Special:CreateRedirect|páxina especial]] para crear redireccións dun xeito sinxelo",
 	"createredirect-error": "Erro: Fallou a autenticación.",
-	"createredirect-instructions": "Empregando o formulario de embaixo, pode crear unha páxina de redirección ou substituír unha páxina existente por unha redirección.",
+	"createredirect-enable-multiline": "Introducir máis títulos",
+	"createredirect-instructions": "Mediante o formulario de embaixo, podes crear unha páxina de redirección ou substituír unha páxina existente por unha redirección.",
+	"createredirect-invalid-title": "Erro: \"$1\" non é un título correcto.",
+	"createredirect-overwrite": "Ignorar as advertencias",
 	"createredirect-page-title": "Título da páxina:",
 	"createredirect-redirect-done": "Redirección creada de \"$1\" cara a \"$2\"",
 	"createredirect-redirect-to": "Redirixir cara a:",
-	"createredirect-save": "Gardar a páxina"
+	"createredirect-save": "Gardar a páxina",
+	"createredirect-would-overwrite": "Aviso: A páxina \"[[:$1]]\" xa existe."
 }
