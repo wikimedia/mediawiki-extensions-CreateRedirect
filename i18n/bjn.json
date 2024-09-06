@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ezagren"
+		]
+	},
+	"createredirect": "Maulah Paugahan",
+	"createredirect-desc": "Manambahakan laman istimiwa [[Special:CreateRedirect|Paulah Paugahan]] gasan mamudahi maulah paugahan",
+	"createredirect-error": "Kasalahan: Pambuktian jajung.",
+	"createredirect-enable-multiline": "Masukakan labih banyak judul",
+	"createredirect-instructions": "Lawan mamakai formulir di bawah ini, Pian kawa maulah laman paugahan atawa mangganti laman nang ada lawan paugahan.",
+	"createredirect-invalid-title": "Kesalahan: \"$1\" lain judul nang bujur.",
+	"createredirect-overwrite": "Kada gaduhi paringatan",
+	"createredirect-page-title": "Judul laman:",
+	"createredirect-redirect-done": "Paugahan diulah matan \"$1\" ka \"$2\"",
+	"createredirect-redirect-to": "Paugahan ka:",
+	"createredirect-save": "Simpan laman",
+	"createredirect-would-overwrite": "Paringatan: laman \"[[:$1]]\" sudah ada."
+}
