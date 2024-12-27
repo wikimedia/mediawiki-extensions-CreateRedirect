@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Fulup",
+			"Huñvreüs",
 			"Y-M D"
 		]
 	},
@@ -10,7 +11,7 @@
 	"createredirect-error": "Fazi : Gwiriekadur c'hwitet.",
 	"createredirect-instructions": "En ur ober gant ar furmskrid a-is e c'hallit krouiñ ur bajenn adkas pe lakaat un adkas e-lec'h ur bajenn zo anezhi dija.",
 	"createredirect-page-title": "Titl ar bajenn :",
-	"createredirect-redirect-done": "Adkas krouet eus \"$1\" davet \"$2\"",
-	"createredirect-redirect-to": "Adkas davet :",
+	"createredirect-redirect-done": "Adkas krouet eus \"$1\" da \"$2\"",
+	"createredirect-redirect-to": "Adkas da:",
 	"createredirect-save": "Enrollañ ar bajenn"
 }
