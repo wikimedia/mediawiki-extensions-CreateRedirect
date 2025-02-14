@@ -26,9 +26,6 @@ use MediaWiki\MediaWikiServices;
  * @group Database
  */
 class SpecialCreateRedirectTest extends SpecialPageTestBase {
-	/** @var string[] */
-	protected $tablesUsed = [ 'page', 'objectcache' ];
-
 	protected function newSpecialPage() {
 		return MediaWikiServices::getInstance()->getSpecialPageFactory()->getPage( 'CreateRedirect' );
 	}
