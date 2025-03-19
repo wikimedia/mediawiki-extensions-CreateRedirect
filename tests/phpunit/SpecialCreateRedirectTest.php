@@ -20,6 +20,8 @@
  */
 
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Request\FauxRequest;
+use MediaWiki\Title\Title;
 
 /**
  * @covers SpecialCreateRedirect
