@@ -17,5 +17,5 @@
 	"createredirect-redirect-done": "「$1」から「$2」への転送が作成されました",
 	"createredirect-redirect-to": "転送先:",
 	"createredirect-save": "ページを保存",
-	"createredirect-would-overwrite": "警告: ページ「[[:$1]]」はすでに存在します。"
+	"createredirect-would-overwrite": "警告: ページ「[[:$1]]」は既に存在します。"
 }
