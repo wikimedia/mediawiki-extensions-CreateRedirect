@@ -3,13 +3,16 @@
 		"authors": [
 			"Diman Russkov",
 			"MaxSem",
-			"Александр Сигачёв"
+			"Александр Сигачёв",
+			"Engineer56"
 		]
 	},
 	"createredirect": "Создать перенаправление",
 	"createredirect-desc": "Добавляет служебную страницу [[Special:CreateRedirect|CreateRedirect]] для лёгкого создания перенаправлений",
 	"createredirect-error": "Ошибка. Аутентификация не удалась.",
+	"createredirect-enable-multiline": "Введите больше названий",
 	"createredirect-instructions": "Используя приведённую ниже форму, вы можете создать страницу-перенаправление или заменить существующую страницу перенаправления.",
+	"createredirect-invalid-title": "Ошибка: «$1» — это неверный заголовок.",
 	"createredirect-overwrite": "Игнорировать предупреждения",
 	"createredirect-page-title": "Название страницы:",
 	"createredirect-redirect-done": "Создано перенаправление с «$1» на «$2»",
