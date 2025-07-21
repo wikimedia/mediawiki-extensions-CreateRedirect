@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"SongNgu.xyz"
+		]
+	},
+	"createredirect": "Tạo đổi hướng",
+	"createredirect-desc": "Thêm [[Special:CreateRedirect|trang đặc biệt]] để dễ dàng tạo trang đổi hướng",
+	"createredirect-error": "Lỗi: Xác thực thất bại.",
+	"createredirect-enable-multiline": "Thêm trang",
+	"createredirect-instructions": "Sử dụng biểu mẫu bên dưới, bạn có thể tạo trang đổi hướng hoặc thay thế trang hiện có bằng trang đổi hướng.",
+	"createredirect-invalid-title": "Lỗi: \"$1\" không phải là tiêu đề chính xác.",
+	"createredirect-overwrite": "Bỏ qua cảnh báo",
+	"createredirect-page-title": "Tên trang:",
+	"createredirect-redirect-done": "Đã đổi hướng \"$1\" tới \"$2\"",
+	"createredirect-redirect-to": "Đổi hướng đến:",
+	"createredirect-save": "Lưu",
+	"createredirect-would-overwrite": "Cảnh báo: trang \"[[:$1]]\" đã tồn tại."
+}
