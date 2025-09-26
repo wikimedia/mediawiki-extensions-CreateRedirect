@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Meno25",
+			"Mohammed Qays",
 			"ديفيد",
 			"روخو",
 			"محمد أحمد عبد الفتاح"
@@ -15,7 +16,7 @@
 	"createredirect-invalid-title": "خطأ: \" $1 \" ليس عنوانًا صحيحًا.",
 	"createredirect-overwrite": "تجاهل التحذيرات",
 	"createredirect-page-title": "عنوان الصفحة:",
-	"createredirect-redirect-done": "تم إنشاء تحويلة من \"$1\" إلى \"$2\"",
+	"createredirect-redirect-done": "أَنُشِّئْت تحويلة من \"$1\" إلى \"$2\"",
 	"createredirect-redirect-to": "إعادة توجيه إلى:",
 	"createredirect-save": "حفظ الصفحة",
 	"createredirect-would-overwrite": "تحذير: الصفحة \"[[:$1]]\" موجودة بالفعل."
