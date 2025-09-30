@@ -1,0 +1,7 @@
+Code-Review+2: L10n-bot <l10n-bot@translatewiki.net>
+Verified+2: jenkins-bot
+Submitted-by: jenkins-bot
+Submitted-at: Tue, 30 Sep 2025 06:46:00 +0000
+Reviewed-on: https://gerrit.wikimedia.org/r/c/mediawiki/extensions/CreateRedirect/+/1192359
+Project: mediawiki/extensions/CreateRedirect
+Branch: refs/heads/REL1_43
