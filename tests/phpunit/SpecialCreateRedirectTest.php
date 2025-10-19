@@ -371,6 +371,7 @@ class SpecialCreateRedirectTest extends SpecialPageTestBase {
 			$this->assertSame( $destinationPageName, $target->getFullText(),
 				'Newly created redirect points to the wrong page.' );
 		}
+		
 	}
 
 	/**
