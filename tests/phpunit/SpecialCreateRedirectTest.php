@@ -369,7 +369,7 @@ class SpecialCreateRedirectTest extends SpecialPageTestBase {
 		foreach ( $pageNames as $pageNameFrom ) {
 			$target = $redirectLookup->getRedirectTarget( Title::newFromText( $pageNameFrom ) );
 			$this->assertNotNull( $target, 'Newly created page is not a redirect.' );
-			$this->assertSame( $destinationPageName, $target->getFullText(),
+			$this->assertSame( $destinationPageName, $target->getText(),
 				'Newly created redirect points to the wrong page.' );
 		}
 	}
