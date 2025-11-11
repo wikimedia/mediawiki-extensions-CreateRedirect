@@ -3,7 +3,8 @@
 		"authors": [
 			"Bhawani Gautam",
 			"Bhawani Gautam Rhk",
-			"पर्वत सुबेदी"
+			"पर्वत सुबेदी",
+			"बडा काजी"
 		]
 	},
 	"createredirect": "अनुप्रेषण सृजना गर्ने",
@@ -14,5 +15,5 @@
 	"createredirect-page-title": "पृष्ठ शीर्षक:",
 	"createredirect-redirect-done": " \"$1\" बाट  \"$2\" तर्फ अनुप्रेषित गरियो",
 	"createredirect-redirect-to": "अनुप्रेषण गर्ने नाम:",
-	"createredirect-save": "पृष्ठ संग्रह गर्ने"
+	"createredirect-save": "पृष्ठ सङ्ग्रह गर्नुहोस्"
 }
