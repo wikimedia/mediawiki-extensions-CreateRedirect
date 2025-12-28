@@ -2,6 +2,7 @@
 
 use MediaWiki\CommentStore\CommentStoreComment;
 use MediaWiki\Content\ContentHandlerFactory;
+use MediaWiki\Html\Html;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Permissions\PermissionManager;
 use MediaWiki\Revision\SlotRecord;
@@ -144,7 +145,7 @@ class SpecialCreateRedirect extends FormSpecialPage {
 
 		if ( $saveStatus->isOK() ) {
 			$linkRenderer = $this->getLinkRenderer();
-			$this->getOutput()->addHTML( Xml::tags( 'div', [ 'class' => 'mw-createredirect-done' ],
+			$this->getOutput()->addHTML( Html::rawElement( 'div', [ 'class' => 'mw-createredirect-done' ],
 				$this->msg( 'createredirect-redirect-done' )->rawParams(
 					$linkRenderer->makeKnownLink( $crOrigTitle, null, [], [ 'redirect' => 'no' ] ),
 					$linkRenderer->makeKnownLink( $redirectTarget )
