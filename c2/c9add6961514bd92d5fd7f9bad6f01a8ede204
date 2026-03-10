@@ -1,0 +1,9 @@
+Verified+2: jenkins-bot
+Code-Review+2: Umherirrender <umherirrender_de.wp@web.de>
+Code-Review+2: Libraryupgrader <tools.libraryupgrader@tools.wmflabs.org>
+Submitted-by: jenkins-bot
+Submitted-at: Tue, 10 Mar 2026 21:02:50 +0000
+Reviewed-on: https://gerrit.wikimedia.org/r/c/mediawiki/extensions/CreateRedirect/+/1249525
+Comments-Total: 1
+Project: mediawiki/extensions/CreateRedirect
+Branch: refs/heads/master
