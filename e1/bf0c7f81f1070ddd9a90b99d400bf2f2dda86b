@@ -1,0 +1,7 @@
+Verified+2: jenkins-bot
+Code-Review+2: Libraryupgrader <tools.libraryupgrader@tools.wmflabs.org>
+Submitted-by: jenkins-bot
+Submitted-at: Tue, 31 Mar 2026 06:37:58 +0000
+Reviewed-on: https://gerrit.wikimedia.org/r/c/mediawiki/extensions/CreateRedirect/+/1265216
+Project: mediawiki/extensions/CreateRedirect
+Branch: refs/heads/REL1_44
