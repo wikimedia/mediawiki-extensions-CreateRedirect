@@ -1,10 +1,20 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ansumang"
+			"Ansumang",
+			"Saurmandal"
 		]
 	},
-	"createredirect": "पुनर्निर्देशन बनाएँ",
+	"createredirect": "अनुप्रेषण बनाएँ",
+	"createredirect-desc": "आसानी से अनुप्रेषण बनाने के लिए [[Special:CreateRedirect|CreateRedirect]] विशेष पृष्ठ जोड़ता है",
+	"createredirect-error": "त्रुटि: प्रमाणीकरण विफल।",
+	"createredirect-enable-multiline": "अधिक शीर्षक दर्ज करें",
+	"createredirect-instructions": "नीचे के फ़ॉर्म का उपयोग करके आप एक अनुप्रेषण पृष्ठ बना सकते हैं या किसी मौजूदा पृष्ठों को एक अनुप्रेषण से बदल सकते हैं।",
+	"createredirect-invalid-title": "त्रुटि: \"$1\" मान्य शीर्षक नहीं है।",
+	"createredirect-overwrite": "चेतावनियों को अनदेखा करें",
 	"createredirect-page-title": "पृष्ठ शीर्षक:",
-	"createredirect-save": "पृष्ठ सहेजें"
+	"createredirect-redirect-done": "\"$1\" से \"$2\" तक अनुप्रेषण बनाया दिया गया है",
+	"createredirect-redirect-to": "अनुप्रेषण का लक्ष्य:",
+	"createredirect-save": "पृष्ठ सहेजें",
+	"createredirect-would-overwrite": "चेतावनी: \"[[$1]]\" पृष्ठ पहले से मौजूद है।"
 }
