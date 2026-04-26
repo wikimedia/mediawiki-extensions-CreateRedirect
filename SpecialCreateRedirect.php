@@ -46,10 +46,15 @@ class SpecialCreateRedirect extends FormSpecialPage {
 	 * @param PermissionManager $permissionManager
 	 */
 	public function __construct( ContentHandlerFactory $contentHandlerFactory, PermissionManager $permissionManager ) {
-		parent::__construct( 'CreateRedirect', 'edit' );
+		parent::__construct( 'CreateRedirect' );
 
 		$this->contentHandlerFactory = $contentHandlerFactory;
 		$this->permissionManager = $permissionManager;
+	}
+
+	/** @inheritDoc */
+	public function getRestriction(): string {
+		return 'edit';
 	}
 
 	/**
