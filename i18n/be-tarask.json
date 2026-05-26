@@ -3,13 +3,14 @@
 		"authors": [
 			"EugeneZelenko",
 			"Jim-by",
-			"Wizardist"
+			"Wizardist",
+			"Ucukor"
 		]
 	},
 	"createredirect": "Стварыць перанакіраваньне",
 	"createredirect-desc": "Дадае спэцыяльную старонку для лёгкага [[Special:CreateRedirect|стварэньня перанакіраваньняў]]",
 	"createredirect-error": "Памылка: немагчыма аўтэнтыфікаць.",
-	"createredirect-instructions": "З дапамогай формы ніжэй Вы можаце ствараць старонкі-перанакіраваньні ці замяняць існуючыя старонкі перанакіраваньнямі.",
+	"createredirect-instructions": "З дапамогай формы ніжэй Вы можаце ствараць старонкі-перанакіраваньні ці замяняць існыя старонкі перанакіраваньнямі.",
 	"createredirect-page-title": "Назва старонкі:",
 	"createredirect-redirect-done": "Створанае перанакіраваньне з «$1» на «$2».",
 	"createredirect-redirect-to": "Перанакіраваньне на:",
