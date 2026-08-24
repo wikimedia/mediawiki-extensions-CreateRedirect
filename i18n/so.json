@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"AhmedG612"
+		]
+	},
+	"createredirect": "Abuur Sii toosin",
+	"createredirect-desc": "Ku dar bogga gaarka ah [[Special:CreateRedirect|CreateRedirect]] si aad si fudud ugu abuurto sii toosinno",
+	"createredirect-error": "Khalad: Xaqiijinta aqoonsiga waa fashilantay.",
+	"createredirect-enable-multiline": "Geli cinwaanno dheeraad ah",
+	"createredirect-instructions": "Adigoo isticmaalaya foomka hoose, waxaad abuuri kartaa bog sii-toosin ah ama waxaad bog jira ku beddeli kartaa sii toosin.",
+	"createredirect-invalid-title": "Khalad: \"$1\" ma aha cinwaan sax ah.",
+	"createredirect-overwrite": "Iska indho tir digniinaha",
+	"createredirect-page-title": "Cinwaanka bogga:",
+	"createredirect-redirect-done": "Sii toosin ayaa laga sameeyay \"$1\" oo loo diray \"$2\"",
+	"createredirect-redirect-to": "Sii toosin loo diray:",
+	"createredirect-save": "Keydi bogga",
+	"createredirect-would-overwrite": "Digniin: bogga \"[[:$1]]\" hore ayuu u jiray."
+}
