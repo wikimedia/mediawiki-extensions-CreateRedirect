@@ -1,9 +1,20 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ahmed-Najib-Biabani-Ibrahimkhel"
+			"Ahmed-Najib-Biabani-Ibrahimkhel",
+			"شاه زمان پټان"
 		]
 	},
+	"createredirect": "مخگرځ جوړول",
+	"createredirect-desc": "په اسانۍ سره د مخگرځ جوړولو په موخه [[Special:CreateRedirect|مخگرځ‌جوړول]] ځانگړی مخ ورگډوي",
+	"createredirect-error": "تېروتنه: تاييد ناکام شو.",
+	"createredirect-enable-multiline": "نور سرليکونه دنه کړئ",
+	"createredirect-instructions": "د لاندې فورمې کارولو سره تاسو کولی شئ يو مخگرځ جوړ کړئ يا يو شته مخ مخگرځ کړئ.",
+	"createredirect-invalid-title": "تېروتنه: \"$1\" سم سرليک نه دی.",
+	"createredirect-overwrite": "گواښونه له پامه غورځول",
 	"createredirect-page-title": "مخ سرليک:",
-	"createredirect-save": "مخ خوندي کول"
+	"createredirect-redirect-done": "له \"$1\" څخه \"$2\" ته مخگرځ جوړ شو",
+	"createredirect-redirect-to": "نوې مخ گرځېدنه:",
+	"createredirect-save": "مخ خوندي کول",
+	"createredirect-would-overwrite": "گواښنه: \"[[:$1]]\" مخ له پخوا څخه شتون لري."
 }
