@@ -11,7 +11,7 @@
 	"createredirect-desc": "[[Special:CreateRedirect|Spezialseite]] zum einfachen Erstellen von Weiterleitungen",
 	"createredirect-error": "Fehler: Authentifizierung fehlgeschlagen.",
 	"createredirect-enable-multiline": "Mehrere Titel angeben",
-	"createredirect-instructions": "Mit diesem Formular kannst du eine Weiterleitung erstellen oder eine existierende Seite durch eine Weiterleitung ersetzen.",
+	"createredirect-instructions": "Mit diesem Formular {{#FORMAL:kannst du|können Sie}} eine Weiterleitung erstellen oder eine existierende Seite durch eine Weiterleitung ersetzen.",
 	"createredirect-invalid-title": "Fehler: „$1“ ist kein korrekter Titel.",
 	"createredirect-overwrite": "Warnungen ignorieren",
 	"createredirect-page-title": "Seitenname:",
